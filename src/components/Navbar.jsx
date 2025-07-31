@@ -16,6 +16,7 @@ export default function Navbar() {
       <a href={communityLink} className="hover:text-pink-brand transition">Comunidad</a>
       <Link to="/experiencia" className="hover:text-pink-brand transition">Experiencia</Link>
       <Link to="/hobbies" className="hover:text-pink-brand transition">Hobbies</Link>
+      <Link to="/influencer" className="hover:text-pink-brand transition">Influencer</Link>
       <a href={contactLink} className="hover:text-pink-brand transition">Contacto</a>
     </nav>
   );
