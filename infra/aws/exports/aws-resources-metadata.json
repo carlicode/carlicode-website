@@ -1,0 +1,25 @@
+{
+  "description": "IDs y nombres para carlicode.com (exportado desde la cuenta AWS actual). No incluye secretos.",
+  "account_id": "447924811196",
+  "cloudfront": {
+    "distribution_id": "E1LGUCJ0AW0ERL",
+    "distribution_domain": "d38lhumv826eud.cloudfront.net",
+    "aliases": ["carlicode.com"],
+    "origin_access_control_id": "EXHYNBAHEH9E8",
+    "managed_cache_policy_id": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+  },
+  "s3": {
+    "bucket": "carlicode.com",
+    "region": "us-east-1",
+    "website_index_document": "index.html"
+  },
+  "route53": {
+    "hosted_zone_id": "Z04847522BNLNR2UXI4XB",
+    "apex_alias_target": "d38lhumv826eud.cloudfront.net"
+  },
+  "acm": {
+    "region": "us-east-1",
+    "certificate_arn": "arn:aws:acm:us-east-1:447924811196:certificate/479b8547-9b36-449f-bf23-784ca4d6c90f",
+    "domains": ["carlicode.com", "*.carlicode.com"]
+  }
+}

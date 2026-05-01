@@ -1,0 +1,7 @@
+{
+  "Name": "oac-carlicode.com.s3.us-east-1.amazonaws.com-md46t107qs4",
+  "Description": "Created by CloudFront",
+  "SigningProtocol": "sigv4",
+  "SigningBehavior": "always",
+  "OriginAccessControlOriginType": "s3"
+}
