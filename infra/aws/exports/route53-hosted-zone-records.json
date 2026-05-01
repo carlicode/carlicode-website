@@ -1,0 +1,52 @@
+{
+    "ResourceRecordSets": [
+        {
+            "Name": "carlicode.com.",
+            "Type": "A",
+            "AliasTarget": {
+                "HostedZoneId": "Z2FDTNDATAQYW2",
+                "DNSName": "d38lhumv826eud.cloudfront.net.",
+                "EvaluateTargetHealth": false
+            }
+        },
+        {
+            "Name": "carlicode.com.",
+            "Type": "NS",
+            "TTL": 172800,
+            "ResourceRecords": [
+                {
+                    "Value": "ns-825.awsdns-39.net."
+                },
+                {
+                    "Value": "ns-1876.awsdns-42.co.uk."
+                },
+                {
+                    "Value": "ns-1431.awsdns-50.org."
+                },
+                {
+                    "Value": "ns-173.awsdns-21.com."
+                }
+            ]
+        },
+        {
+            "Name": "carlicode.com.",
+            "Type": "SOA",
+            "TTL": 900,
+            "ResourceRecords": [
+                {
+                    "Value": "ns-825.awsdns-39.net. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+                }
+            ]
+        },
+        {
+            "Name": "_1749bcea820b9ab36c6935769b872f33.carlicode.com.",
+            "Type": "CNAME",
+            "TTL": 300,
+            "ResourceRecords": [
+                {
+                    "Value": "_07fef002017ddfa31e658d6991fc409c.xlfgrmvvlj.acm-validations.aws."
+                }
+            ]
+        }
+    ]
+}

@@ -63,3 +63,19 @@ Thumbs.db
 *.zip
 *.tar.gz
 stats.html
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+*.tfvars
+!*.tfvars.example
