@@ -1,0 +1,559 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "_meta": {
+    "description": "Contenido consolidado del sitio Carli Code para reutilizar en una versión actualizada.",
+    "exportedFrom": ["src/App.jsx", "src/components/*", "src/pages/*", "src/data/content.js"],
+    "notes": [
+      "El Navbar enlaza #contact pero Contacto.jsx usa id=\"contacto\".",
+      "Talks.jsx importa talkVideos desde contentVideos.js; ese archivo solo exporta talks (posible error de build si se usa Talks).",
+      "Los proyectos en content.js tienen link \"#\" — sustituir por URLs reales cuando existan."
+    ]
+  },
+  "identity": {
+    "brandName": "Carli Code",
+    "legalName": "Carla Florida",
+    "titles": [
+      "Programadora de IA, speaker y creadora de contenido.",
+      "Machine Learning Engineer & AI Specialist"
+    ],
+    "typewriterPhrases": {
+      "hero": ["hello world()"],
+      "experienciaPage": ["hello world()", "I'm Carli Code", "Machine Learning Engineer & AI Specialist"],
+      "influencerPage": ["I'm Carli Code"]
+    },
+    "influencerRoles": [
+      { "label": "Desarrolladora AI" },
+      { "label": "Creadora de Contenido" },
+      { "label": "Impulsa Comunidad" }
+    ]
+  },
+  "routes": [
+    { "path": "/", "label": "Inicio", "sections": ["hero", "projects", "comunidad", "contacto"] },
+    { "path": "/experiencia", "label": "Experiencia" },
+    { "path": "/hobbies", "label": "Hobbies" },
+    { "path": "/influencer", "label": "Influencer" }
+  ],
+  "navigation": {
+    "items": [
+      { "type": "route", "to": "/", "label": "Inicio" },
+      { "type": "anchor", "home": "#projects", "away": "/#projects", "label": "Proyectos" },
+      { "type": "anchor", "home": "#comunidad", "away": "/#comunidad", "label": "Comunidad" },
+      { "type": "route", "to": "/experiencia", "label": "Experiencia" },
+      { "type": "route", "to": "/hobbies", "label": "Hobbies" },
+      { "type": "route", "to": "/influencer", "label": "Influencer" },
+      { "type": "anchor", "home": "#contact", "away": "/#contact", "label": "Contacto" }
+    ],
+    "sectionIds": {
+      "projects": "projects",
+      "comunidad": "comunidad",
+      "contact": "contacto"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Carli Code | Portfolio",
+      "description": "Portfolio de Carli Code – Especialista en IA, desarrollo y charlas sobre inteligencia artificial."
+    },
+    "experiencia": {
+      "title": "Carli Code | Experiencia Profesional",
+      "description": "Experiencia profesional, certificaciones y habilidades técnicas de Carli Code en el campo de la IA y desarrollo."
+    },
+    "hobbies": {
+      "title": "Carli Code | Hobbies",
+      "description": "Mis pasatiempos favoritos: public speaking, viajes y tiro con arco."
+    },
+    "influencer": {
+      "title": "Influencer - Carli Code",
+      "description": "Carli Code como influencer en tecnología y desarrollo"
+    }
+  },
+  "footer": {
+    "template": "© {year} — Hecho con 🐍, ☕ y mucho 💜",
+    "homeAnchorId": "contact"
+  },
+  "hero": {
+    "heading": "¡Hola! Soy Carli Code 🚀",
+    "subtitle": "Programadora de IA, speaker y creadora de contenido."
+  },
+  "contact": {
+    "formspreeEndpoint": "https://formspree.io/f/mrbqpbqb",
+    "method": "POST",
+    "fields": [
+      { "name": "name", "placeholder": "Tu nombre", "required": true },
+      { "name": "email", "placeholder": "Tu email", "required": true },
+      { "name": "message", "placeholder": "Escribe tu mensaje", "required": true, "rows": 5 }
+    ],
+    "submitLabel": "Enviar mensaje",
+    "sectionTitle": "Contacto"
+  },
+  "socialAndProfiles": {
+    "linkedin": "https://www.linkedin.com/in/carlicode/",
+    "github": "https://github.com/carlicode",
+    "platziProfessor": "https://platzi.com/profes/carlicode/",
+    "googleCloudSkillsBoost": "https://www.cloudskillsboost.google/public_profiles/14e01263-8531-4600-88a2-320eea1f6c27",
+    "credlyUser": "https://www.credly.com/users/carli-code",
+    "googleDeveloper": "https://g.dev/carlicode",
+    "tiktok": "https://www.tiktok.com/@carli.code",
+    "instagram": "https://www.instagram.com/carli.code/",
+    "twitch": "https://www.twitch.tv/carli_code",
+    "youtube": "https://www.youtube.com/@carli_code"
+  },
+  "influencerKit": {
+    "aboutText": "Principalmente comparto contenido en Tik Tok donde cuento con una comunidad sólida que siempre me apoya y me aporta con buena onda. Ademaes soy colaboro con google cómo embajadora de WTM y participo activamente en la comunidad de programadores.",
+    "socialStats": [
+      { "platform": "TikTok", "followersLabel": "145 MIL", "url": "https://www.tiktok.com/@carli.code" },
+      { "platform": "Instagram", "followersLabel": "14 MIL", "url": "https://www.instagram.com/carli.code/" },
+      { "platform": "Twitch", "followersLabel": "3 MIL", "url": "https://www.twitch.tv/carli_code" },
+      { "platform": "Youtube", "followersLabel": "1 MIL", "url": "https://www.youtube.com/@carli_code" }
+    ],
+    "tiktokFeaturedVideoIds": [
+      "7205955488666651910",
+      "7333576536383130886",
+      "7429755114442788101",
+      "7350286655393189125"
+    ],
+    "tiktokEmbedBase": "https://www.tiktok.com/embed/v2/",
+    "trafficSourcesPercent": [
+      { "source": "Buscar", "percentage": 53.3 },
+      { "source": "Para ti", "percentage": 31.2 },
+      { "source": "Perfil personal", "percentage": 9.6 },
+      { "source": "Siguiendo", "percentage": 5.7 },
+      { "source": "Sonido", "percentage": 0.2 }
+    ],
+    "demographics": {
+      "genderPercent": [
+        { "label": "Hombres", "value": 57 },
+        { "label": "Mujeres", "value": 42 },
+        { "label": "Otro", "value": 1 }
+      ],
+      "agePercent": [
+        { "range": "18-24", "percentage": 30.6 },
+        { "range": "25-34", "percentage": 48.9 },
+        { "range": "35-44", "percentage": 13.8 },
+        { "range": "45-54", "percentage": 5.0 },
+        { "range": "55+", "percentage": 1.7 }
+      ]
+    },
+    "audienceLocationsPercent": [
+      { "label": "Bolivia", "percentage": 29.0 },
+      { "label": "Otros", "percentage": 19.9 },
+      { "label": "México", "percentage": 13.3 },
+      { "label": "Perú", "percentage": 13.1 },
+      { "label": "Colombia", "percentage": 6.0 },
+      { "label": "Brasil", "percentage": 4.5 },
+      { "label": "Ecuador", "percentage": 4.1 },
+      { "label": "Chile", "percentage": 2.8 },
+      { "label": "Argentina", "percentage": 2.7 },
+      { "label": "Guatemala", "percentage": 2.4 },
+      { "label": "Estados Unidos", "percentage": 2.2 }
+    ],
+    "pricingUsd": {
+      "currency": "USD",
+      "tiktok": [
+        { "description": "VIDEO DE 60 A 80 SEGUNDOS", "price": 80 },
+        { "description": "VIDEO DE 40 A 59 SEGUNDOS", "price": 75 },
+        { "description": "VIDEO DE MENOS DE 40 SEGUNDOS", "price": 60 }
+      ],
+      "instagramReels": [
+        { "description": "VIDEO DE 60 A 80 SEGUNDOS", "price": 30 },
+        { "description": "VIDEO DE 40 A 59 SEGUNDOS", "price": 25 },
+        { "description": "VIDEO DE MENOS DE 40 SEGUNDOS", "price": 15 }
+      ],
+      "instagramStories": [
+        { "description": "HISTORIA IMAGEN", "price": 10 },
+        { "description": "HISTORIA HABLANDO Y PRESENTANDO", "price": 25 },
+        { "description": "HISTORIA HABLANDO Y PRESENTANDO + COMPARTIR LINK", "price": 30 }
+      ]
+    },
+    "collaborationNotice": "PARA CUALQUIER COMBINACIÓN DE PUBLICACIÓN O COTIZACIÓN DE PAQUETE, COMUNICARSE AL CORREO",
+    "businessEmail": "CARLI.F.ROMAN@GMAIL.COM",
+    "directContact": {
+      "phone": "(591) 69533423",
+      "email": "carli.f.roman@gmail.com",
+      "handle": "@Carli.code"
+    }
+  },
+  "talksAndVideos": [
+    {
+      "title": "TED Talk: Rompiendo el molde con IA",
+      "youtubeId": "9Q-G55HgvHE",
+      "featured": true,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=9Q-G55HgvHE",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/9Q-G55HgvHE"
+    },
+    {
+      "title": "Nerdearla: Cómo la IA cambió mi vida",
+      "youtubeId": "5L-8NO-_GZw",
+      "featured": true,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=5L-8NO-_GZw",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/5L-8NO-_GZw"
+    },
+    {
+      "title": "Fuckup Nights: Mi error favorito",
+      "youtubeId": "hq3SlZgG1To",
+      "featured": true,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=hq3SlZgG1To",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/hq3SlZgG1To"
+    },
+    {
+      "title": "Podcast: De AI a real life",
+      "youtubeId": "OvReIKeexzM",
+      "featured": false,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=OvReIKeexzM",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/OvReIKeexzM"
+    },
+    {
+      "title": "Podcast: Qué hay detrás del código",
+      "youtubeId": "xtPDQeGoBDE",
+      "featured": false,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=xtPDQeGoBDE",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/xtPDQeGoBDE"
+    },
+    {
+      "title": "Podcast: Origen y evolución",
+      "youtubeId": "fK0dsBXb5Ao",
+      "featured": false,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=fK0dsBXb5Ao",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/fK0dsBXb5Ao"
+    },
+    {
+      "title": "Podcast: IA y trabajo humano",
+      "youtubeId": "R_pDTiZ-iOs",
+      "featured": false,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=R_pDTiZ-iOs",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/R_pDTiZ-iOs"
+    },
+    {
+      "title": "Podcast: Cosas que no te enseñan",
+      "youtubeId": "3nTopDNpDDo",
+      "featured": false,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=3nTopDNpDDo",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/3nTopDNpDDo"
+    },
+    {
+      "title": "Podcast: El miedo a programar",
+      "youtubeId": "vDw-UVTKXPg",
+      "featured": false,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=vDw-UVTKXPg",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/vDw-UVTKXPg"
+    },
+    {
+      "title": "Podcast antiguo",
+      "youtubeId": "5gV2YXdtd4A",
+      "featured": false,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=5gV2YXdtd4A",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/5gV2YXdtd4A"
+    },
+    {
+      "title": "Podcast antiguo 2",
+      "youtubeId": "7AhC2nr8xTE",
+      "featured": false,
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=7AhC2nr8xTE",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/7AhC2nr8xTE"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sistema Cognitivo para Detección Temprana de Incendios",
+      "link": "#",
+      "description": "Trabajé con visión por computadora y aprendizaje automático supervisado para entrenar un modelo de reconocimiento de incendios."
+    },
+    {
+      "name": "Clasificación de Violencia con Streaming de Audio",
+      "link": "#",
+      "description": "Desarrollé herramientas de análisis de audio para evaluar niveles de violencia en audio y texto."
+    },
+    {
+      "name": "Study-Buddy: Asistente de Aprendizaje con Grafos de Conocimiento",
+      "link": "#",
+      "description": "Construí una IA conversacional utilizando LLMs y grafos de conocimiento para educación personalizada."
+    },
+    {
+      "name": "MATILDA: Chatbot para Mujeres Científicas",
+      "link": "#",
+      "description": "Construí MATILDA, un chatbot en RASA entrenado con datos sobre mujeres científicas en español."
+    }
+  ],
+  "sectionsUiLabels": {
+    "projectsTitle": "Proyectos",
+    "comunidadTitle": "Comunidad",
+    "talksSectionTitle": "Charlas & recursos",
+    "backToHome": "← Volver al inicio",
+    "hobbiesPageTitle": "Mis Hobbies",
+    "hobbiesIntro": "Más allá de la tecnología y la inteligencia artificial, estos son los pasatiempos que me apasionan y ayudan a mantener un equilibrio en mi vida."
+  },
+  "hobbies": [
+    {
+      "id": "speaking",
+      "title": "Public Speaking",
+      "description": "Compartir conocimientos sobre inteligencia artificial y desarrollo a través de conferencias, talleres y charlas es una de mis mayores pasiones.",
+      "photos": [
+        "src/data/photos/speaking_1.JPEG",
+        "src/data/photos/speaking_2.JPEG",
+        "src/data/photos/speaking_3.JPG",
+        "src/data/photos/speaking_4.jpg",
+        "src/data/photos/speaking_5.JPEG",
+        "src/data/photos/speaking_6.JPEG",
+        "src/data/photos/speaking_7.jpg",
+        "src/data/photos/speaking_8.JPEG",
+        "src/data/photos/speaking_9.jpg"
+      ]
+    },
+    {
+      "id": "travel",
+      "title": "Viajes",
+      "description": "Explorar nuevos lugares, culturas y paisajes es una fuente constante de inspiración para mí. Cada viaje es una oportunidad para aprender y crecer.",
+      "photos": [
+        "src/data/photos/travel_1.JPEG",
+        "src/data/photos/travel_2.jpg",
+        "src/data/photos/travel_3.JPG",
+        "src/data/photos/travel_4.JPG",
+        "src/data/photos/travel_5.jpg",
+        "src/data/photos/travel_6.jpg",
+        "src/data/photos/travel_7.jpg",
+        "src/data/photos/travel_8.JPG",
+        "src/data/photos/travel_9.jpg"
+      ]
+    },
+    {
+      "id": "archery",
+      "title": "Tiro con Arco",
+      "description": "El tiro con arco me enseña paciencia, precisión y concentración. Es un deporte que combina perfectamente la técnica física con la fortaleza mental.",
+      "photos": [
+        "src/data/photos/archery_1.JPEG",
+        "src/data/photos/archery_2.JPEG",
+        "src/data/photos/archery_3.JPEG",
+        "src/data/photos/archery_4.JPEG",
+        "src/data/photos/archery_5.JPEG",
+        "src/data/photos/archery_6.jpg",
+        "src/data/photos/archery_7.jpg",
+        "src/data/photos/archery_8.JPEG",
+        "src/data/photos/archery_9.JPEG"
+      ]
+    }
+  ],
+  "cv": {
+    "experience": [
+      {
+        "role": "AI engineer",
+        "company": "Nowbit",
+        "period": "Feb 2025 - presente",
+        "location": "Remote",
+        "tasks": ["Develop AI agents."]
+      },
+      {
+        "role": "AI In-house Teacher",
+        "company": "Platzi",
+        "period": "March 2024 - October 2024",
+        "location": "Remote",
+        "tasks": ["Delivered courses on Python, LangChain, and virtual environments."]
+      },
+      {
+        "role": "Head of AI",
+        "company": "Dapta",
+        "period": "Jan 2024 - March",
+        "location": "Remote - USA",
+        "tasks": [
+          "Built contextual assistants using RAG.",
+          "Directed AI projects, optimized NLP pipelines and models with LLMs, and instructed the team on emerging AI technologies."
+        ]
+      },
+      {
+        "role": "Professor",
+        "company": "Platzi",
+        "period": "March 2023 - July 2023",
+        "location": "Cochabamba - Bolivia",
+        "tasks": ["Taught the course 'Creating Chatbots with OpenAI.'"]
+      },
+      {
+        "role": "Co-founder & CEO",
+        "company": "Menti Academy",
+        "period": "October 2020 - November 2024",
+        "location": "Cochabamba - Bolivia",
+        "tasks": ["Managed an educational startup focused on coding for kids."]
+      },
+      {
+        "role": "Associate Researcher",
+        "company": "Artificial Intelligence Institute (IIC) of the Private Bolivian University",
+        "period": "March 2020 - March 2023",
+        "location": "Cochabamba - Bolivia",
+        "tasks": [
+          "Developed next-generation deep learning models for conversational AI in Spanish.",
+          "Built MATILDA, a RASA chatbot trained with data about scientific women."
+        ]
+      },
+      {
+        "role": "Machine Learning Freelancer",
+        "company": "Trascender Global",
+        "period": "Feb 2021 - Feb 2022",
+        "location": "Bogotá - Colombia",
+        "tasks": [
+          "Designed and developed ETL workflows for extracting, transforming, and loading data from diverse sources.",
+          "Collaborated on data labeling for AI models with image analysis."
+        ]
+      },
+      {
+        "role": "Python Instructor",
+        "company": "CISCO Networking Academy",
+        "period": "April 2020 - December 2020",
+        "location": "Cochabamba - Bolivia",
+        "tasks": ["Taught online courses on Python essentials development."]
+      },
+      {
+        "role": "Research Assistant - Robotics Lab",
+        "company": "TRUEXTEND",
+        "period": "Sep 2019 - Nov 2019",
+        "location": "Cochabamba - Bolivia",
+        "tasks": [
+          "Researched and developed VEX Robotics projects.",
+          "Taught programming and robotics to children."
+        ]
+      },
+      {
+        "role": "UI/UX Intern",
+        "company": "Zékiri",
+        "period": "Apr 2019 - Jul 2019",
+        "location": "Cochabamba - Bolivia",
+        "tasks": ["Designed UI wireframes for web and mobile applications."]
+      }
+    ],
+    "achievements": [
+      "2016: 3rd place national phase - ACM-ICPC Bolivia.",
+      "2016: 2nd place - International NASA Space Apps Challenge, Cochabamba."
+    ],
+    "technicalSkills": [
+      {
+        "category": "Programming Languages",
+        "items": ["Python (TensorFlow, PyTorch, Keras)", "pandas, matplotlib, numpy, requests, BeautifulSoup, OpenCV"]
+      },
+      {
+        "category": "Machine Learning & Computer Vision",
+        "items": ["Supervised learning", "Computer Vision"]
+      },
+      {
+        "category": "Conversational AI",
+        "items": [
+          "Langchain and RASA Framework",
+          "Contextual models with Langchain",
+          "Gemini multimodal applications",
+          "OpenAI: Personalization, Fine-tuning, Transfer Learning"
+        ]
+      },
+      {
+        "category": "Natural Language Processing (NLP)",
+        "items": ["Text Embeddings using Chroma"]
+      },
+      {
+        "category": "DevOps",
+        "items": ["Docker / Jupyter notebooks", "Google Cloud: Storage I/O"]
+      }
+    ],
+    "communities": [
+      "Scientific Society of Systems and Informatics Engineering Students (SCESI)",
+      "Google Developers Group (GDG) - Instructor in ML & SL",
+      "Women Techmakers",
+      "Cochabamba AI",
+      "Lead at PyLadies Cochabamba - Organizer and teacher for women and girls",
+      "Python Community Cochabamba - Organizer (logistics, promotion, programming)"
+    ],
+    "volunteering": [
+      "Esclavas del Sagrado Corazón de Jesús - Community volunteering (2012)",
+      "TRUEXTEND - Coach at robotics challenge (2018)"
+    ],
+    "certifications": [
+      {
+        "name": "Dynamic and Stochastic Programming with Python",
+        "issuer": "Platzi",
+        "certificateUrl": null
+      },
+      {
+        "name": "OOP and Algorithms in Python",
+        "issuer": "Platzi",
+        "certificateUrl": null
+      },
+      {
+        "name": "Intro to Probabilistic Thinking",
+        "issuer": "Platzi",
+        "certificateUrl": null
+      },
+      {
+        "name": "Computational Thinking with Python",
+        "issuer": "Platzi",
+        "certificateUrl": null
+      },
+      {
+        "name": "CNNs in TensorFlow",
+        "issuer": "Coursera",
+        "certificateUrl": null
+      },
+      {
+        "name": "AWS Machine Learning Foundations",
+        "issuer": "Udacity",
+        "certificateUrl": null
+      },
+      {
+        "name": "Supervised Learning with Scikit-learn",
+        "issuer": "Datacamp",
+        "certificateUrl": null
+      },
+      {
+        "name": "Foundation of Generative AI",
+        "issuer": "Udacity",
+        "certificateUrl": "https://www.udacity.com/certificate/e/e70454be-b7bc-11ef-8c5b-1fee656b8520"
+      },
+      {
+        "name": "Analyze Speech and Language with Google APIs",
+        "issuer": "Credly",
+        "certificateUrl": "https://www.credly.com/badges/5b1fcac5-d620-4b15-b0eb-53b1fa0f68e3/linked_in_profile"
+      },
+      {
+        "name": "Explore Generative AI with the Vertex AI Gemini API",
+        "issuer": "Credly",
+        "certificateUrl": "https://www.credly.com/badges/dba0e742-7da5-4846-b444-0f18e0edac06/linked_in_profile"
+      },
+      {
+        "name": "Get Started with Cloud Storage",
+        "issuer": "Credly",
+        "certificateUrl": "https://www.credly.com/badges/24a6da56-ab03-4b5d-adfc-9d3dcd3efeeb/linked_in_profile"
+      },
+      {
+        "name": "Prompt Design in Vertex AI",
+        "issuer": "Credly",
+        "certificateUrl": "https://www.credly.com/badges/ab6a61c9-e0b0-410b-89bb-3aef91a29d51/linked_in_profile"
+      },
+      {
+        "name": "Build a Data Science Web App with Streamlit and Python",
+        "issuer": "Coursera",
+        "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/US3VUKHK7YSW"
+      },
+      {
+        "name": "Instructor 1 Year of Service - Cisco",
+        "issuer": "Credly",
+        "certificateUrl": "https://www.credly.com/badges/5769ca48-d09c-4549-ba3a-e82545a31212?source=linked_in_profile"
+      }
+    ],
+    "sectionTitles": {
+      "certifications": "Certifications",
+      "technicalSkills": "Technical Skills",
+      "projects": "Proyectos",
+      "achievements": "Achievements",
+      "communities": "Communities",
+      "volunteering": "Volunteering"
+    }
+  },
+  "influencerPageSectionTitles": {
+    "aboutCreator": "SOBRE LA CREADORA",
+    "featuredVideos": "VIDEOS DESTACADOS",
+    "socialStats": "Estadísticas Sociales",
+    "traffic": "FUENTES DE TRÁFICO",
+    "demographics": "DEMOGRAFÍA",
+    "gender": "SEXO",
+    "age": "EDAD",
+    "locations": "UBICACIONES",
+    "pricing": "PRECIOS POR PUBLICACIÓN",
+    "tiktokPricing": "TikTok Pricing",
+    "instagramReelsPricing": "Instagram Reels Pricing",
+    "instagramStoriesPricing": "Instagram Stories Pricing",
+    "contact": "CONTACTO"
+  }
+}
