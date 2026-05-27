@@ -1,7 +1,11 @@
 import type { Locale } from "@/lib/i18n";
 import type {
   Brand,
+  CvAchievement,
+  CvCertification,
+  CvEducation,
   CvJob,
+  CvSkillGroup,
   Dictionary,
   Project,
   Talk,
@@ -30,6 +34,10 @@ export function BrutalistLanding({
   talks,
   brands,
   cvJobs,
+  cvSkillGroups,
+  cvEducation,
+  cvAchievements,
+  cvCertifications,
   isoDate,
 }: {
   lang: Locale;
@@ -39,12 +47,16 @@ export function BrutalistLanding({
   talks: Talk[];
   brands: Brand[];
   cvJobs: CvJob[];
+  cvSkillGroups: CvSkillGroup[];
+  cvEducation: CvEducation[];
+  cvAchievements: CvAchievement[];
+  cvCertifications: CvCertification[];
   isoDate: string;
 }) {
   return (
     <BrutalistShell>
-      <TopBar lang={lang} />
-      <SiteNav nav={dict.nav} />
+      <TopBar lang={lang} pathSuffix="" />
+      <SiteNav nav={dict.nav} lang={lang} />
       <Hero lang={lang} dict={dict} />
       <Ticker />
       <AboutSection lang={lang} dict={dict} />
@@ -52,7 +64,15 @@ export function BrutalistLanding({
       <TikTokSection lang={lang} dict={dict} videos={tiktoks} />
       <TalksTable lang={lang} dict={dict} talksData={talks} />
       <BrandsSection dict={dict} brandsData={brands} />
-      <ExperienceSection lang={lang} dict={dict} jobs={cvJobs} />
+      <ExperienceSection
+        lang={lang}
+        dict={dict}
+        jobs={cvJobs}
+        skillGroups={cvSkillGroups}
+        education={cvEducation}
+        achievements={cvAchievements}
+        certifications={cvCertifications}
+      />
       <NewsletterSection lang={lang} dict={dict} />
       <ContactSection lang={lang} dict={dict} />
       <SiteFooter dict={dict} isoDate={isoDate} />

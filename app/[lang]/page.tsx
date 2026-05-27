@@ -1,7 +1,11 @@
 import { BrutalistLanding } from "@/components/brutalist/BrutalistLanding";
 import {
   brands,
+  cvAchievements,
+  cvCertifications,
+  cvEducation,
   cvJobs,
+  cvSkillGroups,
   getDictionary,
   projects,
   talks,
@@ -68,6 +72,10 @@ export default async function LangHomePage({
       talks={talks}
       brands={brands}
       cvJobs={cvJobs}
+      cvSkillGroups={cvSkillGroups}
+      cvEducation={cvEducation}
+      cvAchievements={cvAchievements}
+      cvCertifications={cvCertifications}
       isoDate={isoDate}
     />
   );

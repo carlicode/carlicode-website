@@ -1,0 +1,32 @@
+/** Todas las fotos en public/hobbies/ (un solo directorio). */
+const filenames = [
+  "speaking_1.JPEG",
+  "speaking_2.JPEG",
+  "speaking_3.JPG",
+  "speaking_4.jpg",
+  "speaking_5.JPEG",
+  "speaking_6.JPEG",
+  "speaking_7.jpg",
+  "speaking_8.JPEG",
+  "speaking_9.jpg",
+  "travel_1.JPEG",
+  "travel_2.jpg",
+  "travel_3.JPG",
+  "travel_4.JPG",
+  "travel_5.jpg",
+  "travel_6.jpg",
+  "travel_7.jpg",
+  "travel_8.JPG",
+  "travel_9.jpg",
+  "archery_1.JPEG",
+  "archery_2.JPEG",
+  "archery_3.JPEG",
+  "archery_4.JPEG",
+  "archery_5.JPEG",
+  "archery_6.jpg",
+  "archery_7.jpg",
+  "archery_8.JPEG",
+  "archery_9.JPEG",
+] as const;
+
+export const hobbyPhotos: string[] = filenames.map((f) => `/hobbies/${f}`);

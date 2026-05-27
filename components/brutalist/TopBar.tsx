@@ -1,9 +1,16 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n";
 
-export function TopBar({ lang }: { lang: Locale }) {
+export function TopBar({
+  lang,
+  pathSuffix = "",
+}: {
+  lang: Locale;
+  pathSuffix?: string;
+}) {
   const now = new Date().toISOString().slice(0, 10);
-  const remote = lang === "es" ? "BOGOTÁ → REMOTO" : "BOGOTÁ → REMOTE";
+  const remote =
+    lang === "es" ? "COCHABAMBA → REMOTO" : "COCHABAMBA → REMOTE";
 
   return (
     <div className="br-topbar">
@@ -14,10 +21,16 @@ export function TopBar({ lang }: { lang: Locale }) {
         <span>{now}</span>
       </div>
       <div className="br-lang">
-        <Link href="/es" className={lang === "es" ? "active" : ""}>
+        <Link
+          href={`/es${pathSuffix}`}
+          className={lang === "es" ? "active" : ""}
+        >
           ES
         </Link>
-        <Link href="/en" className={lang === "en" ? "active" : ""}>
+        <Link
+          href={`/en${pathSuffix}`}
+          className={lang === "en" ? "active" : ""}
+        >
           EN
         </Link>
       </div>

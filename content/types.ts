@@ -5,11 +5,49 @@ export type NavCopy = {
   tiktok: string;
   talks: string;
   brands: string;
+  cv: string;
+  hobbies: string;
+  mediaKit: string;
   contact: string;
+};
+
+export type MediaKitPageCopy = {
+  metaTitle: string;
+  metaDescription: string;
+  kicker: string;
+  title: string;
+  backHome: string;
+  aboutTitle: string;
+  socialTitle: string;
+  videosTitle: string;
+  trafficTitle: string;
+  demographicsTitle: string;
+  genderTitle: string;
+  ageTitle: string;
+  locationsTitle: string;
+  pricingTitle: string;
+  tiktokPricing: string;
+  reelsPricing: string;
+  storiesPricing: string;
+  packagesNote: string;
+  contactTitle: string;
+  contactCta: string;
+};
+
+export type HobbiesPageCopy = {
+  metaTitle: string;
+  metaDescription: string;
+  kicker: string;
+  title: string;
+  intro: string;
+  backHome: string;
+  photoAlt: string;
 };
 
 export type Dictionary = {
   nav: NavCopy;
+  mediaKitPage: MediaKitPageCopy;
+  hobbiesPage: HobbiesPageCopy;
   heroKicker: string;
   heroTitle: string;
   heroSub: string;
@@ -30,6 +68,10 @@ export type Dictionary = {
   brandsKicker: string;
   cvKicker: string;
   cvDownload: string;
+  cvSkillsTitle: string;
+  cvEducationTitle: string;
+  cvAchievementsTitle: string;
+  cvCertificationsTitle: string;
   newsletterKicker: string;
   newsletterTitle: string;
   newsletterSub: string;
@@ -71,11 +113,13 @@ export type Project = {
 
 export type TikTokCard = {
   id: number;
+  videoId?: string;
   titleEs: string;
   titleEn: string;
   views: string;
   likes: string;
   color: string;
+  url?: string;
 };
 
 export type Talk = {
@@ -85,6 +129,7 @@ export type Talk = {
   topicEn: string;
   year: string;
   city: string;
+  youtubeUrl?: string;
 };
 
 export type Brand = {
@@ -99,7 +144,35 @@ export type CvJob = {
   period: string;
   locEs: string;
   locEn: string;
-  employmentType: "FREELANCE" | "FULL-TIME" | "AMBASSADOR";
+  employmentType: "FREELANCE" | "FULL-TIME" | "AMBASSADOR" | "CONTRACT";
   bulletsEs: string[];
   bulletsEn: string[];
+};
+
+export type CvSkillGroup = {
+  categoryEs: string;
+  categoryEn: string;
+  itemsEs: string[];
+  itemsEn: string[];
+};
+
+export type CvEducation = {
+  institutionEs: string;
+  institutionEn: string;
+  degreeEs: string;
+  degreeEn: string;
+  period: string;
+  noteEs: string;
+  noteEn: string;
+};
+
+export type CvAchievement = {
+  textEs: string;
+  textEn: string;
+};
+
+export type CvCertification = {
+  name: string;
+  issuer: string;
+  url: string | null;
 };

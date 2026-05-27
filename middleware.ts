@@ -5,8 +5,18 @@ export function middleware(request: NextRequest) {
   const headers = new Headers(request.headers);
   headers.set("x-pathname", request.nextUrl.pathname);
 
-  if (request.nextUrl.pathname === "/") {
+  const { pathname } = request.nextUrl;
+
+  if (pathname === "/") {
     return NextResponse.redirect(new URL("/es", request.url));
+  }
+
+  if (pathname === "/influencer") {
+    return NextResponse.redirect(new URL("/es/media-kit", request.url));
+  }
+
+  if (pathname === "/hobbies") {
+    return NextResponse.redirect(new URL("/es/hobbies", request.url));
   }
 
   return NextResponse.next({ request: { headers } });

@@ -1,6 +1,6 @@
 import type { Dictionary } from "@/content/types";
 import type { Locale } from "@/lib/i18n";
-import { mailto } from "@/lib/site";
+import { contact, mailto, outbound } from "@/lib/site";
 import { ContactForm } from "./ContactForm";
 import { SectionHeader } from "./SectionHeader";
 
@@ -11,17 +11,19 @@ export function ContactSection({
   lang: Locale;
   dict: Dictionary;
 }) {
+  const es = lang === "es";
+
   return (
     <section className="br-section" id="contact">
       <SectionHeader
         num="/08"
         title={dict.contactKicker}
-        meta={lang === "es" ? "RESPUESTA · 48H" : "REPLY · 48H"}
+        meta={es ? "RESPUESTA · 48H" : "REPLY · 48H"}
       />
       <div className="br-contact">
         <div className="br-contact-info">
           <h2 className="br-contact-headline">
-            {lang === "es" ? (
+            {es ? (
               <>
                 HAGAMOS
                 <br />
@@ -49,17 +51,22 @@ export function ContactSection({
           </p>
           <div className="br-contact-direct">
             <a className="br-contact-email" href={mailto}>
-              hola@carlicode.com →
+              {contact.email} →
             </a>
             <div className="br-contact-line">
-              TIKTOK · <span>@carlicode</span>
+              TIKTOK · <span>{contact.handle}</span>
             </div>
-            <div className="br-contact-line">
+            <a
+              className="br-contact-line br-contact-line-link"
+              href={outbound.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               LINKEDIN · <span>/in/carlicode</span>
-            </div>
+            </a>
             <div className="br-contact-line">
-              {lang === "es" ? "BASE" : "BASED IN"} ·{" "}
-              <span>BOGOTÁ, COLOMBIA</span>
+              {es ? "BASE" : "BASED IN"} ·{" "}
+              <span>{es ? contact.locationEs : contact.locationEn}</span>
             </div>
           </div>
         </div>
