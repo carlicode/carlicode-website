@@ -38,4 +38,5 @@ export type {
   CvCertification,
   MediaKitPageCopy,
   HobbiesPageCopy,
+  CvPageCopy,
 } from "./types";

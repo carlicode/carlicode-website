@@ -18,6 +18,7 @@ export function ExperienceSection({
   education,
   achievements,
   certifications,
+  sectionHeaderNum = "/06",
 }: {
   lang: Locale;
   dict: Dictionary;
@@ -26,13 +27,14 @@ export function ExperienceSection({
   education: CvEducation[];
   achievements: CvAchievement[];
   certifications: CvCertification[];
+  sectionHeaderNum?: string;
 }) {
   const es = lang === "es";
 
   return (
     <section className="br-section" id="experience">
       <SectionHeader
-        num="/06"
+        num={sectionHeaderNum}
         title={`${dict.cvKicker} — CV.MD`}
         meta={es ? "RESUMÉ" : "RÉSUMÉ"}
       />

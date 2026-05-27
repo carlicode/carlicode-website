@@ -16,7 +16,7 @@ export function ContactSection({
   return (
     <section className="br-section" id="contact">
       <SectionHeader
-        num="/08"
+        num="/03"
         title={dict.contactKicker}
         meta={es ? "RESPUESTA · 48H" : "REPLY · 48H"}
       />

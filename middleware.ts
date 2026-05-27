@@ -19,6 +19,10 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/es/hobbies", request.url));
   }
 
+  if (pathname === "/cv") {
+    return NextResponse.redirect(new URL("/es/cv", request.url));
+  }
+
   return NextResponse.next({ request: { headers } });
 }
 

@@ -1,10 +1,5 @@
 export type NavCopy = {
-  home: string;
-  about: string;
   work: string;
-  tiktok: string;
-  talks: string;
-  brands: string;
   cv: string;
   hobbies: string;
   mediaKit: string;
@@ -44,10 +39,19 @@ export type HobbiesPageCopy = {
   photoAlt: string;
 };
 
+export type CvPageCopy = {
+  metaTitle: string;
+  metaDescription: string;
+  kicker: string;
+  title: string;
+  backHome: string;
+};
+
 export type Dictionary = {
   nav: NavCopy;
   mediaKitPage: MediaKitPageCopy;
   hobbiesPage: HobbiesPageCopy;
+  cvPage: CvPageCopy;
   heroKicker: string;
   heroTitle: string;
   heroSub: string;

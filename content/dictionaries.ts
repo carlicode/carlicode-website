@@ -4,12 +4,7 @@ import type { Locale } from "@/lib/i18n";
 export const dictionaries: Record<Locale, Dictionary> = {
   es: {
     nav: {
-      home: "Inicio",
-      about: "Sobre mí",
       work: "Trabajo",
-      tiktok: "Contenido",
-      talks: "Charlas",
-      brands: "Marcas",
       cv: "CV",
       hobbies: "Hobbies",
       mediaKit: "Media Kit",
@@ -49,6 +44,14 @@ export const dictionaries: Record<Locale, Dictionary> = {
         "Más allá de la tecnología y la IA: public speaking, viajes y tiro con arco — pasatiempos que me dan equilibrio, paciencia y perspectiva.",
       backHome: "← Volver al inicio",
       photoAlt: "Foto de hobby",
+    },
+    cvPage: {
+      metaTitle: "CV — Carli Code",
+      metaDescription:
+        "Experiencia profesional, habilidades técnicas, educación, logros y certificaciones.",
+      kicker: "Currículum · Resumé",
+      title: "CV",
+      backHome: "← Volver al inicio",
     },
     heroKicker: "Ingeniera de IA · Creadora · Speaker",
     heroTitle: "Construyo IA.\nEnseño código.\nMuevo audiencias.",
@@ -115,12 +118,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
   },
   en: {
     nav: {
-      home: "Home",
-      about: "About",
       work: "Work",
-      tiktok: "Content",
-      talks: "Talks",
-      brands: "Brands",
       cv: "CV",
       hobbies: "Hobbies",
       mediaKit: "Media Kit",
@@ -160,6 +158,14 @@ export const dictionaries: Record<Locale, Dictionary> = {
         "Beyond tech and AI: public speaking, travel and archery — hobbies that keep me balanced, patient and grounded.",
       backHome: "← Back to home",
       photoAlt: "Hobby photo",
+    },
+    cvPage: {
+      metaTitle: "CV — Carli Code",
+      metaDescription:
+        "Professional experience, technical skills, education, achievements and certifications.",
+      kicker: "Résumé",
+      title: "CV",
+      backHome: "← Back to home",
     },
     heroKicker: "AI Engineer · Creator · Speaker",
     heroTitle: "I build AI.\nI teach code.\nI move audiences.",

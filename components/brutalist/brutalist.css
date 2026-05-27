@@ -184,28 +184,7 @@
 .br-cta-ghost:hover { background: var(--ink); color: #000; }
 .br-cta-arrow { font-size: 20px; }
 
-/* TICKER */
-.br-ticker {
-  border-bottom: 1px solid var(--line);
-  border-top: 1px solid var(--line);
-  background: var(--paper-2);
-  color: rgba(255, 45, 146, 0.85);
-  padding: 10px 0;
-  overflow: hidden;
-  white-space: nowrap;
-  font-weight: 600;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-.br-ticker-track {
-  display: inline-flex; gap: 56px; align-items: center;
-  animation: br-marquee 48s linear infinite;
-}
-@keyframes br-marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
+
 
 /* SECTION HEADER */
 .br-section {
@@ -345,130 +324,7 @@
 }
 .br-work-arrow { font-size: 28px; transition: transform .3s; }
 
-/* TIKTOK */
-.br-tiktok-wrap {
-  padding: 56px 0 72px;
-}
-.br-tiktok-info {
-  padding: 0 64px 32px;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
-}
-.br-tiktok-statgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--line); }
-.br-tiktok-statgrid > div { padding: 16px 20px; border-right: 1px solid var(--line); }
-.br-tiktok-statgrid > div:last-child { border-right: 0; }
-.br-tiktok-statgrid .num { font-size: 28px; font-weight: 700; color: var(--pink); font-family: var(--font-space-grotesk), ui-sans-serif, sans-serif; }
-.br-tiktok-statgrid .lab { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
 
-.br-tt-carousel {
-  display: flex; gap: 0; padding: 0 64px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  margin: 24px -64px 0;
-}
-.br-tt-carousel::-webkit-scrollbar { display: none; }
-.br-tt-card {
-  flex-shrink: 0;
-  width: 220px; height: 391px;
-  border: 1px solid var(--line);
-  margin-right: -1px;
-  position: relative;
-  cursor: pointer;
-  background: var(--paper-2);
-  overflow: hidden;
-  transition: transform .2s;
-}
-.br-tt-card:hover { transform: translateY(-4px); border-color: var(--pink); z-index: 2; }
-.br-tt-card-bg {
-  position: absolute; inset: 0;
-  background-image:
-    repeating-linear-gradient(135deg, rgba(255,255,255,0.022) 0 1px, transparent 1px 10px);
-}
-.br-tt-num {
-  position: absolute; top: 12px; left: 12px;
-  font-size: 11px; color: var(--pink); font-weight: 700;
-}
-.br-tt-views {
-  position: absolute; top: 12px; right: 12px;
-  font-size: 10px; color: var(--ink);
-  background: var(--pink); color: #000; padding: 4px 8px; font-weight: 700;
-}
-.br-tt-play {
-  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  width: 48px; height: 48px; border: 1px solid var(--ink);
-  display: flex; align-items: center; justify-content: center;
-  background: rgba(0,0,0,0.6);
-}
-.br-tt-meta {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  padding: 16px;
-  background: rgba(0,0,0,0.85);
-  border-top: 1px solid var(--line);
-}
-.br-tt-title {
-  font-size: 12px; line-height: 1.3; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.02em;
-  font-family: var(--font-space-grotesk), ui-sans-serif, sans-serif;
-}
-.br-tt-likes {
-  font-size: 10px; color: var(--pink); margin-top: 8px;
-  text-transform: uppercase; letter-spacing: 0.1em;
-}
-
-/* TALKS */
-.br-talks { padding: 0; }
-.br-talks-row {
-  display: grid;
-  grid-template-columns: 80px 1fr 1.5fr 120px 100px 80px;
-  align-items: center;
-  border-bottom: 1px solid var(--line);
-  font-size: 13px;
-  transition: background .2s;
-  cursor: pointer;
-}
-.br-talks-row:last-child { border-bottom: 0; }
-.br-talks-row:hover {
-  background: var(--pink-soft);
-}
-.br-talks-row > div { padding: 22px 16px; border-right: 1px solid var(--line); }
-.br-talks-row > div:last-child { border-right: 0; }
-.br-talks-num { color: var(--pink); font-weight: 700; }
-.br-talks-row:hover .br-talks-num { color: var(--pink); }
-.br-talks-event { font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; font-family: var(--font-space-grotesk), ui-sans-serif, sans-serif; font-size: 16px; }
-.br-talks-topic { color: rgba(255,255,255,0.7); font-style: italic; font-family: var(--font-space-grotesk), ui-sans-serif, sans-serif; font-size: 14px; }
-.br-talks-row:hover .br-talks-topic { color: rgba(255,255,255,0.62); }
-.br-talks-meta { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
-.br-talks-row:hover .br-talks-meta { color: var(--muted); }
-
-/* BRANDS */
-.br-brands {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-}
-.br-brand-cell {
-  padding: 64px 48px;
-  border-right: 1px solid var(--line);
-  min-height: 280px;
-  display: flex; flex-direction: column; justify-content: space-between;
-  position: relative;
-  transition: background .2s;
-}
-.br-brand-cell:last-child { border-right: 0; }
-.br-brand-cell:hover { background: var(--paper-2); }
-.br-brand-mark {
-  font-size: 14px; color: var(--pink); font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.1em;
-}
-.br-brand-bigname {
-  font-size: clamp(40px, 6.5vw, 68px);
-  font-weight: 700;
-  font-family: var(--font-space-grotesk), ui-sans-serif, sans-serif;
-  letter-spacing: -0.04em;
-  line-height: 0.92;
-  text-transform: uppercase;
-}
-.br-brand-foot {
-  display: flex; justify-content: space-between;
-  font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);
-}
 
 /* CV */
 .br-cv-table { font-size: 13px; }
@@ -549,27 +405,6 @@
   letter-spacing: 0.08em;
   margin-top: 2px;
 }
-.br-talks-row-link {
-  text-decoration: none;
-  color: inherit;
-  transition: background 0.15s;
-}
-.br-talks-row-link:hover { background: rgba(255,45,146,0.06); }
-.br-tt-card-link {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-.br-tt-card-link:hover .br-tt-play { background: var(--pink); }
-.br-tiktok-profile-link {
-  display: inline-block;
-  margin-top: 16px;
-  font-size: 12px;
-  color: var(--pink);
-  text-decoration: none;
-  letter-spacing: 0.04em;
-}
-.br-tiktok-profile-link:hover { text-decoration: underline; }
 .br-contact-line-link {
   text-decoration: none;
   color: inherit;
@@ -591,49 +426,7 @@
 }
 .br-download:hover { background: var(--ink); color: var(--pink); }
 
-/* NEWSLETTER */
-.br-news {
-  display: grid; grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid var(--line);
-}
-.br-news-left {
-  padding: 72px 56px;
-  border-right: 1px solid var(--line);
-  background: rgba(255, 45, 146, 0.92);
-  color: #000;
-}
-.br-news-tag {
-  display: inline-block; border: 1px solid #000; padding: 4px 10px;
-  font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700;
-  margin-bottom: 32px;
-}
-.br-news-headline {
-  font-size: 48px; font-weight: 700;
-  font-family: var(--font-space-grotesk), ui-sans-serif, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -0.03em;
-  line-height: 0.95;
-  margin: 0 0 24px;
-}
-.br-news-text { font-family: var(--font-space-grotesk), ui-sans-serif, sans-serif; font-size: 16px; line-height: 1.5; max-width: 420px; }
-.br-news-right {
-  padding: 72px 56px;
-  display: flex; flex-direction: column; justify-content: center; gap: 16px;
-}
-.br-news-input {
-  background: transparent; border: 1px solid var(--line); padding: 20px 24px;
-  font-family: inherit; font-size: 16px; color: var(--ink); outline: none;
-  transition: border-color .2s;
-}
-.br-news-input:focus { border-color: var(--pink); }
-.br-news-input::placeholder { color: var(--muted); }
-.br-news-cta {
-  background: var(--pink); color: #000; border: 0;
-  padding: 22px; font-family: inherit; font-size: 12px; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.12em; cursor: pointer;
-  transition: all .2s;
-}
-.br-news-cta:hover { background: var(--ink); }
+
 
 /* CONTACT */
 .br-contact { display: grid; grid-template-columns: 1fr 1fr; }
@@ -725,7 +518,6 @@
   .br-hero-title { font-size: clamp(40px, 7vw, 64px); }
   .br-sec-title { font-size: clamp(18px, 2.4vw, 28px); padding: 20px 24px; }
   .br-about-text { font-size: clamp(20px, 3vw, 28px); }
-  .br-brand-bigname { font-size: clamp(40px, 8vw, 80px); }
   .br-stamp { flex-wrap: wrap; row-gap: 10px; justify-content: center; }
   .br-topbar { grid-template-columns: 1fr 1fr; }
   .br-topbar > *:nth-child(2) { grid-column: 1 / -1; border-right: 0; border-top: 1px solid var(--line); }
@@ -737,24 +529,10 @@
   .br-work-item:nth-child(2n) { border-right: 0; }
   .br-work-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--line); }
   .br-work-item:last-child { border-bottom: 0; }
-  .br-tiktok-info { grid-template-columns: 1fr; padding: 0 40px 24px; gap: 32px; }
-  .br-tt-carousel { padding: 0 40px; margin: 24px -40px 0; }
-  .br-talks-row {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-  .br-talks-row > div { border-right: 0; border-bottom: 1px solid var(--line); padding: 16px; }
-  .br-talks-row > div:last-child { border-bottom: 0; }
-  .br-brands { grid-template-columns: 1fr; }
-  .br-brand-cell { border-right: 0; border-bottom: 1px solid var(--line); }
-  .br-brand-cell:last-child { border-bottom: 0; }
   .br-cv-thead { display: none; }
   .br-cv-row { grid-template-columns: 1fr; }
   .br-cv-row > div { border-right: 0; border-bottom: 1px solid var(--line); }
   .br-cv-row > div:last-child { border-bottom: 0; }
-  .br-news { grid-template-columns: 1fr; }
-  .br-news-left { border-right: 0; padding: 56px 40px; }
-  .br-news-right { padding: 56px 40px; }
   .br-contact { grid-template-columns: 1fr; }
   .br-contact-info { border-right: 0; border-bottom: 1px solid var(--line); padding: 48px 40px; }
   .br-contact-form { padding: 48px 40px; }
@@ -800,19 +578,10 @@
   .br-stat-num { font-size: 40px; }
   .br-work-item { padding: 32px 20px; min-height: 240px; }
   .br-work-name { font-size: 22px; margin: 24px 0 12px; }
-  .br-tiktok-info { padding: 0 20px 20px; }
-  .br-tiktok-statgrid { grid-template-columns: 1fr; }
-  .br-tiktok-statgrid > div { border-right: 0; border-bottom: 1px solid var(--line); }
-  .br-tiktok-statgrid > div:last-child { border-bottom: 0; }
-  .br-tt-carousel { padding: 0 16px; margin: 16px -16px 0; -webkit-overflow-scrolling: touch; }
-  .br-tt-card { width: 200px; height: 356px; }
   .br-contact-headline { font-size: clamp(28px, 9vw, 42px); }
   .br-contact-info { padding: 36px 20px; }
   .br-contact-form { padding: 36px 20px; }
   .br-contact-email { font-size: 20px; word-break: break-all; }
-  .br-news-headline { font-size: clamp(28px, 8vw, 40px); }
-  .br-news-left, .br-news-right { padding: 40px 20px; }
-  .br-brand-cell { padding: 40px 24px; min-height: 220px; }
   .br-cv-skills-grid { grid-template-columns: 1fr; }
   .br-cv-foot { flex-direction: column; gap: 20px; align-items: stretch; text-align: center; }
   .br-download { width: 100%; justify-content: center; box-sizing: border-box; }
