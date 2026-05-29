@@ -2,6 +2,9 @@ import { getDictionary } from "@/content";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { MinimalNav } from "@/components/minimal/MinimalNav";
+import { MinimalFooter } from "@/components/minimal/MinimalFooter";
+import "@/components/minimal/minimal.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
@@ -69,6 +72,8 @@ export default async function BlogPage({
 
   return (
     <div className="minimal-root">
+      <MinimalNav dict={dict} />
+
       {/* Hero */}
       <section className="min-cv-hero">
         <div className="min-container">
@@ -119,20 +124,7 @@ export default async function BlogPage({
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="min-footer">
-        <div className="min-container">
-          <div className="min-footer-content">
-            <div className="min-footer-brand">
-              <span className="min-footer-logo">CARLI <span className="accent">CODE</span></span>
-              <p className="min-footer-note">{dict.footerNote}</p>
-            </div>
-            <div className="min-footer-copy">
-              © {new Date().getFullYear()} Carli Code. All rights reserved.
-            </div>
-          </div>
-        </div>
-      </footer>
+      <MinimalFooter dict={dict} />
     </div>
   );
 }
