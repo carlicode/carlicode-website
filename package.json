@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "./scripts/deploy-to-s3.sh",
+    "deploy:build": "npm run build && npm run deploy"
   },
   "dependencies": {
     "next": "16.2.4",
