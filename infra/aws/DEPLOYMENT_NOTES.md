@@ -7,8 +7,26 @@ CloudFront was returning 403 errors when accessing `/es/` or `/en/` because:
 - S3 "directories" return 403 when accessed without `index.html`
 - CloudFront's `DefaultRootObject` only applies to the root domain, not subdirectories
 
-### Solution
-Added CustomErrorResponses to CloudFront distribution `E1LGUCJ0AW0ERL`:
+### Solution (Final - Using CloudFront Function)
+Created a CloudFront Function that rewrites URLs to append `/index.html` to directory requests.
+
+**Why not CustomErrorResponses?**
+- CustomErrorResponses caused redirect loops because the root `/index.html` redirects to `/es/`
+- CloudFront Functions run at edge and rewrite the request before it hits S3
+- More efficient and no redirect loops
+
+### CloudFront Function
+Location: `infra/aws/cloudfront-function.js`
+
+```javascript
+// Rewrites /es/ → /es/index.html
+// Rewrites /en → /en/index.html
+```
+
+Function ARN: `arn:aws:cloudfront::447924811196:function/carlicode-index-rewrite`
+
+### Old Solution (Deprecated)
+~~Added CustomErrorResponses to CloudFront distribution `E1LGUCJ0AW0ERL`:~~
 
 ```json
 {
