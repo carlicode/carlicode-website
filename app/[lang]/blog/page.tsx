@@ -5,6 +5,10 @@ import type { Metadata } from "next";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
+export function generateStaticParams() {
+  return [{ lang: "es" }, { lang: "en" }];
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -119,11 +123,13 @@ export default async function BlogPage({
       <footer className="min-footer">
         <div className="min-container">
           <div className="min-footer-content">
-            <div>
-              <div className="min-footer-logo">CARLI<span className="accent">CODE</span></div>
-              <p className="min-footer-note">{dict.footerTagline}</p>
+            <div className="min-footer-brand">
+              <span className="min-footer-logo">CARLI <span className="accent">CODE</span></span>
+              <p className="min-footer-note">{dict.footerNote}</p>
             </div>
-            <p className="min-footer-copy">{dict.footerCopy}</p>
+            <div className="min-footer-copy">
+              © {new Date().getFullYear()} Carli Code. All rights reserved.
+            </div>
           </div>
         </div>
       </footer>
