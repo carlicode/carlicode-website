@@ -1,0 +1,442 @@
+{
+  "meta": {
+    "site": "https://carlicode.com",
+    "github_repo": "https://github.com/carlicode/carlicode-website",
+    "seo_description": "Portfolio de Carli Code – IA, charlas, proyectos y experiencia profesional en inteligencia artificial y desarrollo.",
+    "generated_at": "2026-05-27"
+  },
+
+  "personal": {
+    "name": "Carla Florida",
+    "alias": "Carli Code",
+    "handle": "@carli.code",
+    "tagline": "Programadora de IA, speaker y creadora de contenido.",
+    "roles": [
+      "Machine Learning Engineer",
+      "AI Specialist",
+      "Creadora de Contenido",
+      "Speaker"
+    ],
+    "typewriter_lines": [
+      "hello world()",
+      "I'm Carli Code",
+      "Machine Learning Engineer & AI Specialist"
+    ],
+    "contact": {
+      "email": "carli.f.roman@gmail.com",
+      "phone": "(591) 69533423",
+      "contact_form_endpoint": "https://formspree.io/f/mrbqpbqb"
+    },
+    "location": "Bolivia (Remote)"
+  },
+
+  "social_links": {
+    "linkedin": "https://www.linkedin.com/in/carlicode/",
+    "github": "https://github.com/carlicode",
+    "platzi": "https://platzi.com/profes/carlicode/",
+    "cloud_skills_boost": "https://www.cloudskillsboost.google/public_profiles/14e01263-8531-4600-88a2-320eea1f6c27",
+    "credly": "https://www.credly.com/users/carli-code",
+    "google_dev": "https://g.dev/carlicode",
+    "tiktok": "https://www.tiktok.com/@carli.code",
+    "instagram": "https://www.instagram.com/carli.code/",
+    "twitch": "https://www.twitch.tv/carli_code",
+    "youtube": "https://www.youtube.com/@carli_code"
+  },
+
+  "navigation": [
+    { "label": "Inicio", "path": "/", "type": "route" },
+    { "label": "Proyectos", "path": "/#projects", "type": "anchor" },
+    { "label": "Comunidad", "path": "/#comunidad", "type": "anchor" },
+    { "label": "Experiencia", "path": "/experiencia", "type": "route" },
+    { "label": "Hobbies", "path": "/hobbies", "type": "route" },
+    { "label": "Influencer", "path": "/influencer", "type": "route" },
+    { "label": "Contacto", "path": "/#contact", "type": "anchor" }
+  ],
+
+  "projects": [
+    {
+      "name": "Sistema Cognitivo para Detección Temprana de Incendios",
+      "description": "Trabajé con visión por computadora y aprendizaje automático supervisado para entrenar un modelo de reconocimiento de incendios.",
+      "link": null,
+      "tags": ["Computer Vision", "Machine Learning", "Supervised Learning"]
+    },
+    {
+      "name": "Clasificación de Violencia con Streaming de Audio",
+      "description": "Desarrollé herramientas de análisis de audio para evaluar niveles de violencia en audio y texto.",
+      "link": null,
+      "tags": ["NLP", "Audio Analysis", "Classification"]
+    },
+    {
+      "name": "Study-Buddy: Asistente de Aprendizaje con Grafos de Conocimiento",
+      "description": "Construí una IA conversacional utilizando LLMs y grafos de conocimiento para educación personalizada.",
+      "link": null,
+      "tags": ["LLMs", "Knowledge Graphs", "Conversational AI", "Education"]
+    },
+    {
+      "name": "MATILDA: Chatbot para Mujeres Científicas",
+      "description": "Construí MATILDA, un chatbot en RASA entrenado con datos sobre mujeres científicas en español.",
+      "link": null,
+      "tags": ["RASA", "Chatbot", "NLP", "Spanish"]
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "AI Engineer",
+      "company": "Nowbit",
+      "period": "Feb 2025 - presente",
+      "location": "Remote",
+      "tasks": ["Develop AI agents."]
+    },
+    {
+      "role": "AI In-house Teacher",
+      "company": "Platzi",
+      "period": "March 2024 - October 2024",
+      "location": "Remote",
+      "tasks": ["Delivered courses on Python, LangChain, and virtual environments."]
+    },
+    {
+      "role": "Head of AI",
+      "company": "Dapta",
+      "period": "Jan 2024 - March 2024",
+      "location": "Remote - USA",
+      "tasks": [
+        "Built contextual assistants using RAG.",
+        "Directed AI projects, optimized NLP pipelines and models with LLMs, and instructed the team on emerging AI technologies."
+      ]
+    },
+    {
+      "role": "Professor",
+      "company": "Platzi",
+      "period": "March 2023 - July 2023",
+      "location": "Cochabamba - Bolivia",
+      "tasks": ["Taught the course 'Creating Chatbots with OpenAI.'"]
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Menti Academy",
+      "period": "October 2020 - November 2024",
+      "location": "Cochabamba - Bolivia",
+      "tasks": ["Managed an educational startup focused on coding for kids."]
+    },
+    {
+      "role": "Associate Researcher",
+      "company": "Artificial Intelligence Institute (IIC) of the Private Bolivian University",
+      "period": "March 2020 - March 2023",
+      "location": "Cochabamba - Bolivia",
+      "tasks": [
+        "Developed next-generation deep learning models for conversational AI in Spanish.",
+        "Built MATILDA, a RASA chatbot trained with data about scientific women."
+      ]
+    },
+    {
+      "role": "Machine Learning Freelancer",
+      "company": "Trascender Global",
+      "period": "Feb 2021 - Feb 2022",
+      "location": "Bogotá - Colombia",
+      "tasks": [
+        "Designed and developed ETL workflows for extracting, transforming, and loading data from diverse sources.",
+        "Collaborated on data labeling for AI models with image analysis."
+      ]
+    },
+    {
+      "role": "Python Instructor",
+      "company": "CISCO Networking Academy",
+      "period": "April 2020 - December 2020",
+      "location": "Cochabamba - Bolivia",
+      "tasks": ["Taught online courses on Python essentials development."]
+    },
+    {
+      "role": "Research Assistant - Robotics Lab",
+      "company": "TRUEXTEND",
+      "period": "Sep 2019 - Nov 2019",
+      "location": "Cochabamba - Bolivia",
+      "tasks": [
+        "Researched and developed VEX Robotics projects.",
+        "Taught programming and robotics to children."
+      ]
+    },
+    {
+      "role": "UI/UX Intern",
+      "company": "Zékiri",
+      "period": "Apr 2019 - Jul 2019",
+      "location": "Cochabamba - Bolivia",
+      "tasks": ["Designed UI wireframes for web and mobile applications."]
+    }
+  ],
+
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": [
+        "Python (TensorFlow, PyTorch, Keras)",
+        "pandas, matplotlib, numpy, requests, BeautifulSoup, OpenCV"
+      ]
+    },
+    {
+      "category": "Machine Learning & Computer Vision",
+      "items": ["Supervised learning", "Computer Vision"]
+    },
+    {
+      "category": "Conversational AI",
+      "items": [
+        "Langchain and RASA Framework",
+        "Contextual models with Langchain",
+        "Gemini multimodal applications",
+        "OpenAI: Personalization, Fine-tuning, Transfer Learning"
+      ]
+    },
+    {
+      "category": "Natural Language Processing (NLP)",
+      "items": ["Text Embeddings using Chroma"]
+    },
+    {
+      "category": "DevOps",
+      "items": ["Docker / Jupyter notebooks", "Google Cloud: Storage I/O"]
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "Foundation of Generative AI",
+      "issuer": "Udacity",
+      "credential_url": "https://www.udacity.com/certificate/e/e70454be-b7bc-11ef-8c5b-1fee656b8520"
+    },
+    {
+      "name": "Analyze Speech and Language with Google APIs",
+      "issuer": "Credly",
+      "credential_url": "https://www.credly.com/badges/5b1fcac5-d620-4b15-b0eb-53b1fa0f68e3/linked_in_profile"
+    },
+    {
+      "name": "Explore Generative AI with the Vertex AI Gemini API",
+      "issuer": "Credly",
+      "credential_url": "https://www.credly.com/badges/dba0e742-7da5-4846-b444-0f18e0edac06/linked_in_profile"
+    },
+    {
+      "name": "Get Started with Cloud Storage",
+      "issuer": "Credly",
+      "credential_url": "https://www.credly.com/badges/24a6da56-ab03-4b5d-adfc-9d3dcd3efeeb/linked_in_profile"
+    },
+    {
+      "name": "Prompt Design in Vertex AI",
+      "issuer": "Credly",
+      "credential_url": "https://www.credly.com/badges/ab6a61c9-e0b0-410b-89bb-3aef91a29d51/linked_in_profile"
+    },
+    {
+      "name": "Build a Data Science Web App with Streamlit and Python",
+      "issuer": "Coursera",
+      "credential_url": "https://www.coursera.org/account/accomplishments/verify/US3VUKHK7YSW"
+    },
+    {
+      "name": "Instructor 1 Year of Service",
+      "issuer": "Cisco / Credly",
+      "credential_url": "https://www.credly.com/badges/5769ca48-d09c-4549-ba3a-e82545a31212?source=linked_in_profile"
+    },
+    {
+      "name": "Dynamic and Stochastic Programming with Python",
+      "issuer": "Platzi",
+      "credential_url": null
+    },
+    {
+      "name": "OOP and Algorithms in Python",
+      "issuer": "Platzi",
+      "credential_url": null
+    },
+    {
+      "name": "Intro to Probabilistic Thinking",
+      "issuer": "Platzi",
+      "credential_url": null
+    },
+    {
+      "name": "Computational Thinking with Python",
+      "issuer": "Platzi",
+      "credential_url": null
+    },
+    {
+      "name": "CNNs in TensorFlow",
+      "issuer": "Coursera",
+      "credential_url": null
+    },
+    {
+      "name": "AWS Machine Learning Foundations",
+      "issuer": "Udacity",
+      "credential_url": null
+    },
+    {
+      "name": "Supervised Learning with Scikit-learn",
+      "issuer": "Datacamp",
+      "credential_url": null
+    }
+  ],
+
+  "achievements": [
+    "2016: 3rd place national phase - ACM-ICPC Bolivia.",
+    "2016: 2nd place - International NASA Space Apps Challenge, Cochabamba."
+  ],
+
+  "communities": [
+    "Scientific Society of Systems and Informatics Engineering Students (SCESI)",
+    "Google Developers Group (GDG) - Instructor in ML & SL",
+    "Women Techmakers",
+    "Cochabamba AI",
+    "Lead at PyLadies Cochabamba - Organizer and teacher for women and girls",
+    "Python Community Cochabamba - Organizer (logistics, promotion, programming)"
+  ],
+
+  "volunteering": [
+    "Esclavas del Sagrado Corazón de Jesús - Community volunteering (2012)",
+    "TRUEXTEND - Coach at robotics challenge (2018)"
+  ],
+
+  "talks_and_videos": [
+    {
+      "title": "TED Talk: Rompiendo el molde con IA",
+      "youtube_id": "9Q-G55HgvHE",
+      "youtube_url": "https://www.youtube.com/watch?v=9Q-G55HgvHE",
+      "featured": true,
+      "type": "talk"
+    },
+    {
+      "title": "Nerdearla: Cómo la IA cambió mi vida",
+      "youtube_id": "5L-8NO-_GZw",
+      "youtube_url": "https://www.youtube.com/watch?v=5L-8NO-_GZw",
+      "featured": true,
+      "type": "talk"
+    },
+    {
+      "title": "Fuckup Nights: Mi error favorito",
+      "youtube_id": "hq3SlZgG1To",
+      "youtube_url": "https://www.youtube.com/watch?v=hq3SlZgG1To",
+      "featured": true,
+      "type": "talk"
+    },
+    {
+      "title": "Podcast: De AI a real life",
+      "youtube_id": "OvReIKeexzM",
+      "youtube_url": "https://www.youtube.com/watch?v=OvReIKeexzM",
+      "featured": false,
+      "type": "podcast"
+    },
+    {
+      "title": "Podcast: Qué hay detrás del código",
+      "youtube_id": "xtPDQeGoBDE",
+      "youtube_url": "https://www.youtube.com/watch?v=xtPDQeGoBDE",
+      "featured": false,
+      "type": "podcast"
+    },
+    {
+      "title": "Podcast: Origen y evolución",
+      "youtube_id": "fK0dsBXb5Ao",
+      "youtube_url": "https://www.youtube.com/watch?v=fK0dsBXb5Ao",
+      "featured": false,
+      "type": "podcast"
+    },
+    {
+      "title": "Podcast: IA y trabajo humano",
+      "youtube_id": "R_pDTiZ-iOs",
+      "youtube_url": "https://www.youtube.com/watch?v=R_pDTiZ-iOs",
+      "featured": false,
+      "type": "podcast"
+    },
+    {
+      "title": "Podcast: Cosas que no te enseñan",
+      "youtube_id": "3nTopDNpDDo",
+      "youtube_url": "https://www.youtube.com/watch?v=3nTopDNpDDo",
+      "featured": false,
+      "type": "podcast"
+    },
+    {
+      "title": "Podcast: El miedo a programar",
+      "youtube_id": "vDw-UVTKXPg",
+      "youtube_url": "https://www.youtube.com/watch?v=vDw-UVTKXPg",
+      "featured": false,
+      "type": "podcast"
+    },
+    {
+      "title": "Podcast antiguo",
+      "youtube_id": "5gV2YXdtd4A",
+      "youtube_url": "https://www.youtube.com/watch?v=5gV2YXdtd4A",
+      "featured": false,
+      "type": "podcast"
+    },
+    {
+      "title": "Podcast antiguo 2",
+      "youtube_id": "7AhC2nr8xTE",
+      "youtube_url": "https://www.youtube.com/watch?v=7AhC2nr8xTE",
+      "featured": false,
+      "type": "podcast"
+    }
+  ],
+
+  "tiktok_videos_featured": [
+    "7205955488666651910",
+    "7333576536383130886",
+    "7429755114442788101",
+    "7350286655393189125"
+  ],
+
+  "influencer": {
+    "description": "Principalmente comparto contenido en TikTok donde cuento con una comunidad sólida que siempre me apoya y me aporta con buena onda. Además colaboro con Google como embajadora de WTM y participo activamente en la comunidad de programadores.",
+    "social_stats": [
+      { "platform": "TikTok", "followers": "145K", "url": "https://www.tiktok.com/@carli.code" },
+      { "platform": "Instagram", "followers": "14K", "url": "https://www.instagram.com/carli.code/" },
+      { "platform": "Twitch", "followers": "3K", "url": "https://www.twitch.tv/carli_code" },
+      { "platform": "YouTube", "followers": "1K", "url": "https://www.youtube.com/@carli_code" }
+    ],
+    "tiktok_analytics": {
+      "traffic_sources": [
+        { "source": "Buscar", "percentage": 53.3 },
+        { "source": "Para ti", "percentage": 31.2 },
+        { "source": "Perfil personal", "percentage": 9.6 },
+        { "source": "Siguiendo", "percentage": 5.7 },
+        { "source": "Sonido", "percentage": 0.2 }
+      ],
+      "demographics": {
+        "gender": [
+          { "label": "Hombres", "percentage": 57 },
+          { "label": "Mujeres", "percentage": 42 },
+          { "label": "Otro", "percentage": 1 }
+        ],
+        "age": [
+          { "range": "18-24", "percentage": 30.6 },
+          { "range": "25-34", "percentage": 48.9 },
+          { "range": "35-44", "percentage": 13.8 },
+          { "range": "45-54", "percentage": 5.0 },
+          { "range": "55+", "percentage": 1.7 }
+        ],
+        "top_locations": [
+          { "country": "Bolivia", "percentage": 29.0 },
+          { "country": "Otros", "percentage": 19.9 },
+          { "country": "México", "percentage": 13.3 },
+          { "country": "Perú", "percentage": 13.1 },
+          { "country": "Colombia", "percentage": 6.0 },
+          { "country": "Brasil", "percentage": 4.5 },
+          { "country": "Ecuador", "percentage": 4.1 },
+          { "country": "Chile", "percentage": 2.8 },
+          { "country": "Argentina", "percentage": 2.7 },
+          { "country": "Guatemala", "percentage": 2.4 },
+          { "country": "Estados Unidos", "percentage": 2.2 }
+        ]
+      }
+    },
+    "sponsorship_pricing": {
+      "currency": "USD",
+      "tiktok": [
+        { "format": "Video 60-80 segundos", "price": 80 },
+        { "format": "Video 40-59 segundos", "price": 75 },
+        { "format": "Video menos de 40 segundos", "price": 60 }
+      ],
+      "instagram_reels": [
+        { "format": "Video 60-80 segundos", "price": 30 },
+        { "format": "Video 40-59 segundos", "price": 25 },
+        { "format": "Video menos de 40 segundos", "price": 15 }
+      ],
+      "instagram_stories": [
+        { "format": "Historia imagen", "price": 10 },
+        { "format": "Historia hablando y presentando", "price": 25 },
+        { "format": "Historia hablando y presentando + compartir link", "price": 30 }
+      ],
+      "contact_for_packages": "carli.f.roman@gmail.com"
+    }
+  }
+}
