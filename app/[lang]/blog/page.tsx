@@ -1,4 +1,5 @@
-import { getDictionary, type Locale } from "@/lib/i18n";
+import { getDictionary } from "@/content";
+import { isLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -10,7 +11,8 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang: raw } = await params;
-  const dict = getDictionary(raw as Locale);
+  if (!isLocale(raw)) notFound();
+  const dict = getDictionary(raw);
   const base = new URL(siteUrl);
 
   return {
@@ -29,7 +31,9 @@ export default async function BlogPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang: raw } = await params;
-  const dict = getDictionary(raw as Locale);
+  if (!isLocale(raw)) notFound();
+  const lang = raw;
+  const dict = getDictionary(lang);
 
   // Placeholder blog posts - en el futuro puedes conectar con un CMS
   const blogPosts = [
