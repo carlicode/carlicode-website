@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
-import { headers } from "next/headers";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -24,19 +23,14 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const h = await headers();
-  const pathname = h.get("x-pathname") ?? "/es";
-  const seg = pathname.split("/").filter(Boolean)[0];
-  const lang = seg === "en" ? "en" : "es";
-
   return (
     <html
-      lang={lang}
+      lang="es"
       className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full`}
     >
       <body className="min-h-full bg-[var(--paper)] text-[var(--ink)] antialiased">

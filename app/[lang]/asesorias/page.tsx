@@ -7,6 +7,10 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import "@/components/minimal/minimal.css";
 
+export function generateStaticParams() {
+  return [{ lang: "es" }, { lang: "en" }];
+}
+
 export async function generateMetadata({
   params,
 }: {
