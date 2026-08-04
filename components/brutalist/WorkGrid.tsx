@@ -1,7 +1,6 @@
 import type { Dictionary } from "@/content/types";
 import type { Locale } from "@/lib/i18n";
 import type { Project } from "@/content/types";
-import { SectionHeader } from "./SectionHeader";
 
 export function WorkGrid({
   lang,
@@ -12,22 +11,14 @@ export function WorkGrid({
   dict: Dictionary;
   projects: Project[];
 }) {
-  const meta =
-    projects.length.toString().padStart(2, "0") +
-    " " +
-    (lang === "es" ? "PROYECTOS" : "PROJECTS");
-
   return (
-    <section className="br-section" id="work">
-      <SectionHeader num="/02" title={dict.workKicker} meta={meta} />
-      <div className="br-work">
-        {projects.map((p) => (
-          <article className="br-work-item" key={p.code}>
-            <div className="br-work-head">
-              <span className="br-work-code">PROJECT.{p.code}</span>
-              <span className="br-work-meta">{p.year}</span>
-            </div>
-            <div>
+    <section className="br-work-section" id="work">
+      <p className="br-section-label">{dict.workKicker}</p>
+      <ul className="br-work-list">
+        {projects.map((p, i) => (
+          <li className="br-work-row" key={p.code}>
+            <span className="br-work-index">{String(i + 1).padStart(2, "0")}</span>
+            <div className="br-work-main">
               <h3 className="br-work-name">
                 {lang === "es" ? p.titleEs : p.titleEn}
               </h3>
@@ -35,19 +26,17 @@ export function WorkGrid({
                 {lang === "es" ? p.descEs : p.descEn}
               </p>
             </div>
-            <div className="br-work-foot">
+            <div className="br-work-side">
+              <span className="br-work-year">{p.year}</span>
               <div className="br-work-tags">
                 {p.tags.map((tag) => (
-                  <span className="br-work-tag" key={tag}>
-                    {tag}
-                  </span>
+                  <span className="br-work-tag" key={tag}>{tag}</span>
                 ))}
               </div>
-              <span className="br-work-arrow">↗</span>
             </div>
-          </article>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

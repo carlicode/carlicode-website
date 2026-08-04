@@ -21,7 +21,11 @@ export function SiteNav({
       <Link href={`${base}/media-kit`}>{nav.mediaKit}</Link>
       <Link href={`${base}/hobbies`}>{nav.hobbies}</Link>
       <div className="br-nav-spacer" />
-      <Link href={`${base}#contact`}>
+      <div className="br-lang">
+        <Link href={`/es`} className={lang === "es" ? "active" : ""}>ES</Link>
+        <Link href={`/en`} className={lang === "en" ? "active" : ""}>EN</Link>
+      </div>
+      <Link href={`${base}#contact`} className="br-nav-cta">
         {nav.contact} ↗
       </Link>
     </nav>

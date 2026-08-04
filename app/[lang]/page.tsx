@@ -1,5 +1,6 @@
 import { BrutalistLanding } from "@/components/brutalist/BrutalistLanding";
-import { getDictionary, projects } from "@/content";
+import { getDictionary } from "@/content/dictionaries";
+import { projects } from "@/content";
 import { defaultLocale, isLocale, type Locale } from "@/lib/i18n";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -18,12 +19,18 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang: raw } = await params;
   if (!isLocale(raw)) notFound();
-  const dict = getDictionary(raw);
+
+  const isSpanish = raw === "es";
+  const title = "Carli Code - AI Engineer, Speaker & Content Creator";
+  const description = isSpanish
+    ? "AI Engineer especializada en sistemas agénticos, automatización y LLMs. Speaker y creadora de contenido tech para 145K+ personas."
+    : "AI Engineer specialized in agentic systems, automation and LLMs. Tech speaker and content creator for 145K+ people.";
+
   const base = new URL(siteUrl);
   return {
     metadataBase: base,
-    title: dict.metaTitle,
-    description: dict.metaDescription,
+    title,
+    description,
     alternates: {
       canonical: `${base.origin}/${raw}`,
       languages: {
@@ -33,8 +40,8 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: dict.metaTitle,
-      description: dict.metaDescription,
+      title,
+      description,
       locale: raw,
       type: "website",
     },
@@ -49,7 +56,8 @@ export default async function LangHomePage({
   const { lang: raw } = await params;
   if (!isLocale(raw)) notFound();
   const lang = raw;
-  const dict = getDictionary(lang);
+
+  const dict = await getDictionary(lang);
   const isoDate = new Date().toISOString().slice(0, 10);
 
   return (

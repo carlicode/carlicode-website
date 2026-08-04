@@ -22,7 +22,7 @@ export function BrutalistLanding({
 }) {
   return (
     <BrutalistShell>
-      <TopBar lang={lang} pathSuffix="" />
+      <TopBar />
       <SiteNav nav={dict.nav} lang={lang} />
       <Hero lang={lang} dict={dict} />
       <AboutSection lang={lang} dict={dict} />

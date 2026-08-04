@@ -1,12 +1,6 @@
 import { CvPage } from "@/components/brutalist/CvPage";
-import {
-  cvAchievements,
-  cvCertifications,
-  cvEducation,
-  cvJobs,
-  cvSkillGroups,
-  getDictionary,
-} from "@/content";
+import { getDictionary } from "@/content/dictionaries";
+import { cvJobs, cvSkillGroups, cvEducation, cvAchievements, cvCertifications } from "@/content";
 import { defaultLocale, isLocale, type Locale } from "@/lib/i18n";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -25,12 +19,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang: raw } = await params;
   if (!isLocale(raw)) notFound();
-  const dict = getDictionary(raw);
-  const p = dict.cvPage;
+
+  const isSpanish = raw === "es";
+  const title = isSpanish ? "CV — Carli Code" : "CV — Carli Code";
+  const description = isSpanish
+    ? "Curriculum Vitae de Carla Florida — AI Engineer, Speaker y Creadora de Contenido."
+    : "Curriculum Vitae of Carla Florida — AI Engineer, Speaker and Content Creator.";
+
   const base = new URL(siteUrl);
   return {
-    title: p.metaTitle,
-    description: p.metaDescription,
+    title,
+    description,
     alternates: {
       canonical: `${base.origin}/${raw}/cv`,
       languages: {
@@ -42,26 +41,28 @@ export async function generateMetadata({
   };
 }
 
-export default async function CvRoute({
+export default async function CVRoute({
   params,
 }: {
   params: Promise<{ lang: string }>;
 }) {
   const { lang: raw } = await params;
   if (!isLocale(raw)) notFound();
-  const dict = getDictionary(raw);
+  const lang = raw;
+
+  const dict = await getDictionary(lang);
   const isoDate = new Date().toISOString().slice(0, 10);
 
   return (
     <CvPage
-      lang={raw}
+      lang={lang}
       dict={dict}
-      jobs={cvJobs}
-      skillGroups={cvSkillGroups}
-      education={cvEducation}
-      achievements={cvAchievements}
-      certifications={cvCertifications}
       isoDate={isoDate}
+      cvJobs={cvJobs}
+      cvSkillGroups={cvSkillGroups}
+      cvEducation={cvEducation}
+      cvAchievements={cvAchievements}
+      cvCertifications={cvCertifications}
     />
   );
 }
