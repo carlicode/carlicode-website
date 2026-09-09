@@ -1,2 +1,9 @@
 import { Menu } from "lucide-react";
-export default function Navbar() { return <header className="site-header"><a href="/" className="brand">CARLI<span>CODE</span></a><nav aria-label="Navegación principal"><a href="/#comunidad">Comunidad</a><a href="/#trayectoria">Trayectoria</a><a href="/#archivo">Archivo</a><a href="/collaborations">Collaborations</a></nav><a href="/collaborations" className="header-cta">Let’s talk <span>↗</span></a><button className="menu-button" aria-label="Abrir menú"><Menu size={22} /></button></header>; }
+import LanguageToggle from "./LanguageToggle";
+import { useLanguage } from "./LanguageProvider";
+
+export default function Navbar() {
+  const { language } = useLanguage();
+  const copy = language === "es" ? { community: "Comunidad", path: "Trayectoria", archive: "Archivo", collaborations: "Colaboraciones", cta: "Hablemos", menu: "Abrir menú" } : { community: "Community", path: "Journey", archive: "Archive", collaborations: "Collaborations", cta: "Let’s talk", menu: "Open menu" };
+  return <header className="site-header"><a href="/" className="brand">CARLI<span>CODE</span></a><nav aria-label="Primary navigation"><a href="/comunidad">{copy.community}</a><a href="/#trayectoria">{copy.path}</a><a href="/#archivo">{copy.archive}</a><a href="/collaborations">{copy.collaborations}</a></nav><div className="header-actions"><LanguageToggle /><a href="/collaborations" className="header-cta">{copy.cta} <span>↗</span></a></div><button className="menu-button" aria-label={copy.menu}><Menu size={22} /></button></header>;
+}
