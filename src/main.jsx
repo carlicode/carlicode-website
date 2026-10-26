@@ -6,9 +6,10 @@ import Layout from "./components/Layout";
 import Redirect from "./components/Redirect";
 import { LanguageProvider } from "./components/LanguageProvider";
 import Collaborations from "./pages/Collaborations";
-import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import CV from "./pages/CV";
+import Museum from "./pages/Museum";
+import MuseumPiece from "./pages/MuseumPiece";
 import NotFound from "./pages/NotFound";
 import "./index.css";
 import "./App.css";
@@ -29,8 +30,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route element={<Layout />}>
             <Route path="/" element={<App />} />
             <Route path="/media-kit" element={<Collaborations />} />
-            {/* Sprint 4 reemplaza esta página por la línea del tiempo del museo. */}
-            <Route path="/museo" element={<Community />} />
+            <Route path="/museo" element={<Museum />} />
+            <Route path="/museo/:id" element={<MuseumPiece />} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/cv" element={<CV />} />
             {Object.entries(redirects).map(([from, to]) => <Route key={from} path={from} element={<Redirect to={to} />} />)}

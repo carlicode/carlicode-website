@@ -100,3 +100,33 @@
 .impact-total em{font-style:normal;font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid #ffffff44;padding:3px 9px;border-radius:99px;color:#c9c3da}
 .impact-counter small{display:block;max-width:560px;color:#9d97b3;line-height:1.5}
 @media(max-width:720px){.impact-counter{padding:56px 25px}.impact-figures i{display:none}.impact-figures{flex-direction:column;align-items:flex-start}}
+
+/* Sprint 4: museo */
+.museum{background:#090714;color:#f8f6ff;padding-top:88px;min-height:100svh}
+.museum-hero{padding:clamp(60px,9vw,120px) clamp(24px,11vw,178px) 30px}
+.museum-hero h1{margin:0;font-size:clamp(2.8rem,6.5vw,6rem);line-height:.95}.museum-hero h1 em{color:var(--pink)}
+.museum-hero p:not(.eyebrow){max-width:620px;color:#c9c4da;line-height:1.6;margin-top:22px}
+.museum-rooms{display:flex;flex-wrap:wrap;gap:10px;padding:0 clamp(24px,11vw,178px);margin-top:10px}
+.museum-rooms button{background:transparent;border:1px solid #ffffff2e;color:#f8f6ff;padding:9px 16px;border-radius:99px;cursor:pointer;font:500 .9rem 'Outfit',sans-serif;transition:background .2s,border-color .2s}
+.museum-rooms button span{font-family:'DM Mono',monospace;font-size:.72rem;color:#9d97b3;margin-left:4px}
+.museum-rooms button:hover{border-color:var(--pink)}.museum-rooms button.is-active{background:var(--pink);border-color:var(--pink);color:#fff}.museum-rooms button.is-active span{color:#ffffffcc}
+.museum-room-text{padding:0 clamp(24px,11vw,178px);margin:18px 0 0;color:#c9c4da}
+.museum-timeline{padding:40px clamp(24px,11vw,178px) clamp(70px,9vw,130px);display:grid;gap:40px}
+.museum-year{display:grid;grid-template-columns:110px minmax(0,1fr);gap:24px;border-top:1px solid #ffffff1c;padding-top:22px}
+.museum-year h2{margin:0;font-size:2rem;letter-spacing:-.03em;color:var(--cyan)}
+.museum-year ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.museum-piece{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:center;padding:14px;border:1px solid #ffffff1f;background:#ffffff06;color:inherit;text-decoration:none;transition:background .2s,transform .2s}
+.museum-piece:hover{background:#ffffff10;transform:translateX(4px)}
+.museum-piece img{width:92px;height:68px;object-fit:cover}
+.museum-piece small{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.06em;color:#9d97b3;text-transform:uppercase}
+.museum-piece h3{margin:4px 0 0;font-size:1.1rem}.museum-piece p{margin:6px 0 0;color:#c9c4da;font-size:.9rem;line-height:1.45}
+.museum-piece svg{color:var(--pink)}
+.museum-detail{padding-left:clamp(24px,11vw,178px);padding-right:clamp(24px,11vw,178px);padding-bottom:100px}
+.museum-detail>a{display:inline-flex;margin:50px 0 30px;gap:8px;align-items:center}
+.museum-detail article{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,60px);align-items:start}
+.museum-detail article img{width:100%;max-height:520px;object-fit:cover;border:1px solid #ffffff1f}
+.museum-detail h1{margin:10px 0 20px;font-size:clamp(2.2rem,4.5vw,3.8rem);line-height:1}
+.museum-detail dl{display:flex;gap:30px;margin:0 0 22px}.museum-detail dt{font-family:'DM Mono',monospace;font-size:.68rem;color:#9d97b3;letter-spacing:.08em;text-transform:uppercase}.museum-detail dd{margin:4px 0 0}
+.museum-detail article p:not(.eyebrow){color:#c9c4da;line-height:1.65;margin:0 0 26px}
+@media(max-width:900px){.museum-detail article{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:720px){.museum{padding-top:70px}.museum-hero{padding:50px 25px 24px}.museum-rooms,.museum-room-text{padding-left:25px;padding-right:25px}.museum-timeline{padding:30px 25px 70px}.museum-year{grid-template-columns:minmax(0,1fr);gap:14px}.museum-piece{grid-template-columns:minmax(0,1fr) auto}.museum-piece img{display:none}.museum-detail{padding-left:25px;padding-right:25px}}
