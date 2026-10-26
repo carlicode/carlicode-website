@@ -1,0 +1,790 @@
+[
+ {
+  "id": "A001",
+  "g": "charla",
+  "t": "IA en startups: de asistentes que responden hasta agentes que ejecutan",
+  "e": "The Spark Networking Sessions · Incubatec y Acelaratec (Solydes + UPB) con BCP",
+  "r": "Panelista",
+  "f": "2026-10-06",
+  "l": "Santa Cruz de la Sierra · Casa Alfonsina"
+ },
+ {
+  "id": "A002",
+  "g": "charla",
+  "t": "Panel del Día Internacional de la Mujer 2025 (#8M)",
+  "e": "International Women's Day 2025",
+  "r": "Panelista",
+  "f": "2025-03-14",
+  "u": "https://www.instagram.com/p/DHLTUpVxqL4/",
+  "d": "Conversación sobre tecnología, oportunidades y liderazgo de mujeres."
+ },
+ {
+  "id": "A003",
+  "g": "charla",
+  "t": "IA para no programadores",
+  "e": "IWD Future Makers Cochabamba 2025",
+  "r": "Speaker",
+  "f": "2025-04-05",
+  "l": "Cochabamba, Bolivia",
+  "u": "https://www.instagram.com/p/DHq_baPOxmT/"
+ },
+ {
+  "id": "A004",
+  "g": "charla",
+  "t": "Redefine Possible Together: IA accesible para todos",
+  "e": "Road to #IWD2025 · Redefine Possible Together",
+  "r": "Speaker",
+  "f": "2025-04-16"
+ },
+ {
+  "id": "A005",
+  "g": "charla",
+  "t": "AWS Community Day Bolivia 2025",
+  "e": "AWS Community Day Bolivia",
+  "r": "Speaker",
+  "f": "2025",
+  "l": "Bolivia",
+  "u": "https://www.instagram.com/p/DOXE-2cEW7G/"
+ },
+ {
+  "id": "A006",
+  "g": "charla",
+  "t": "Un título no te define en tech",
+  "e": "Charla tech",
+  "r": "Speaker",
+  "f": "2024-10-26",
+  "u": "https://www.instagram.com/p/DBd7sczuX3t/",
+  "d": "Caminos no tradicionales hacia la tecnología."
+ },
+ {
+  "id": "A007",
+  "g": "charla",
+  "t": "El futuro de Python como lenguaje",
+  "e": "PlatziConf",
+  "r": "Speaker",
+  "f": "2024-09-07",
+  "l": "Bogotá, Colombia",
+  "u": "https://platzi.com/cursos/platziconfbogota2024/el-futuro-de-python-como-lenguaje-carli/",
+  "d": "El futuro de Python y su rol en la industria."
+ },
+ {
+  "id": "A008",
+  "g": "charla",
+  "t": "Nerdearla Chile",
+  "e": "Nerdearla",
+  "r": "Speaker",
+  "f": "2024-04",
+  "l": "Chile",
+  "u": "https://www.instagram.com/p/C5Y5yzWOB8n/",
+  "d": "Uno de los eventos tech más grandes de LATAM."
+ },
+ {
+  "id": "A009",
+  "g": "charla",
+  "t": "Lecciones de tropiezos, tecnología y seguir construyendo",
+  "e": "FuckUp Nights Cochabamba · Green & Tech",
+  "r": "Speaker",
+  "f": "2024-04-11",
+  "l": "Cochabamba, Bolivia",
+  "u": "https://www.instagram.com/p/C4_eTQiP7z2/"
+ },
+ {
+  "id": "A010",
+  "g": "charla",
+  "t": "Cómo la IA cambió mi vida",
+  "e": "Nerdearla",
+  "r": "Speaker",
+  "f": "",
+  "u": "https://www.youtube.com/watch?v=5L-8NO-_GZw"
+ },
+ {
+  "id": "A011",
+  "g": "charla",
+  "t": "Rompiendo el molde con IA",
+  "e": "TEDx",
+  "r": "Speaker",
+  "f": "",
+  "u": "https://www.youtube.com/watch?v=9Q-G55HgvHE"
+ },
+ {
+  "id": "A012",
+  "g": "charla",
+  "t": "Mi error favorito",
+  "e": "FuckUp Nights",
+  "r": "Speaker",
+  "f": "",
+  "u": "https://www.youtube.com/watch?v=hq3SlZgG1To"
+ },
+ {
+  "id": "A013",
+  "g": "charla",
+  "t": "PyCon US 2024",
+  "e": "PyCon US",
+  "r": "Speaker",
+  "f": "2024",
+  "l": "Estados Unidos"
+ },
+ {
+  "id": "A014",
+  "g": "charla",
+  "t": "La IA y su dualidad",
+  "e": "TDex",
+  "r": "Speaker",
+  "f": "2023-11-24",
+  "u": "https://www.instagram.com/p/CzwAOxrIYrq/",
+  "d": "Charla sobre inteligencia artificial y su dualidad."
+ },
+ {
+  "id": "A015",
+  "g": "charla",
+  "t": "MujeresTech LATAM: mi camino en IA, comunidad y educación",
+  "e": "MujeresTech LATAM",
+  "r": "Invitada",
+  "f": "2023-08-22",
+  "u": "https://www.instagram.com/p/Cvm31ffsHOZ/"
+ },
+ {
+  "id": "A016",
+  "g": "charla",
+  "t": "Explorando Hugging Face",
+  "e": "Te con Tech · GDSC",
+  "r": "Speaker",
+  "f": "2023-05-05",
+  "l": "r00thouse",
+  "d": "Sesión comunitaria sobre Hugging Face."
+ },
+ {
+  "id": "A017",
+  "g": "charla",
+  "t": "Introducción a ChatGPT y Whisper APIs",
+  "e": "",
+  "r": "Speaker",
+  "f": "2023-04-01"
+ },
+ {
+  "id": "A018",
+  "g": "charla",
+  "t": "Chatbots con Inteligencia Artificial",
+  "e": "MLSA Latam · Microsoft User Group Bolivia",
+  "r": "Speaker",
+  "f": "2022-04-09"
+ },
+ {
+  "id": "A019",
+  "g": "charla",
+  "t": "Futuro de la IA",
+  "e": "Transmisión en vivo de la comunidad",
+  "r": "Invitada",
+  "f": "2022-09-19"
+ },
+ {
+  "id": "A020",
+  "g": "charla",
+  "t": "Tecnología digital: una oportunidad para tu futuro",
+  "e": "Foro de Tecnología Mujeres (5.ª versión)",
+  "r": "Panelista",
+  "f": "",
+  "d": "Panel con otras referentes de la región."
+ },
+ {
+  "id": "A021",
+  "g": "charla",
+  "t": "Creación de nuestro primer agente virtual con RAG y modelos fundacionales",
+  "e": "Evento de comunidad",
+  "r": "Speaker",
+  "f": "2026-03-08"
+ },
+ {
+  "id": "A022",
+  "g": "charla",
+  "t": "Inteligencia Artificial",
+  "e": "2do Webinar SucreTechnology · JCI Líderes Sucre",
+  "r": "Expositora",
+  "f": "2021-08-18",
+  "l": "En línea (Zoom y Facebook Live)"
+ },
+ {
+  "id": "A023",
+  "g": "charla",
+  "t": "Speaker en la celebración del Día Internacional de la Mujer y la Niña en Ciencia y Tecnología",
+  "e": "Becas Grace Hopper",
+  "r": "Speaker",
+  "f": "2021-02-12"
+ },
+ {
+  "id": "A024",
+  "g": "charla",
+  "t": "Charla al estilo MLSA: proceso en MLSA, proyectos en Python e IA",
+  "e": "MLSA Latam · InstaLive",
+  "r": "Invitada",
+  "f": ""
+ },
+ {
+  "id": "A025",
+  "g": "podcast",
+  "t": "Por qué aprender Python",
+  "e": "Declarando Variables",
+  "r": "Invitada",
+  "f": "",
+  "u": "https://declarandovariables.com/por-que-aprender-python/",
+  "d": "Por qué Python es tan demandado y recursos para empezar."
+ },
+ {
+  "id": "A026",
+  "g": "podcast",
+  "t": "Equilibrium Podcast",
+  "e": "Equilibrium Podcast",
+  "r": "Entrevistada",
+  "f": "2022-03-06",
+  "u": "https://www.instagram.com/p/Crx-q6puFZx/"
+ },
+ {
+  "id": "A027",
+  "g": "podcast",
+  "t": "Python, investigación e inteligencia artificial",
+  "e": "PyLadies El Alto · Podcast 5",
+  "r": "Invitada",
+  "f": "2022-10-27",
+  "u": "https://www.youtube.com/watch?v=5gV2YXdtd4A"
+ },
+ {
+  "id": "A028",
+  "g": "podcast",
+  "t": "Pizza na Estrada · PyConUS",
+  "e": "Pizza de Dados",
+  "r": "Invitada",
+  "f": "2023-04-18",
+  "l": "Salt Lake City, EE. UU.",
+  "u": "https://www.youtube.com/watch?v=ksSAmJS1vAY"
+ },
+ {
+  "id": "A029",
+  "g": "podcast",
+  "t": "De 0 a 1 · Ep. 6: ¿Cómo comenzar una carrera en IA?",
+  "e": "De 0 a 1 · Daniiee",
+  "r": "Invitada",
+  "f": "2024-04-11",
+  "u": "https://www.youtube.com/watch?v=R_pDTiZ-iOs"
+ },
+ {
+  "id": "A030",
+  "g": "podcast",
+  "t": "Aprendiendo a hacer un bot en RASA",
+  "e": "Canal de YouTube",
+  "r": "Invitada",
+  "f": "",
+  "u": "https://www.youtube.com/watch?v=fK0dsBXb5Ao"
+ },
+ {
+  "id": "A031",
+  "g": "podcast",
+  "t": "Mujer en tech y AI · Ep. 113",
+  "e": "Mujer en tech y AI",
+  "r": "Invitada",
+  "f": "2025-03-11",
+  "d": "La ciencia detrás de la inteligencia artificial: algoritmos, datos y código."
+ },
+ {
+  "id": "A032",
+  "g": "podcast",
+  "t": "La IA en la vida cotidiana",
+  "e": "DevLokos",
+  "r": "Invitada",
+  "f": "2025-03-23",
+  "u": "https://www.instagram.com/p/DHkCpg8giX3/"
+ },
+ {
+  "id": "A033",
+  "g": "podcast",
+  "t": "Filosofando sobre inteligencia artificial",
+  "e": "Canal de YouTube",
+  "r": "Invitada",
+  "f": "2025-11-19",
+  "u": "https://www.youtube.com/watch?v=7SQ2PrtDMho"
+ },
+ {
+  "id": "A034",
+  "g": "podcast",
+  "t": "Comiendo y charlando con @CarliCode · Episodio 3",
+  "e": "ExploMinds",
+  "r": "Invitada",
+  "f": "2025-12-29",
+  "u": "https://www.youtube.com/watch?v=AtC0BxJi0K0",
+  "d": "Ingeniera de sistemas y creadora de contenido en Cochabamba."
+ },
+ {
+  "id": "A035",
+  "g": "podcast",
+  "t": "De AI a real life",
+  "e": "Podcast",
+  "r": "Invitada",
+  "f": "",
+  "u": "https://www.youtube.com/watch?v=OvReIKeexzM"
+ },
+ {
+  "id": "A036",
+  "g": "podcast",
+  "t": "Qué hay detrás del código",
+  "e": "Podcast",
+  "r": "Invitada",
+  "f": "",
+  "u": "https://www.youtube.com/watch?v=xtPDQeGoBDE"
+ },
+ {
+  "id": "A037",
+  "g": "podcast",
+  "t": "Cosas que no te enseñan",
+  "e": "Podcast",
+  "r": "Invitada",
+  "f": "",
+  "u": "https://www.youtube.com/watch?v=3nTopDNpDDo"
+ },
+ {
+  "id": "A038",
+  "g": "podcast",
+  "t": "El miedo a programar",
+  "e": "Podcast",
+  "r": "Invitada",
+  "f": "",
+  "u": "https://www.youtube.com/watch?v=vDw-UVTKXPg"
+ },
+ {
+  "id": "A039",
+  "g": "podcast",
+  "t": "Episodio de podcast",
+  "e": "Podcast",
+  "r": "Invitada",
+  "f": "",
+  "u": "https://www.youtube.com/watch?v=7AhC2nr8xTE"
+ },
+ {
+  "id": "A040",
+  "g": "mentoria",
+  "t": "Mentora en la Hackathon Build with AI Bolivia",
+  "e": "Build with AI Bolivia",
+  "r": "Mentora",
+  "f": "2024-05-04",
+  "l": "Bolivia",
+  "u": "https://www.instagram.com/p/C6ZYYhou_sd/"
+ },
+ {
+  "id": "A041",
+  "g": "mentoria",
+  "t": "Mentora en Women Game Jam Bolivia 2023",
+  "e": "Women Game Jam Bolivia",
+  "r": "Mentora",
+  "f": "2023-08",
+  "l": "Bolivia",
+  "u": "https://www.instagram.com/p/Cvxu_6uu8TR/",
+  "d": "Evento inclusivo de creación de videojuegos."
+ },
+ {
+  "id": "A042",
+  "g": "taller",
+  "t": "Gemma, la familia de modelos open-source de Google",
+  "e": "Google I/O Extended Santa Cruz",
+  "r": "Speaker",
+  "f": "2025-07-23",
+  "l": "Santa Cruz de la Sierra",
+  "u": "https://www.instagram.com/p/DMc-8YqggNK/"
+ },
+ {
+  "id": "A043",
+  "g": "taller",
+  "t": "Taller de MediaPipe y visión por computadora",
+  "e": "Google I/O Extended Cochabamba",
+  "r": "Facilitadora",
+  "f": "2023-08-26",
+  "l": "Cochabamba, Bolivia",
+  "u": "https://www.instagram.com/p/CwObFadLvIQ/"
+ },
+ {
+  "id": "A044",
+  "g": "taller",
+  "t": "Club de chicas programadoras · Introducción a Python",
+  "e": "Club de chicas programadoras",
+  "r": "Facilitadora",
+  "f": "2021-10-01",
+  "l": "Santa Cruz de la Sierra · La Federal",
+  "d": "Taller presencial de Python para chicas que empiezan en tecnología."
+ },
+ {
+  "id": "A045",
+  "g": "taller",
+  "t": "Curso: Chatbots con OpenAI",
+  "e": "Platzi",
+  "r": "Profesora",
+  "f": "",
+  "u": "https://platzi.com/profes/carlicode/"
+ },
+ {
+  "id": "A046",
+  "g": "taller",
+  "t": "Curso de Python",
+  "e": "Platzi",
+  "r": "Profesora",
+  "f": "",
+  "u": "https://platzi.com/profes/carlicode/"
+ },
+ {
+  "id": "A047",
+  "g": "taller",
+  "t": "Curso de ciencia de datos",
+  "e": "Platzi",
+  "r": "Profesora",
+  "f": "",
+  "u": "https://platzi.com/profes/carlicode/"
+ },
+ {
+  "id": "A048",
+  "g": "taller",
+  "t": "Curso de agentes de IA",
+  "e": "Platzi",
+  "r": "Profesora",
+  "f": "",
+  "u": "https://platzi.com/profes/carlicode/"
+ },
+ {
+  "id": "A049",
+  "g": "taller",
+  "t": "Curso de Anaconda y Jupyter",
+  "e": "Platzi",
+  "r": "Profesora",
+  "f": "",
+  "u": "https://platzi.com/profes/carlicode/"
+ },
+ {
+  "id": "A050",
+  "g": "comunidad",
+  "t": "Lanzamiento de PyLadies Santa Cruz",
+  "e": "PyLadies Santa Cruz",
+  "r": "Lead",
+  "f": "",
+  "l": "Santa Cruz de la Sierra · UCB",
+  "d": "Evento de lanzamiento de la comunidad PyLadies en Santa Cruz."
+ },
+ {
+  "id": "A051",
+  "g": "comunidad",
+  "t": "AWS + n8n meetup Santa Cruz",
+  "e": "Comunidad AWS Santa Cruz",
+  "r": "Co-organizadora",
+  "f": "2025",
+  "l": "Santa Cruz de la Sierra",
+  "u": "https://www.instagram.com/p/DPHIuGPANHW/",
+  "d": "Sesión comunitaria sobre automatización e IA práctica."
+ },
+ {
+  "id": "A052",
+  "g": "comunidad",
+  "t": "Primeros meetups de n8n en Bolivia",
+  "e": "Comunidad n8n Bolivia",
+  "r": "Co-organizadora",
+  "f": "",
+  "l": "Bolivia",
+  "m": "+150 asistentes"
+ },
+ {
+  "id": "A053",
+  "g": "comunidad",
+  "t": "AWS Community Builder",
+  "e": "AWS",
+  "r": "Miembro",
+  "f": "2025"
+ },
+ {
+  "id": "A054",
+  "g": "comunidad",
+  "t": "AWS User Group Leader",
+  "e": "AWS",
+  "r": "Líder",
+  "f": ""
+ },
+ {
+  "id": "A055",
+  "g": "comunidad",
+  "t": "n8n Official Ambassador",
+  "e": "n8n",
+  "r": "Embajadora",
+  "f": ""
+ },
+ {
+  "id": "A056",
+  "g": "comunidad",
+  "t": "Women Techmakers Ambassador",
+  "e": "Google",
+  "r": "Embajadora",
+  "f": ""
+ },
+ {
+  "id": "A057",
+  "g": "comunidad",
+  "t": "Google Developer Profile",
+  "e": "Google",
+  "r": "Developer",
+  "f": "",
+  "u": "https://g.dev/carlicode"
+ },
+ {
+  "id": "A058",
+  "g": "comunidad",
+  "t": "Microsoft Learn Student Ambassador (Gold)",
+  "e": "Microsoft",
+  "r": "Gold Student Ambassador",
+  "f": ""
+ },
+ {
+  "id": "A059",
+  "g": "comunidad",
+  "t": "Co-fundadora de Menti Academy",
+  "e": "Menti Academy",
+  "r": "CEO y fundadora",
+  "f": "2021-11",
+  "d": "Iniciativa de educación tecnológica en Bolivia (2021–2024)."
+ },
+ {
+  "id": "A060",
+  "g": "contenido",
+  "t": "Campaña con Wallbit",
+  "e": "Wallbit",
+  "r": "Creadora",
+  "f": "",
+  "u": "https://www.tiktok.com/@carli.code/video/7551670056627801355"
+ },
+ {
+  "id": "A061",
+  "g": "contenido",
+  "t": "Campaña con Wallbit",
+  "e": "Wallbit",
+  "r": "Creadora",
+  "f": "",
+  "u": "https://www.tiktok.com/@carli.code/video/7594863165230304523",
+  "m": "1.132 likes · 38 comentarios · 475 guardados"
+ },
+ {
+  "id": "A062",
+  "g": "contenido",
+  "t": "Campaña GreenCloud / Google Partner",
+  "e": "GreenCloud · Google Partner",
+  "r": "Creadora",
+  "f": "",
+  "u": "https://www.tiktok.com/@carli.code/video/7559053295520582968"
+ },
+ {
+  "id": "A063",
+  "g": "contenido",
+  "t": "Campaña con Global Tecno Academy",
+  "e": "Global Tecno Academy",
+  "r": "Creadora",
+  "f": "",
+  "u": "https://www.tiktok.com/@carli.code/video/7448006686490561798"
+ },
+ {
+  "id": "A064",
+  "g": "contenido",
+  "t": "Campaña con AssureSoft",
+  "e": "AssureSoft",
+  "r": "Creadora",
+  "f": "",
+  "u": "https://www.tiktok.com/@carli.code/video/7560506772188908811"
+ },
+ {
+  "id": "A065",
+  "g": "codigo",
+  "t": "Sistema cognitivo para detección temprana de incendios",
+  "e": "Proyecto",
+  "r": "Investigadora y desarrolladora",
+  "f": "",
+  "d": "Visión por computadora y aprendizaje supervisado para reconocer incendios."
+ },
+ {
+  "id": "A066",
+  "g": "codigo",
+  "t": "Clasificación de violencia con streaming de audio",
+  "e": "Proyecto",
+  "r": "Investigadora y desarrolladora",
+  "f": "",
+  "d": "Análisis de audio y texto para evaluar niveles de violencia."
+ },
+ {
+  "id": "A067",
+  "g": "codigo",
+  "t": "Study-Buddy",
+  "e": "Proyecto",
+  "r": "Investigadora y desarrolladora",
+  "f": "",
+  "d": "IA conversacional con LLMs y grafos de conocimiento para educación personalizada."
+ },
+ {
+  "id": "A068",
+  "g": "codigo",
+  "t": "MATILDA: chatbot de mujeres científicas",
+  "e": "Proyecto",
+  "r": "Investigadora y desarrolladora",
+  "f": "",
+  "d": "Chatbot en RASA entrenado con datos de mujeres científicas en español."
+ },
+ {
+  "id": "A069",
+  "g": "codigo",
+  "t": "video-concepto-tech",
+  "e": "GitHub",
+  "r": "Autora",
+  "f": "",
+  "u": "https://github.com/carlicode/video-concepto-tech"
+ },
+ {
+  "id": "A070",
+  "g": "codigo",
+  "t": "experimento-lean-aws (BugDojo)",
+  "e": "GitHub",
+  "r": "Autora",
+  "f": "",
+  "u": "https://github.com/carlicode/experimento-lean-aws"
+ },
+ {
+  "id": "A071",
+  "g": "codigo",
+  "t": "aif-c01-study-lab",
+  "e": "GitHub",
+  "r": "Autora",
+  "f": "",
+  "u": "https://github.com/carlicode/aif-c01-study-lab"
+ },
+ {
+  "id": "A072",
+  "g": "codigo",
+  "t": "chroma-to-opensearch",
+  "e": "GitHub",
+  "r": "Autora",
+  "f": "",
+  "u": "https://github.com/carlicode/chroma-to-opensearch"
+ },
+ {
+  "id": "A073",
+  "g": "codigo",
+  "t": "andina-agent-demo",
+  "e": "GitHub",
+  "r": "Autora",
+  "f": "",
+  "u": "https://github.com/carlicode/andina-agent-demo"
+ },
+ {
+  "id": "A074",
+  "g": "codigo",
+  "t": "AI-Study-Squad-Tools",
+  "e": "GitHub",
+  "r": "Autora",
+  "f": "",
+  "u": "https://github.com/carlicode/AI-Study-Squad-Tools"
+ },
+ {
+  "id": "A075",
+  "g": "codigo",
+  "t": "wabi-sabi",
+  "e": "GitHub",
+  "r": "Autora",
+  "f": "",
+  "u": "https://github.com/carlicode/wabi-sabi"
+ },
+ {
+  "id": "A076",
+  "g": "charla",
+  "t": "BugDojo: experimento lean en AWS",
+  "e": "AWS Student Community Day Santa Cruz 2026",
+  "r": "Speaker",
+  "f": "2026-10-24",
+  "l": "UPB, Santa Cruz de la Sierra",
+  "u": "https://github.com/carlicode/experimento-lean-aws"
+ },
+ {
+  "id": "A077",
+  "g": "charla",
+  "t": "Charla en AgenTICs Bootcamp 2026",
+  "e": "AgenTICs Bootcamp 2026 · GDG Santa Cruz, Women Techmakers Santa Cruz, UPLABS AI",
+  "r": "Speaker",
+  "f": "2026-09-12",
+  "l": "Centro de convenciones UPSA, Santa Cruz de la Sierra"
+ },
+ {
+  "id": "A078",
+  "g": "charla",
+  "t": "Serverless en un fin de semana: la app que armé para un evento de 900 personas",
+  "e": "Nerdearla Argentina 2026 · Escenario AWS",
+  "r": "Speaker",
+  "f": "2026-09-24",
+  "l": "Ciudad Cultural Konex, Buenos Aires",
+  "d": "App 100% serverless con Lambda, API Gateway, DynamoDB, S3 y CloudFront."
+ },
+ {
+  "id": "A079",
+  "g": "comunidad",
+  "t": "Participación en el stand de AWS",
+  "e": "Nerdearla Argentina 2026",
+  "r": "Participante",
+  "f": "2026-09",
+  "l": "Buenos Aires, Argentina",
+  "d": "Dinámicas, sorteos y laboratorios para developers en el stand de AWS."
+ },
+ {
+  "id": "A080",
+  "g": "taller",
+  "t": "Zero to Hero: Despliegue de MVPs Hyper-Fast con Kiro y Python",
+  "e": "Build with AI Hackathon 2026 · GDG Santa Cruz y Women Techmakers Santa Cruz",
+  "r": "Speaker",
+  "f": "2026-05-29",
+  "l": "Campus UCB, Santa Cruz de la Sierra",
+  "u": "https://gdg.community.dev/events/details/google-gdg-santa-cruz-presents-hackathon-build-with-ai-crea-con-ia-en-santa-cruz/"
+ },
+ {
+  "id": "A081",
+  "g": "charla",
+  "t": "Inteligencia artificial con AWS",
+  "e": "AWS Cloud on Campus · AWS User Group Santa Cruz de la Sierra",
+  "r": "Speaker",
+  "f": "2026-05-11",
+  "l": "Auditorio FICCT, UAGRM, Santa Cruz de la Sierra",
+  "u": "https://www.meetup.com/user-group-santa-cruz/events/314664242"
+ },
+ {
+  "id": "A082",
+  "g": "taller",
+  "t": "AWS Cloud Foundations Workshop",
+  "e": "Cloud Queens | Break the Pattern · AWS User Group Santa Cruz de la Sierra",
+  "r": "Speaker",
+  "f": "2026-04-18",
+  "l": "Unifranz Santa Cruz",
+  "d": "Workshop presencial de fundamentos de AWS, junto a Dariana Pol."
+ },
+ {
+  "id": "A083",
+  "g": "comunidad",
+  "t": "AWSome Women Summit LATAM 2026",
+  "e": "AWSome Women Summit LATAM",
+  "r": "Organizadora",
+  "f": "2026-03-28",
+  "l": "MIDE, Ciudad de México",
+  "u": "https://www.awswomensummitlatam.com/home.html",
+  "d": "Día de charlas, workshops y networking para mujeres en tecnología en Latinoamérica."
+ },
+ {
+  "id": "A084",
+  "g": "charla",
+  "t": "Lightning talk técnica · Relanzamiento PyLadies Santiago",
+  "e": "PyLadies Santiago",
+  "r": "Speaker",
+  "f": "2026-03-16",
+  "l": "Online",
+  "u": "https://www.instagram.com/p/DV4TtuhiYQh/",
+  "d": "Lightning talks técnicas junto a Hazel Saenz (Developer Advocate, AWS)."
+ },
+ {
+  "id": "A085",
+  "g": "charla",
+  "t": "Speaker en Bolivia Blockchain Conference 2025",
+  "e": "Bolivia Blockchain Conference 2025",
+  "r": "Speaker",
+  "f": "2025-11-13",
+  "l": "Fexpocruz, Santa Cruz de la Sierra"
+ }
+]
