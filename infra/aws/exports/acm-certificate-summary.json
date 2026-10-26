@@ -1,8 +1,12 @@
 {
-    "Arn": null,
-    "DomainName": null,
-    "SubjectAlternativeNames": null,
-    "Status": null,
-    "Type": null,
-    "KeyAlgorithm": null
+    "Arn": "arn:aws:acm:us-east-1:447924811196:certificate/479b8547-9b36-449f-bf23-784ca4d6c90f",
+    "DomainName": "carlicode.com",
+    "SubjectAlternativeNames": [
+        "carlicode.com",
+        "*.carlicode.com"
+    ],
+    "Status": "ISSUED",
+    "Type": "AMAZON_ISSUED",
+    "KeyAlgorithm": "RSA-2048",
+    "RenewalEligibility": "ELIGIBLE"
 }

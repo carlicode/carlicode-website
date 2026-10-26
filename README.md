@@ -34,21 +34,22 @@ Portfolio personal que muestra mi trabajo en Inteligencia Artificial, experienci
 ## 🧰 Instalación y Uso
 
 ### Prerrequisitos
-- [Node.js](https://nodejs.org/) (versión 18 o superior)
-- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
+- [Node.js](https://nodejs.org/) 20 o superior (probado con 22)
+- npm
 
 ### Pasos para ejecutar el proyecto
 
 1. **Clonar el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/carlicode-website.git
+git clone https://github.com/carlicode/carlicode-website.git
 cd carlicode-website
 ```
 
 2. **Instalar dependencias**
 ```bash
-npm install
+npm ci --legacy-peer-deps
 ```
+(`--legacy-peer-deps` hace falta mientras `react-helmet-async` no declare soporte para React 19.)
 
 3. **Ejecutar en modo desarrollo**
 ```bash
@@ -62,6 +63,8 @@ El proyecto estará disponible en: `http://localhost:5173` (o `http://localhost:
 - **`npm run build`** - Construye la aplicación para producción
 - **`npm run preview`** - Previsualiza el build de producción localmente
 - **`npm run lint`** - Ejecuta ESLint para encontrar problemas en el código
+- **`npm run test:infra`** - Prueba la CloudFront Function (no necesita AWS)
+- **`npm run deploy`** - Publica el sitio en AWS (necesita credenciales)
 
 ### Construcción para producción
 
@@ -86,15 +89,23 @@ carlicode-website/
 │   ├── assets/        # Recursos (imágenes, iconos, etc.)
 │   └── main.jsx       # Punto de entrada de la aplicación
 ├── public/            # Archivos públicos
-├── docs/              # Documentación y build de GitHub Pages
+├── docs/              # Build viejo de GitHub Pages (ya no se usa)
+├── infra/aws/         # Infraestructura AWS: scripts, función CloudFront y exports
+├── scripts/           # deploy.sh
 └── package.json       # Dependencias y scripts
 ```
 
 ## 🌐 Despliegue
 
-El proyecto está configurado para desplegarse automáticamente usando:
-- **GitHub Pages** - Para el hosting estático
-- **Vite Build** - Para la optimización de archivos
+El sitio vive en AWS: S3 privado + CloudFront + Route 53 (`carlicode.com` y `www.carlicode.com`). El detalle está en [`infra/aws/README.md`](infra/aws/README.md).
+
+Para publicar, con AWS CLI v2 configurado:
+
+```bash
+npm run deploy
+```
+
+Esto hace `npm run build`, sube `dist/` a S3 (los assets con caché de un año porque llevan hash, `index.html` sin caché) e invalida CloudFront.
 
 ## 🤝 Contribución
 

@@ -1,0 +1,7 @@
+{
+    "Name": "carlicode-index-rewrite",
+    "Status": "DEPLOYED",
+    "Runtime": "cloudfront-js-2.0",
+    "Comment": "www a carlicode.com y rutas SPA a /index.html",
+    "Stage": "LIVE"
+}

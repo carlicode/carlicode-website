@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "context": { "eventType": "viewer-request" },
+  "viewer": { "ip": "198.51.100.10" },
+  "request": {
+    "method": "GET",
+    "uri": "/assets/index-abc123.js",
+    "querystring": {},
+    "headers": { "host": { "value": "carlicode.com" } },
+    "cookies": {}
+  }
+}
