@@ -1,5 +1,4 @@
 import { ArrowUpRight, Award, Download, Globe2, GraduationCap, Sparkles, Users } from "lucide-react";
-import { Helmet } from "react-helmet-async";
 import { createElement } from "react";
 
 const experience = [
@@ -26,9 +25,11 @@ const impact = [
   { icon: Award, label: "STAGES", title: "International Speaker", text: "Speaker at PyCon US, Platzi Conf and TEDx, translating complex technology into useful stories." },
 ];
 
+import Seo from "../components/Seo";
+
 export default function CV() {
   return <main className="cv-page">
-    <Helmet><title>CV — Carla Florida | Carli Code</title><meta name="description" content="CV de Carla Florida, AI Engineer, Tech Lead, educator and community builder." /></Helmet>
+    <Seo title="CV — Carla Florida" description="Carla Florida — AI Engineer, Tech Lead, educator and community builder." noindex />
     <section className="cv-hero"><p className="eyebrow"><span /> CURRICULUM VITAE</p><h1>Carla<br /><em>Florida.</em></h1><p className="cv-role">AI Engineer · Agentic Systems & Automation · Tech Lead</p><div className="cv-actions"><a href="/downloads/carla-florida-cv-2026.pdf" download="Carla_Florida_CV_2026.pdf" className="button button-primary"><Download size={17} /> Download PDF</a><a href="#experience" className="button hero-secondary">View experience <ArrowUpRight size={17} /></a></div><span className="cv-code">&lt;/&gt;</span></section>
 
     <section className="cv-profile"><div><p className="eyebrow"><span /> PROFESSIONAL PROFILE</p><h2>From prototype<br />to <em>production.</em></h2></div><div><p className="cv-profile-lede">I design and ship LLM-powered products — from multi-agent orchestration and RAG to end-to-end automations — that solve real operational problems.</p><p>Currently Tech Lead at Beezero, leading AI-driven logistics systems for B2B mobility. Beyond building products, I teach, speak and grow technical communities across Latin America.</p><div className="cv-tags"><span>LLMs</span><span>RAG</span><span>LangChain</span><span>n8n</span><span>Python</span><span>AWS</span><span>AI Product Development</span></div></div></section>
