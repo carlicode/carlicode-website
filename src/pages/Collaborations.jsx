@@ -43,7 +43,7 @@ const copy = {
 function TikTokCase({ item, language, t }) {
   const [playing, setPlaying] = useState(false);
   return <article className="case-card">
-    <div className="case-video">{playing
+    <div className={`case-video${playing ? " is-playing" : ""}`}>{playing
       ? <iframe src={`https://www.tiktok.com/embed/v2/${item.tiktokId}`} title={`${item.brand} — TikTok`} allow="encrypted-media; fullscreen" allowFullScreen />
       : <button type="button" onClick={() => setPlaying(true)} aria-label={`${t.play}: ${item.brand}`}><Play size={30} fill="currentColor" /><span>{t.play}</span></button>}</div>
     <div className="case-body">

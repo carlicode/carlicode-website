@@ -68,3 +68,22 @@
 @media(max-width:1100px){.case-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:720px){.case-grid{grid-template-columns:1fr 1fr}.cases-section{padding:75px 25px}}
 .cases-section h2{font-size:clamp(2.9rem,5.4vw,5.4rem);line-height:.93;margin:0}.cases-section h2 em{color:var(--pink)}
+
+/* Sprint 3.1: correcciones del media kit */
+.media-contact{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.media-contact>*{min-width:0}
+.media-contact>div:last-child{max-width:none;width:100%}
+.collaboration-form{box-sizing:border-box;width:100%;min-width:0;grid-template-columns:repeat(2,minmax(0,1fr))}
+.collaboration-form label{min-width:0}
+.collaboration-form input,.collaboration-form select,.collaboration-form textarea{box-sizing:border-box;width:100%;min-width:0;max-width:100%}
+.collaboration-form textarea{resize:vertical}
+.case-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.case-video.is-playing{aspect-ratio:auto;height:min(760px,calc(100svh - 120px));min-height:640px}
+@media(max-width:900px){.media-contact{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:720px){.media-contact{grid-template-columns:minmax(0,1fr);gap:30px}.media-contact h2{font-size:clamp(2.4rem,12vw,3.2rem);overflow-wrap:anywhere}.direct-contact a{width:auto;max-width:100%;overflow-wrap:anywhere}.collaboration-form{grid-template-columns:minmax(0,1fr);padding:18px;box-shadow:8px 8px 0 #5430be}.collaboration-form .form-message,.form-submit{grid-column:auto}.case-grid{grid-template-columns:minmax(0,1fr)}}
+.social-card.blue p,.social-card.blue strong{color:#5fb3ff}
+.social-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr))}
+/* 6 métricas en el inicio: 3 columnas x 2 filas */
+.home-metrics div:nth-child(3n+1){border-left:0}
+.home-metrics div:nth-child(n+4){border-top:1px solid #ffffff1c}
+@media(max-width:560px){.home-metrics div:nth-child(n+2){border-left:0;border-top:1px solid #ffffff1c}}

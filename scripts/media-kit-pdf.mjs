@@ -20,7 +20,7 @@ function html(lang) {
   return `<!doctype html><html lang="${lang}"><meta charset="utf-8"><style>
   @page{size:A4;margin:16mm}body{font:11pt/1.45 system-ui,sans-serif;color:#1a1026}h1{font-size:30pt;margin:0;color:#071218}h1 em{color:#d61fb5;font-style:normal}
   h2{font-size:13pt;margin:22px 0 8px;color:#5430be;text-transform:uppercase;letter-spacing:.06em}.lede{font-size:12pt;max-width:150mm}
-  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.card{border:1px solid #ddd6ee;padding:10px}.card b{display:block;font-size:17pt;color:#d61fb5}
+  .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.card{border:1px solid #ddd6ee;padding:10px}.card b{display:block;font-size:17pt;color:#d61fb5}
   table{width:100%;border-collapse:collapse}td{border-bottom:1px solid #eee;padding:6px 0;vertical-align:top}td.p{text-align:right;font-weight:700;font-size:12pt;white-space:nowrap}
   small{color:#5b5470}a{color:#5430be}.chips span{display:inline-block;border:1px solid #ddd6ee;border-radius:99px;padding:3px 10px;margin:0 6px 6px 0}.page{break-before:page}</style>
   <p style="color:#5430be;letter-spacing:.1em">CARLI CODE · ${esc(brand.community)}</p><h1>${t.title.replace("2026", "<em>2026</em>")}</h1><p class="lede">${esc(t.lede)}</p>

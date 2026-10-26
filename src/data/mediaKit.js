@@ -3,8 +3,9 @@
 export const socialChannels = [
   { name: "TikTok", handle: "@carli.code", followers: "163.9K", detail: { es: "2.2M me gusta", en: "2.2M likes" }, href: "https://www.tiktok.com/@carli.code", accent: "pink" },
   { name: "Instagram", handle: "@carli.code", followers: "42.2K", detail: { es: "seguidores", en: "followers" }, href: "https://www.instagram.com/carli.code/", accent: "orange" },
-  { name: "YouTube", handle: "@CarliCode", followers: null, detail: { es: "charlas y videos largos", en: "talks and long-form videos" }, href: "https://www.youtube.com/@CarliCode", accent: "red" },
-  { name: "Twitch", handle: "carlicode", followers: null, detail: { es: "directos", en: "live streams" }, href: "https://www.twitch.tv/carlicode", accent: "violet" },
+  { name: "YouTube", handle: "@CarliCode", followers: "1.61K", detail: { es: "suscriptores", en: "subscribers" }, href: "https://www.youtube.com/@CarliCode", accent: "red" },
+  { name: "Twitch", handle: "carlicode", followers: "3.1K", detail: { es: "seguidores", en: "followers" }, href: "https://www.twitch.tv/carlicode", accent: "violet" },
+  { name: "LinkedIn", handle: "carlicode", followers: "3,614", detail: { es: "seguidores", en: "followers" }, href: "https://www.linkedin.com/in/carlicode/", accent: "blue" },
 ];
 
 export const services = [
