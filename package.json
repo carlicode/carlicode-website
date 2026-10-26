@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test:infra": "node --test infra/aws/cloudfront/*.test.mjs",
-    "deploy": "bash scripts/deploy.sh"
+    "deploy": "bash scripts/deploy.sh",
+    "media-kit:pdf": "node scripts/media-kit-pdf.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.503.0",
