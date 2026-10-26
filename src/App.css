@@ -56,3 +56,15 @@
 .home-brands>p:not(.eyebrow){color:#c9c4da;margin:0 0 30px}
 @media(max-width:900px){.home-hero{grid-template-columns:1fr;padding-top:120px}.home-portrait{max-width:420px;grid-row:1}.home-topic-grid,.home-featured-grid,.home-heading{grid-template-columns:1fr}.home-community-grid{grid-template-columns:1fr 1fr}.home-community-grid figure{height:220px}}
 @media(max-width:560px){.home-metrics{grid-template-columns:1fr}.home-metrics div+div{border-left:0;border-top:1px solid #ffffff1c}.home-portrait:after{transform:translate(10px,10px)}}
+.cases-section{background:#0d0b1a;color:#fff}
+.case-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:50px}
+.case-card{border:1px solid #ffffff1f;background:#ffffff06;display:flex;flex-direction:column;height:100%}
+.case-video{aspect-ratio:9/16;background:linear-gradient(160deg,#2a0f3d,#071218);position:relative}
+.case-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.case-video button{position:absolute;inset:0;width:100%;border:0;background:transparent;color:#fff;display:grid;place-content:center;justify-items:center;gap:10px;cursor:pointer;font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.case-video button svg{color:var(--pink);filter:drop-shadow(0 0 14px #fa3ddd88)}
+.case-body{padding:18px;display:grid;gap:10px;align-content:start}.case-body h3{margin:0;font-size:1.05rem}.case-body p{margin:0;color:#c9c4da;font-size:.88rem;line-height:1.45}
+.case-body ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:12px}.case-body li{display:grid}.case-body li strong{color:var(--cyan);font-size:1.2rem}.case-body li span{font-family:'DM Mono',monospace;font-size:.62rem;color:#aaa6bb;text-transform:uppercase}
+@media(max-width:1100px){.case-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:720px){.case-grid{grid-template-columns:1fr 1fr}.cases-section{padding:75px 25px}}
+.cases-section h2{font-size:clamp(2.9rem,5.4vw,5.4rem);line-height:.93;margin:0}.cases-section h2 em{color:var(--pink)}
