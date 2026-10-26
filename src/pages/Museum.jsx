@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import Reveal from "../components/Reveal";
 import Seo from "../components/Seo";
 import { useLanguage } from "../components/LanguageProvider";
-import { formatDate, groupByYear, localized, pieceImage, pieces, roomIds, rooms } from "../data/museo";
+import { formatDate, groupByYear, localized, pieceThumb, pieces, roomIds, rooms } from "../data/museo";
 
 const copy = {
   es: {
@@ -50,12 +50,13 @@ export default function Museum() {
       {groupByYear(visible).map(([year, items]) => <div className="museum-year" key={year ?? "sin-fecha"}>
         <h2>{year ?? t.noDate}</h2>
         <ul>{items.map((piece) => {
-          const image = pieceImage(piece);
+          const image = pieceThumb(piece);
           return <li key={piece.id}><Link to={`/museo/${piece.id}`} className="museum-piece">
             {image && <img src={image} alt="" loading="lazy" />}
             <div>
               <small>{roomName(piece.sala)}{piece.date && ` · ${formatDate(piece.date, language)}`}</small>
               <h3>{localized(piece.title, language)}</h3>
+              {piece.event && <p className="museum-event">{piece.event}{piece.role && ` · ${piece.role}`}</p>}
               {piece.text && <p>{piece.text[language]}</p>}
             </div>
             <ArrowUpRight size={18} aria-label={t.open} />

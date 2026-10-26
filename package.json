@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test:infra": "node --test infra/aws/cloudfront/*.test.mjs",
     "deploy": "bash scripts/deploy.sh",
-    "media-kit:pdf": "node scripts/media-kit-pdf.mjs"
+    "media-kit:pdf": "node scripts/media-kit-pdf.mjs",
+    "museo:build": "node scripts/build-aportes.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.503.0",
