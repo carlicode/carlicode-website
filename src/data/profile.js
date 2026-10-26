@@ -21,5 +21,8 @@ export const metrics = {
     { platform: "TikTok", value: "163.9K", label: { es: "seguidores", en: "followers" } },
     { platform: "TikTok", value: "2.2M", label: { es: "me gusta", en: "likes" } },
     { platform: "Instagram", value: "42.2K", label: { es: "seguidores", en: "followers" } },
+    { platform: "LinkedIn", value: "3,614", label: { es: "seguidores", en: "followers" } },
+    { platform: "Twitch", value: "3.1K", label: { es: "seguidores", en: "followers" } },
+    { platform: "YouTube", value: "1.61K", label: { es: "suscriptores", en: "subscribers" } },
   ],
 };
