@@ -11,6 +11,15 @@
         },
         {
             "Name": "carlicode.com.",
+            "Type": "AAAA",
+            "AliasTarget": {
+                "HostedZoneId": "Z2FDTNDATAQYW2",
+                "DNSName": "d38lhumv826eud.cloudfront.net.",
+                "EvaluateTargetHealth": false
+            }
+        },
+        {
+            "Name": "carlicode.com.",
             "Type": "NS",
             "TTL": 172800,
             "ResourceRecords": [
@@ -47,6 +56,24 @@
                     "Value": "_07fef002017ddfa31e658d6991fc409c.xlfgrmvvlj.acm-validations.aws."
                 }
             ]
+        },
+        {
+            "Name": "www.carlicode.com.",
+            "Type": "A",
+            "AliasTarget": {
+                "HostedZoneId": "Z2FDTNDATAQYW2",
+                "DNSName": "d38lhumv826eud.cloudfront.net.",
+                "EvaluateTargetHealth": false
+            }
+        },
+        {
+            "Name": "www.carlicode.com.",
+            "Type": "AAAA",
+            "AliasTarget": {
+                "HostedZoneId": "Z2FDTNDATAQYW2",
+                "DNSName": "d38lhumv826eud.cloudfront.net.",
+                "EvaluateTargetHealth": false
+            }
         }
     ]
 }
