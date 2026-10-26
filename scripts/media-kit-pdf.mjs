@@ -27,7 +27,7 @@ function html(lang) {
   <h2>${t.reach}</h2><div class="grid">${socialChannels.map((c) => `<div class="card">${c.name}<b>${c.followers ?? t.profile}</b><small>${esc(c.detail[lang])}<br>${c.handle}</small></div>`).join("")}</div>
   <h2>${t.cases}</h2><table>${cases.map((c) => `<tr><td><b>${esc(c.brand)}</b>${c.topic ? ` — ${esc(c.topic[lang])}` : ""}<br><small>${c.results.map((r) => `${r.value} ${r.label[lang]}`).join(" · ")}</small></td><td class="p"><a href="${c.href}">TikTok ↗</a></td></tr>`).join("")}</table>
   <h2>${t.brands}</h2><p class="chips">${brands.map((b) => `<span>${esc(b)}</span>`).join("")}</p>
-  <h2 class="page">${t.rates}</h2><table>${services.map((s) => row(s.name, s.description[lang], s.price)).join("")}</table>
+  <h2 class="page">${t.rates}</h2><table>${services.map((s) => row(s.name[lang], s.description[lang], s.price)).join("")}</table>
   <h2>${t.packages}</h2><table>${packages.map((p) => row(p.name, p.description[lang], p.price)).join("")}</table>
   <h2>${t.contact}</h2><p><a href="mailto:${contact.email}">${contact.email}</a> · <a href="https://carlicode.com/contacto">carlicode.com/contacto</a> · <a href="https://carlicode.com/media-kit">carlicode.com/media-kit</a></p></html>`;
 }

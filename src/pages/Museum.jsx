@@ -7,12 +7,14 @@ import { formatDate, groupByYear, localized, pieceThumb, pieces, roomIds, rooms 
 
 const copy = {
   es: {
+    name: "Museo",
     seo: "El museo de Carli Code: charlas, comunidad, mentorías, educación y código, en una línea de tiempo.",
     eyebrow: "EL MUSEO", title: <>Todo lo que he <em>hecho y compartido.</em></>,
     text: "Una línea de tiempo con las charlas, comunidades, mentorías y proyectos de Carli Code. Filtra por sala o abre una pieza para ver su ficha.",
     all: "Todas", rooms: "SALAS", noDate: "Sin fecha", empty: "Esta sala todavía no tiene piezas.", open: "Ver ficha",
   },
   en: {
+    name: "Museum",
     seo: "The Carli Code museum: talks, community, mentoring, education and code, on a timeline.",
     eyebrow: "THE MUSEUM", title: <>Everything I’ve <em>made and shared.</em></>,
     text: "A timeline of Carli Code’s talks, communities, mentoring and projects. Filter by room or open a piece to see its page.",
@@ -36,7 +38,7 @@ export default function Museum() {
   const count = (id) => pieces.filter((piece) => piece.sala === id).length;
 
   return <main className="museum">
-    <Seo title="Museo — Carli Code" description={t.seo} />
+    <Seo title={`${t.name} — Carli Code`} description={t.seo} />
     <section className="museum-hero"><Reveal><p className="eyebrow"><span /> {t.eyebrow}</p><h1>{t.title}</h1><p>{t.text}</p></Reveal></section>
 
     <nav className="museum-rooms" aria-label={t.rooms}>
@@ -56,7 +58,7 @@ export default function Museum() {
             <div>
               <small>{roomName(piece.sala)}{piece.date && ` · ${formatDate(piece.date, language)}`}</small>
               <h3>{localized(piece.title, language)}</h3>
-              {piece.event && <p className="museum-event">{piece.event}{piece.role && ` · ${piece.role}`}</p>}
+              {piece.event && <p className="museum-event">{localized(piece.event, language)}{piece.role && ` · ${localized(piece.role, language)}`}</p>}
               {piece.text && <p>{piece.text[language]}</p>}
             </div>
             <ArrowUpRight size={18} aria-label={t.open} />

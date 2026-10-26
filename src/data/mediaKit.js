@@ -9,12 +9,12 @@ export const socialChannels = [
 ];
 
 export const services = [
-  { name: "Collaborative Live / Livestream", description: { es: "Hasta 60 minutos con interacción y demostración.", en: "Up to 60 minutes with interaction and demonstration." }, price: "$200" },
-  { name: "Main Video", description: { es: "31–90 segundos, con guion, edición y llamado a la acción.", en: "31–90 seconds, including script, editing and a call to action." }, price: "$90" },
-  { name: "Short Video", description: { es: "Gancho de 30 segundos, demo rápida o formato best seller.", en: "30-second hook, quick demo or best-seller format." }, price: "$80", featured: true },
-  { name: "Mini clip / teaser", description: { es: "Menos de 29 segundos, pensado para audio viral o en tendencia.", en: "Under 29 seconds, designed for viral or trending audio." }, price: "$60" },
-  { name: "Educational carousel", description: { es: "3–5 imágenes o clips verticales para TikTok e Instagram.", en: "3–5 vertical images or clips adapted for TikTok and Instagram." }, price: "$50" },
-  { name: "Story with mention", description: { es: "Hasta 3 historias con enlace o etiqueta.", en: "Up to 3 story frames or clips, including a link or tag." }, price: "$20" },
+  { name: { es: "Live colaborativo / transmisión", en: "Collaborative Live / Livestream" }, description: { es: "Hasta 60 minutos con interacción y demostración.", en: "Up to 60 minutes with interaction and demonstration." }, price: "$200" },
+  { name: { es: "Video principal", en: "Main Video" }, description: { es: "31–90 segundos, con guion, edición y llamado a la acción.", en: "31–90 seconds, including script, editing and a call to action." }, price: "$90" },
+  { name: { es: "Video corto", en: "Short Video" }, description: { es: "Gancho de 30 segundos, demo rápida o formato best seller.", en: "30-second hook, quick demo or best-seller format." }, price: "$80", featured: true },
+  { name: { es: "Mini clip / teaser", en: "Mini clip / teaser" }, description: { es: "Menos de 29 segundos, pensado para audio viral o en tendencia.", en: "Under 29 seconds, designed for viral or trending audio." }, price: "$60" },
+  { name: { es: "Carrusel educativo", en: "Educational carousel" }, description: { es: "3–5 imágenes o clips verticales para TikTok e Instagram.", en: "3–5 vertical images or clips adapted for TikTok and Instagram." }, price: "$50" },
+  { name: { es: "Historia con mención", en: "Story with mention" }, description: { es: "Hasta 3 historias con enlace o etiqueta.", en: "Up to 3 story frames or clips, including a link or tag." }, price: "$20" },
 ];
 
 export const packages = [

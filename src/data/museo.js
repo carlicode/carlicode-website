@@ -2,6 +2,7 @@
 // que genera src/data/aportes.json y las fotos WebP en public/museo/. Los hitos de abajo se escriben a mano.
 // date: "AAAA", "AAAA-MM" o "AAAA-MM-DD"; null = sin fecha (va al final de la línea de tiempo).
 import aportes from "./aportes.json";
+import * as en from "./museo.en";
 
 export const rooms = [
   { id: "escenarios", name: { es: "Escenarios", en: "Stages" }, text: { es: "Charlas, paneles y conferencias.", en: "Talks, panels and conferences." } },
@@ -19,22 +20,17 @@ const milestones = [
   { id: "hito-2016-acm-icpc", sala: "codigo", date: "2016", title: { es: "ACM-ICPC: 3.er lugar", en: "ACM-ICPC: 3rd place" }, text: null, images: [] },
 ];
 
-// Los aportes están en español. Estas son las traducciones al inglés que ya existían; el resto se revisa en el Sprint 7.
-const english = {
-  A002: { title: "International Women’s Day panel 2025 (#8M)", text: "A conversation on technology, opportunity and women’s leadership." },
-  A006: { text: "Non-traditional paths into technology." },
-  A007: { text: "The future of Python and its role in the industry." },
-  A008: { text: "One of the largest tech events in LATAM." },
-  A041: { text: "An inclusive game-building event." },
-  A044: { text: "In-person Python workshop for girls starting their path in technology." },
-  A050: { text: "Launch event of the PyLadies community in Santa Cruz." },
-  A051: { text: "A community session on automation and practical AI." },
-};
-
-const fromAportes = aportes.map((piece) => {
-  const en = english[piece.id] ?? {};
-  return { ...piece, title: { es: piece.title, en: en.title ?? piece.title }, text: piece.text ? { es: piece.text, en: en.text ?? piece.text } : null };
-});
+// Los aportes están en español; museo.en.js trae el inglés. Lo que no tiene traducción se muestra tal cual (nombres propios).
+const tr = (map, value) => (value ? { es: value, en: map[value] ?? value } : null);
+const fromAportes = aportes.map((piece) => ({
+  ...piece,
+  title: { es: piece.title, en: en.titles[piece.id] ?? piece.title },
+  text: piece.text ? { es: piece.text, en: en.texts[piece.id] ?? piece.text } : null,
+  event: tr(en.events, piece.event),
+  role: tr(en.roles, piece.role),
+  place: tr(en.places, piece.place),
+  metric: tr(en.metrics, piece.metric),
+}));
 
 export const pieces = [...milestones, ...fromAportes];
 

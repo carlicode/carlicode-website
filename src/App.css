@@ -138,3 +138,6 @@
 .cv-skill-list h3 a{display:inline-flex;align-items:center;gap:6px;color:inherit;text-decoration:none}.cv-skill-list h3 a:hover{color:#fff;text-decoration:underline}
 .cv-skill-list small{display:block;margin-top:10px;font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.04em;color:#9d97b3;line-height:1.5;overflow-wrap:anywhere}
 .cv-skill-list small a{color:var(--pink)}
+
+/* Sprint 7: título original en la ficha en inglés */
+.museum-original{font-family:'DM Mono',monospace;font-size:.78rem;color:#9d97b3;margin:-6px 0 20px!important}
