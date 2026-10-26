@@ -132,3 +132,9 @@
 @media(max-width:720px){.museum{padding-top:70px}.museum-hero{padding:50px 25px 24px}.museum-rooms,.museum-room-text{padding-left:25px;padding-right:25px}.museum-timeline{padding:30px 25px 70px}.museum-year{grid-template-columns:minmax(0,1fr);gap:14px}.museum-piece{grid-template-columns:minmax(0,1fr) auto}.museum-piece img{display:none}.museum-detail{padding-left:25px;padding-right:25px}}
 .museum-piece .museum-event{color:#e9e5f6;font-size:.85rem;margin:4px 0 0}
 .museum-piece img{background:#18162a}
+
+/* Sprint 6: proyectos del CV */
+.cv-projects{background:#120d22}
+.cv-skill-list h3 a{display:inline-flex;align-items:center;gap:6px;color:inherit;text-decoration:none}.cv-skill-list h3 a:hover{color:#fff;text-decoration:underline}
+.cv-skill-list small{display:block;margin-top:10px;font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.04em;color:#9d97b3;line-height:1.5;overflow-wrap:anywhere}
+.cv-skill-list small a{color:var(--pink)}
