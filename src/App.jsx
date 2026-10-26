@@ -84,7 +84,7 @@ export default function App() {
   const { language } = useLanguage();
   const t = copy[language];
   return <main className="home">
-    <Seo title="Carli Code — Tech en español" description={t.seo} />
+    <Seo title={language === "es" ? "Carli Code — Tech en español" : "Carli Code — Tech in Spanish"} description={t.seo} />
 
     <section className="home-hero">
       <div className="home-hero-copy">
@@ -109,7 +109,7 @@ export default function App() {
 
     <section className="section home-featured">
       <Reveal className="home-heading"><div><p className="eyebrow"><span /> {t.featuredLabel}</p><h2>{t.featuredTitle}</h2></div><p>{t.featuredText}</p></Reveal>
-      <div className="home-featured-grid">{featured.map((talk, index) => <Reveal delay={index * 90} key={talk.youtubeId}><a className="home-piece" href={`https://www.youtube.com/watch?v=${talk.youtubeId}`} target="_blank" rel="noreferrer"><img src={`https://i.ytimg.com/vi/${talk.youtubeId}/hqdefault.jpg`} alt="" loading="lazy" /><span className="home-piece-play"><Play size={16} fill="currentColor" /> {t.watch}</span><h3>{talk.title}</h3></a></Reveal>)}</div>
+      <div className="home-featured-grid">{featured.map((talk, index) => <Reveal delay={index * 90} key={talk.youtubeId}><a className="home-piece" href={`https://www.youtube.com/watch?v=${talk.youtubeId}`} target="_blank" rel="noreferrer"><img src={`https://i.ytimg.com/vi/${talk.youtubeId}/hqdefault.jpg`} alt="" loading="lazy" /><span className="home-piece-play"><Play size={16} fill="currentColor" /> {t.watch}</span><h3>{(language === "en" && talk.titleEn ? talk.titleEn : talk.title)}</h3></a></Reveal>)}</div>
       <a className="text-link" href="/museo">{t.allPieces} <ArrowUpRight size={17} /></a>
     </section>
 

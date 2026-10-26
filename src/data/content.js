@@ -1,16 +1,19 @@
 export const talks = [
   {
     title: "TED Talk: Rompiendo el molde con IA",
+    titleEn: "TED Talk: Breaking the mold with AI",
     youtubeId: "9Q-G55HgvHE",
     featured: true,
   },
   {
     title: "Nerdearla: Cómo la IA cambió mi vida",
+    titleEn: "Nerdearla: How AI changed my life",
     youtubeId: "5L-8NO-_GZw",
     featured: true,
   },
   {
     title: "Fuckup Nights: Mi error favorito",
+    titleEn: "Fuckup Nights: My favorite mistake",
     youtubeId: "hq3SlZgG1To",
     featured: true,
   },
