@@ -1,57 +1,126 @@
-import { useMemo, useState } from "react";
-import { ArrowUpRight, Camera, ExternalLink, Heart, Mic2, Play, Sparkles, Users } from "lucide-react";
-import heroImage from "./assets/brand/carli-hero-neon.png";
-import studioImage from "./assets/brand/carli-studio.png";
-import { projects, talks } from "./data/content";
+import { ArrowUpRight, Bot, Cloud, Play, Workflow } from "lucide-react";
+import portrait from "./assets/home/carli-neon.webp";
+import pyladies from "./assets/home/pyladies-ucb.webp";
+import agentics from "./assets/home/agentics-upsa.webp";
+import builderLoft from "./assets/home/aws-builder-loft.webp";
+import selfie from "./assets/home/selfie-evento.webp";
+import Reveal from "./components/Reveal";
+import Seo from "./components/Seo";
 import { useLanguage } from "./components/LanguageProvider";
+import { talks } from "./data/content";
+import { brands } from "./data/mediaKit";
+import { brand, metrics } from "./data/profile";
 import "./App.css";
 
-const profiles = [
-  { title: "TikTok", description: "Videos cortos, ideas y comunidad.", href: "https://www.tiktok.com/@carli.code", category: "Perfiles" },
-  { title: "Instagram", description: "Día a día, historias y contenido visual.", href: "https://www.instagram.com/carli.code/", category: "Perfiles" },
-  { title: "Twitch", description: "Directos y conversaciones en vivo.", href: "https://www.twitch.tv/carlicode", category: "Perfiles" },
-  { title: "YouTube", description: "Videos y charlas de formato largo.", href: "https://www.youtube.com/@CarliCode", category: "Perfiles" },
-  { title: "LinkedIn", description: "Trayectoria profesional y colaboraciones.", href: "https://www.linkedin.com/in/carlicode/", category: "Trayectoria" },
-  { title: "GitHub", description: "Proyectos y experimentos técnicos.", href: "https://github.com/carlicode", category: "Trayectoria" },
-  { title: "Platzi", description: "Cursos e historia como profesora.", href: "https://platzi.com/profes/carlicode/", category: "Trayectoria" },
-  { title: "Google Developer", description: "Perfil y presencia en la comunidad Google.", href: "https://g.dev/carlicode", category: "Trayectoria" },
-];
+const featured = talks.filter((talk) => talk.featured).slice(0, 3);
 
-const archiveItems = [
-  ...talks.map((talk) => ({ title: talk.title, description: "Mira la charla completa en YouTube.", href: `https://www.youtube.com/watch?v=${talk.youtubeId}`, youtubeId: talk.youtubeId, category: "Charlas" })),
-  ...projects.map((project) => ({ title: project.name, description: project.description, href: project.link === "#" ? null : project.link, category: "Proyectos" })),
-  ...profiles,
-];
-const perPage = 6;
+const copy = {
+  es: {
+    seo: "Carli Code: contenido de tecnología en español. Inteligencia artificial, AWS, Python y automatización explicados en lenguaje natural.",
+    eyebrow: "CARLI CODE · CREADORA DE CONTENIDO TECH",
+    title: <>Tech en español, <em>más fácil de lo que crees.</em></>,
+    lede: "Creo contenido enseñando sobre tecnología y transformo conceptos complejos en lenguaje natural. Me apasiona la programación en Python, AWS y, sobre todo, la inteligencia artificial.",
+    mediaKit: "Ver media kit",
+    museum: "Entrar al museo",
+    metricsLabel: "COMUNIDAD EN REDES",
+    topicsLabel: "DE QUÉ HABLO",
+    topicsTitle: <>Tres temas, <em>explicados sin vueltas.</em></>,
+    topics: [
+      { icon: Bot, title: "Inteligencia artificial y agentes", text: "Qué es un modelo, un agente o un RAG, y cómo usarlos en proyectos reales." },
+      { icon: Cloud, title: "AWS y la nube", text: "Servicios de AWS explicados paso a paso, desde la primera cuenta hasta producción." },
+      { icon: Workflow, title: "Automatización con n8n y Python", text: "Flujos y scripts que ahorran horas de trabajo repetitivo." },
+    ],
+    featuredLabel: "DESTACADOS DEL MUSEO",
+    featuredTitle: <>Algunas piezas <em>del museo.</em></>,
+    featuredText: "Charlas, podcasts, talleres, código y comunidad. Todo mi trabajo, en una línea del tiempo.",
+    watch: "Ver charla",
+    allPieces: "Ver todo el museo",
+    communityLabel: brand.community,
+    communityTitle: <>La comunidad que <em>aprende conmigo.</em></>,
+    communityText: "Meetups, talleres y eventos con PyLadies, AWS, AgenTICs y más comunidades tech.",
+    communityCta: "Ver la sala Comunidad",
+    photos: ["PyLadies en la UCB", "AgenTICs en la UPSA", "AWS Builder Loft", "Comunidad en evento"],
+    brandsLabel: "MARCAS QUE CONFIARON",
+    brandsTitle: <>¿Trabajamos <em>juntas?</em></>,
+    brandsText: "Tarifas públicas, casos y métricas en el media kit.",
+    contact: "Escríbeme",
+  },
+  en: {
+    seo: "Carli Code: tech content in Spanish. Artificial intelligence, AWS, Python and automation explained in plain language.",
+    eyebrow: "CARLI CODE · TECH CONTENT CREATOR",
+    title: <>Tech in Spanish, <em>easier than you think.</em></>,
+    lede: "I create content that teaches technology and I turn complex concepts into plain language. I’m passionate about Python, AWS and, above all, artificial intelligence.",
+    mediaKit: "See media kit",
+    museum: "Enter the museum",
+    metricsLabel: "SOCIAL COMMUNITY",
+    topicsLabel: "WHAT I TALK ABOUT",
+    topicsTitle: <>Three topics, <em>explained straight.</em></>,
+    topics: [
+      { icon: Bot, title: "Artificial intelligence and agents", text: "What a model, an agent or RAG is, and how to use them in real projects." },
+      { icon: Cloud, title: "AWS and the cloud", text: "AWS services explained step by step, from a first account to production." },
+      { icon: Workflow, title: "Automation with n8n and Python", text: "Workflows and scripts that save hours of repetitive work." },
+    ],
+    featuredLabel: "MUSEUM HIGHLIGHTS",
+    featuredTitle: <>A few pieces <em>from the museum.</em></>,
+    featuredText: "Talks, podcasts, workshops, code and community. All my work, on one timeline.",
+    watch: "Watch talk",
+    allPieces: "See the whole museum",
+    communityLabel: brand.community,
+    communityTitle: <>The community that <em>learns with me.</em></>,
+    communityText: "Meetups, workshops and events with PyLadies, AWS, AgenTICs and more tech communities.",
+    communityCta: "See the Community room",
+    photos: ["PyLadies at UCB", "AgenTICs at UPSA", "AWS Builder Loft", "Community at an event"],
+    brandsLabel: "BRANDS THAT TRUSTED ME",
+    brandsTitle: <>Shall we <em>work together?</em></>,
+    brandsText: "Public rates, case studies and metrics in the media kit.",
+    contact: "Get in touch",
+  },
+};
+
+const communityPhotos = [pyladies, agentics, builderLoft, selfie];
 
 export default function App() {
   const { language } = useLanguage();
-  const copy = language === "es" ? { heroLabel: "CREADORA · COMMUNITY BUILDER", hero: <>Ideas que<br /><em>encienden</em><br />comunidad.</>, intro: "Soy Carli. Creo contenido y conversaciones que hacen que la tecnología, las ideas y las oportunidades se sientan más cerca.", community: "Conoce mi comunidad", collaborate: "Colaboremos", work: "Trabajemos juntas", place: "MI LUGAR FAVORITO", create: <>Crear no es hablar <em>sola.</em></>, createText: "Es encontrarnos. Mi contenido vive entre preguntas, herramientas digitales, aprendizajes imperfectos y la energía de una comunidad que se mueve.", story: "MÁS QUE UN FEED", journey: <>Una trayectoria hecha de <em>curiosidad.</em></>, storyText: "Vengo del mundo tech, pero mi motor siempre ha sido traducir lo complejo en algo útil, humano y posible. Hoy esa curiosidad toma forma en contenido, escenarios y proyectos con propósito.", effect: "EL EFECTO CARLI", effectTitle: <>Una idea puede ser el<br /><em>comienzo de algo enorme.</em></>, effectText: "De una conversación a una comunidad. De una duda a una nueva posibilidad.", archive: "TODO EN UN SOLO LUGAR", archiveTitle: <>Mi <em>archivo vivo.</em></>, archiveText: "Charlas, proyectos, perfiles y enlaces para conocer las diferentes facetas de mi trabajo.", watch: "Ver en YouTube", collaborations: "COLABORACIONES", contact: <>¿Creamos algo<br /><em>que importe?</em></>, contactText: "Para campañas, charlas, proyectos de comunidad o una buena conversación.", contactButton: "Escríbeme" } : { heroLabel: "CREATOR · COMMUNITY BUILDER", hero: <>Ideas that<br /><em>ignite</em><br />community.</>, intro: "I create content and conversations that bring technology, ideas and opportunities closer.", community: "Explore my community", collaborate: "Let’s collaborate", work: "Let’s work together", place: "MY FAVORITE PLACE", create: <>Creating is not speaking <em>alone.</em></>, createText: "It is finding each other. My content lives between questions, digital tools, imperfect learning and the energy of a community in motion.", story: "MORE THAN A FEED", journey: <>A journey built on <em>curiosity.</em></>, storyText: "I come from the world of tech, but my drive has always been translating complexity into something useful, human and possible. Today, that curiosity takes shape in content, stages and purposeful projects.", effect: "THE CARLI EFFECT", effectTitle: <>One idea can be the<br /><em>start of something big.</em></>, effectText: "From a conversation to a community. From a question to a new possibility.", archive: "ALL IN ONE PLACE", archiveTitle: <>My <em>living archive.</em></>, archiveText: "Talks, projects, profiles and links to discover the different sides of my work.", watch: "Watch on YouTube", collaborations: "COLLABORATIONS", contact: <>Can we create<br /><em>something that matters?</em></>, contactText: "For campaigns, talks, community projects or a good conversation.", contactButton: "Send me a message" };
-  const [activeCategory, setActiveCategory] = useState("Todo");
-  const [page, setPage] = useState(1);
-  const filteredItems = useMemo(() => activeCategory === "Todo" ? archiveItems : archiveItems.filter((item) => item.category === activeCategory), [activeCategory]);
-  const totalPages = Math.ceil(filteredItems.length / perPage);
-  const pageItems = filteredItems.slice((page - 1) * perPage, page * perPage);
-  const selectCategory = (category) => { setActiveCategory(category); setPage(1); };
-  return <>
-    <><title>Carli Code — Creadora que conecta</title><meta name="description" content="Carli Code: creadora de contenido, speaker y comunidad que convierte ideas en oportunidades." /></>
-    <main>
-      <section id="inicio" className="hero-shell">
-        <img className="hero-art" src={heroImage} alt="Ilustración de Carli creando contenido en un estudio de neón" /><div className="hero-noise" />
-        <div className="hero-copy"><p className="eyebrow"><span /> {copy.heroLabel}</p><h1>{copy.hero}</h1><p className="hero-lede">{copy.intro}</p><div className="hero-actions"><a className="button button-primary" href="/museo?sala=comunidad">{copy.community} <ArrowUpRight size={18} /></a><a className="button hero-secondary" href="/contacto">{copy.collaborate} <ArrowUpRight size={18} /></a></div></div>
-        <div className="hero-stamp"><span>01</span><span>CARLI<br />CODE</span></div><div className="scroll-cue">SCROLL TO EXPLORE <i /></div>
-      </section>
-      <section id="comunidad" className="section section-motion community-section">
-        <div className="section-intro split-intro"><div><p className="eyebrow"><span /> {copy.place}</p><h2>{copy.create}</h2></div><p>{copy.createText}</p></div>
-        <div className="format-grid">{[{ icon: <Camera size={26} />, title: "Creadora de contenido tech", text: "Contenido claro y cercano sobre IA, tecnología y oportunidades para crecer." }, { icon: <Mic2 size={26} />, title: "Embajadora y educadora", text: "Apoyo a personas y comunidades con conocimiento práctico de Python, AWS y desarrollo profesional." }, { icon: <Heart size={26} />, title: "Líder de comunidad", text: "Creo espacios donde aprender, compartir y construir se siente posible para más personas." }].map(({ icon, title, text }, index) => <article className="format-card" key={title}><div className="card-top">{icon}<span>0{index + 1}</span></div><h3>{title}</h3><p>{text}</p><a href="/museo?sala=comunidad" aria-label={`Ver ${title}`}><ArrowUpRight size={20} /></a></article>)}</div>
-      </section>
-      <section id="trayectoria" className="section section-motion story-section">
-        <div className="story-image-wrap"><img src={studioImage} alt="Carli Code en su estudio creativo" /><div className="image-caption">GOOD IDEAS / BRIGHTER TOMORROWS</div></div>
-        <div className="story-copy"><p className="eyebrow"><span /> {copy.story}</p><h2>{copy.journey}</h2><p>{copy.storyText}</p><div className="signal-list"><div><Sparkles size={19} /><span><b>Ideas</b> que se comparten</span></div><div><Users size={19} /><span><b>Personas</b> que se encuentran</span></div><div><Mic2 size={19} /><span><b>Historias</b> que se amplifican</span></div></div><a href="/museo" className="text-link">Conoce mi trabajo <ArrowUpRight size={17} /></a></div>
-      </section>
-      <section className="section section-motion pulse-section"><div className="pulse-orbit orbit-one" /><div className="pulse-orbit orbit-two" /><p className="eyebrow"><span /> {copy.effect}</p><h2>{copy.effectTitle}</h2><p>{copy.effectText}</p><a className="play-button" href="/contacto"><Play fill="currentColor" size={18} /> {copy.work.toUpperCase()}</a></section>
-      <section id="archivo" className="section section-motion archive-section"><div className="archive-heading"><div><p className="eyebrow"><span /> {copy.archive}</p><h2>{copy.archiveTitle}</h2></div><p>{copy.archiveText}</p></div><div className="archive-controls" aria-label="Filtrar archivo">{["Todo", "Charlas", "Proyectos", "Perfiles", "Trayectoria"].map((category) => <button key={category} className={activeCategory === category ? "active" : ""} onClick={() => selectCategory(category)}>{category}</button>)}</div><div className="archive-grid">{pageItems.map((item) => item.youtubeId ? <article className="archive-card archive-video" key={`${item.category}-${item.title}`}><div className="video-preview"><iframe title={`Preview: ${item.title}`} src={`https://www.youtube-nocookie.com/embed/${item.youtubeId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${item.youtubeId}&playsinline=1&rel=0`} loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" /><a href={item.href} target="_blank" rel="noreferrer" aria-label={`${copy.watch}: ${item.title}`}><span><Play fill="currentColor" size={16} /> {copy.watch}</span></a></div><div className="archive-video-copy"><div className="archive-card-meta"><span>{item.category}</span><span>0{archiveItems.indexOf(item) + 1}</span></div><h3>{item.title}</h3></div></article> : <article className="archive-card" key={`${item.category}-${item.title}`}><div className="archive-card-meta"><span>{item.category}</span><span>0{archiveItems.indexOf(item) + 1}</span></div><h3>{item.title}</h3><p>{item.description}</p>{item.href ? <a href={item.href} target="_blank" rel="noreferrer">Abrir enlace <ExternalLink size={16} /></a> : <span className="archive-no-link">Proyecto de portafolio</span>}</article>)}</div><nav className="pagination" aria-label="Paginación del archivo"><button onClick={() => setPage((current) => Math.max(1, current - 1))} disabled={page === 1}>← Anterior</button>{Array.from({ length: totalPages }, (_, index) => <button key={index + 1} className={page === index + 1 ? "active" : ""} onClick={() => setPage(index + 1)} aria-current={page === index + 1 ? "page" : undefined}>{String(index + 1).padStart(2, "0")}</button>)}<button onClick={() => setPage((current) => Math.min(totalPages, current + 1))} disabled={page === totalPages}>Siguiente →</button></nav></section>
-      <section id="colabora" className="section section-motion contact-section"><div><p className="eyebrow"><span /> {copy.collaborations}</p><h2>{copy.contact}</h2></div><div className="contact-side"><p>{copy.contactText}</p><a className="contact-email" href="/contacto">{copy.contactButton} <ArrowUpRight size={22} /></a></div></section>
-    </main>
-  </>;
+  const t = copy[language];
+  return <main className="home">
+    <Seo title="Carli Code — Tech en español" description={t.seo} />
+
+    <section className="home-hero">
+      <div className="home-hero-copy">
+        <p className="eyebrow"><span /> {t.eyebrow}</p>
+        <h1>{t.title}</h1>
+        <p className="home-lede">{t.lede}</p>
+        <div className="home-actions"><a className="button button-primary" href="/media-kit">{t.mediaKit} <ArrowUpRight size={18} /></a><a className="button hero-secondary" href="/museo">{t.museum} <ArrowUpRight size={18} /></a></div>
+      </div>
+      <figure className="home-portrait"><img src={portrait} alt="Carli Code" width="1000" height="1000" fetchPriority="high" /></figure>
+    </section>
+
+    <section className="home-metrics" aria-label={t.metricsLabel}>
+      {metrics.items.map(({ platform, value, label }) => <div key={`${platform}-${value}`}><strong>{value}</strong><span>{label[language]} · {platform}</span></div>)}
+    </section>
+
+    <section className="section home-topics">
+      <Reveal><p className="eyebrow"><span /> {t.topicsLabel}</p><h2>{t.topicsTitle}</h2></Reveal>
+      <div className="home-topic-grid">{t.topics.map((topic, index) => <Reveal delay={index * 90} key={topic.title}><article><topic.icon size={28} /><h3>{topic.title}</h3><p>{topic.text}</p></article></Reveal>)}</div>
+    </section>
+
+    <section className="section home-featured">
+      <Reveal className="home-heading"><div><p className="eyebrow"><span /> {t.featuredLabel}</p><h2>{t.featuredTitle}</h2></div><p>{t.featuredText}</p></Reveal>
+      <div className="home-featured-grid">{featured.map((talk, index) => <Reveal delay={index * 90} key={talk.youtubeId}><a className="home-piece" href={`https://www.youtube.com/watch?v=${talk.youtubeId}`} target="_blank" rel="noreferrer"><img src={`https://i.ytimg.com/vi/${talk.youtubeId}/hqdefault.jpg`} alt="" loading="lazy" /><span className="home-piece-play"><Play size={16} fill="currentColor" /> {t.watch}</span><h3>{talk.title}</h3></a></Reveal>)}</div>
+      <a className="text-link" href="/museo">{t.allPieces} <ArrowUpRight size={17} /></a>
+    </section>
+
+    <section className="section home-community">
+      <Reveal className="home-heading"><div><p className="eyebrow"><span /> {t.communityLabel}</p><h2>{t.communityTitle}</h2></div><p>{t.communityText}</p></Reveal>
+      <div className="home-community-grid">{communityPhotos.map((src, index) => <Reveal delay={index * 80} key={src}><figure><img src={src} alt={t.photos[index]} loading="lazy" /><figcaption>{t.photos[index]}</figcaption></figure></Reveal>)}</div>
+      <a className="button button-primary" href="/museo?sala=comunidad">{t.communityCta} <ArrowUpRight size={18} /></a>
+    </section>
+
+    <section className="section home-brands">
+      <p className="eyebrow"><span /> {t.brandsLabel}</p>
+      <ul>{brands.map((name) => <li key={name}>{name}</li>)}</ul>
+      <h2>{t.brandsTitle}</h2><p>{t.brandsText}</p>
+      <div className="home-actions"><a className="button button-primary" href="/media-kit">{t.mediaKit} <ArrowUpRight size={18} /></a><a className="button hero-secondary" href="/contacto">{t.contact} <ArrowUpRight size={18} /></a></div>
+    </section>
+  </main>;
 }
