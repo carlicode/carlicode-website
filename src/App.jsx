@@ -10,6 +10,7 @@ import { useLanguage } from "./components/LanguageProvider";
 import { talks } from "./data/content";
 import { brands } from "./data/mediaKit";
 import { brand, metrics } from "./data/profile";
+import ImpactCounter from "./components/ImpactCounter";
 import "./App.css";
 
 const featured = talks.filter((talk) => talk.featured).slice(0, 3);
@@ -98,6 +99,8 @@ export default function App() {
     <section className="home-metrics" aria-label={t.metricsLabel}>
       {metrics.items.map(({ platform, value, label }) => <div key={`${platform}-${value}`}><strong>{value}</strong><span>{label[language]} · {platform}</span></div>)}
     </section>
+
+    <ImpactCounter />
 
     <section className="section home-topics">
       <Reveal><p className="eyebrow"><span /> {t.topicsLabel}</p><h2>{t.topicsTitle}</h2></Reveal>

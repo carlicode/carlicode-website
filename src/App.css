@@ -87,3 +87,16 @@
 .home-metrics div:nth-child(3n+1){border-left:0}
 .home-metrics div:nth-child(n+4){border-top:1px solid #ffffff1c}
 @media(max-width:560px){.home-metrics div:nth-child(n+2){border-left:0;border-top:1px solid #ffffff1c}}
+
+/* Sprint 3.2: contador de impacto */
+.impact-counter{padding:clamp(56px,8vw,100px) clamp(24px,11vw,178px);background:#0d0b1a;color:#fff;border-block:1px solid #ffffff1c}
+.impact-figures{display:flex;align-items:center;gap:clamp(16px,3vw,40px);margin-top:26px;flex-wrap:wrap}
+.impact-figures>div{display:grid;gap:6px;min-width:0}
+.impact-figures strong{font-size:clamp(2.6rem,6vw,4.6rem);letter-spacing:-.04em;line-height:1;color:var(--cyan)}
+.impact-figures span{font-family:'DM Mono',monospace;font-size:.78rem;color:#c9c3da;letter-spacing:.04em}
+.impact-figures i{font-style:normal;font-size:2rem;color:#ffffff55}
+.impact-total{margin:30px 0 10px;font-size:clamp(1.1rem,2vw,1.4rem);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.impact-total strong{color:var(--pink);font-size:clamp(1.8rem,3.4vw,2.6rem);letter-spacing:-.03em}
+.impact-total em{font-style:normal;font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid #ffffff44;padding:3px 9px;border-radius:99px;color:#c9c3da}
+.impact-counter small{display:block;max-width:560px;color:#9d97b3;line-height:1.5}
+@media(max-width:720px){.impact-counter{padding:56px 25px}.impact-figures i{display:none}.impact-figures{flex-direction:column;align-items:flex-start}}

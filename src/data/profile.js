@@ -26,3 +26,8 @@ export const metrics = {
     { platform: "YouTube", value: "1.61K", label: { es: "suscriptores", en: "subscribers" } },
   ],
 };
+
+// Estimación propia (content/impacto/impacto-estimacion.csv, 87 filas). Reglas: evento pequeño 50, charla 70,
+// evento grande 200, Platzi Conf 500, AWSome 350, bootcamp de Twitch 1,500, cursos Platzi 60K en total;
+// podcasts/lives sin dato en 70. Seguidores = suma de los 5 canales de socialChannels (mediaKit.js).
+export const impact = { people: 67340, followers: 214424, total: 281800 };

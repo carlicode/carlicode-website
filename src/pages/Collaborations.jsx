@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowUpRight, Check, Download, Mail, Play, Send } from "lucide-react";
 import Reveal from "../components/Reveal";
 import Seo from "../components/Seo";
+import ImpactCounter from "../components/ImpactCounter";
 import { useLanguage } from "../components/LanguageProvider";
 import { brands, cases, mediaKitPdf, packages, services, socialChannels } from "../data/mediaKit";
 import { brand, contact } from "../data/profile";
@@ -66,6 +67,8 @@ export default function Collaborations() {
     <section className="media-section media-about"><Reveal><p className="eyebrow"><span /> {t.about}</p><h2>{t.aboutTitle}</h2></Reveal><Reveal delay={120}><div><p>{t.aboutOne}</p><p>{t.aboutTwo}</p></div></Reveal></section>
 
     <section className="media-section social-section"><Reveal className="section-label"><p className="eyebrow"><span /> {t.socialLabel}</p><h2>{t.socialTitle}</h2></Reveal><div className="social-grid">{socialChannels.map((channel, index) => <Reveal delay={index * 80} key={channel.name}><a className={`social-card ${channel.accent}`} href={channel.href} target="_blank" rel="noreferrer"><span>{channel.name}</span><strong>{channel.followers ?? t.noCount}</strong><small>{channel.detail[language]}</small><p>{channel.handle} <ArrowUpRight size={16} /></p></a></Reveal>)}</div></section>
+
+    <ImpactCounter />
 
     <section className="media-section cases-section"><Reveal className="rates-heading"><div><p className="eyebrow"><span /> {t.casesLabel}</p><h2>{t.casesTitle}</h2></div><p>{t.casesText}</p></Reveal><div className="case-grid">{cases.map((item, index) => <Reveal delay={index * 70} key={item.tiktokId}><TikTokCase item={item} language={language} t={t} /></Reveal>)}</div></section>
 
