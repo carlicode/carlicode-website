@@ -1,6 +1,6 @@
 export const socialChannels = [
-  { name: "TikTok", handle: "@carli.code", followers: "151.3K", detail: "1.8M profile likes", href: "https://www.tiktok.com/@carli.code", accent: "pink" },
-  { name: "Instagram", handle: "@carli.code", followers: "41.3K", detail: "469 posts", href: "https://www.instagram.com/carli.code/", accent: "orange" },
+  { name: "TikTok", handle: "@carli.code", followers: "163.9K", detail: "1.8M profile likes", href: "https://www.tiktok.com/@carli.code", accent: "pink" },
+  { name: "Instagram", handle: "@carli.code", followers: "42.2K", detail: "469 posts", href: "https://www.instagram.com/carli.code/", accent: "orange" },
   { name: "Twitch", handle: "carlicode", followers: "3,092", detail: "followers", href: "https://www.twitch.tv/carlicode", accent: "violet" },
   { name: "YouTube", handle: "@CarliCode", followers: "1.7K", detail: "followers", href: "https://www.youtube.com/@CarliCode", accent: "red" },
 ];

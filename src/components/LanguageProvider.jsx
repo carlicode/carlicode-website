@@ -4,9 +4,11 @@ const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
+    // ?lang=en permite compartir el link en inglés (por ejemplo, el media kit a una marca).
+    const fromUrl = new URLSearchParams(window.location.search).get("lang");
+    if (fromUrl === "es" || fromUrl === "en") return fromUrl;
     const saved = window.localStorage.getItem("carli-language");
-    if (saved === "es" || saved === "en") return saved;
-    return window.location.pathname.includes("collaboration") ? "en" : "es";
+    return saved === "en" ? "en" : "es";
   });
 
   useEffect(() => {

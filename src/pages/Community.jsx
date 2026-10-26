@@ -1,5 +1,4 @@
 import { useMemo, useState } from "react";
-import { Helmet } from "react-helmet-async";
 import { ArrowUpRight, CalendarDays, ChevronLeft, ChevronRight, Heart, Sparkles, UsersRound } from "lucide-react";
 import Reveal from "../components/Reveal";
 import { useLanguage } from "../components/LanguageProvider";
@@ -62,7 +61,7 @@ export default function Community() {
   const changeCategory = (next) => { setCategory(next); setPage(1); };
 
   return <main className="community-page">
-    <Helmet><title>Community — Carli Code</title><meta name="description" content="Carli Code’s community work, ambassador roles, events and gallery." /></Helmet>
+    <><title>Community — Carli Code</title><meta name="description" content="Carli Code’s community work, ambassador roles, events and gallery." /></>
     <section className="community-hero"><div className="community-grid" /><Reveal><p className="eyebrow"><span /> {copy.heroLabel}</p><h1>{copy.hero}</h1><p>{copy.heroText}</p><a className="button button-primary" href="#events">{copy.explore} <ArrowUpRight size={18} /></a></Reveal><div className="community-orbit"><span>LEARN</span><span>BUILD</span><span>SHARE</span><span>BELONG</span></div></section>
 
     <section className="community-section community-intro"><Reveal><p className="eyebrow"><span /> {copy.introLabel}</p><h2>{copy.intro}</h2></Reveal><Reveal delay={120}><p>{copy.introText}</p></Reveal></section>
@@ -73,6 +72,6 @@ export default function Community() {
 
     <section id="events" className="community-section events-section"><Reveal className="events-heading"><p className="eyebrow"><span /> {copy.archiveLabel}</p><h2>{copy.archive}</h2><p>{copy.archiveText}</p></Reveal><div className="event-filters" aria-label="Filter events">{["All", "Conference", "Talk", "Workshop", "Panel", "Mentorship", "Community meetup"].map((item) => <button className={category === item ? "active" : ""} onClick={() => changeCategory(item)} key={item}>{copy.filters[item]}</button>)}</div><div className="event-grid">{visibleEvents.map((event, index) => <Reveal delay={index * 65} key={event.title}><article className="event-card"><div><span>{copy.filters[event.type]}</span><time><CalendarDays size={15} /> {event.date}</time></div><h3>{event.title}</h3><p>{event.text}</p>{event.href ? <a href={event.href} target="_blank" rel="noreferrer">{copy.eventDetail} <ArrowUpRight size={16} /></a> : <span className="event-note">{copy.eventNote}</span>}</article></Reveal>)}</div><nav className="community-pagination" aria-label="Event archive pages"><button onClick={() => setPage((current) => Math.max(1, current - 1))} disabled={page === 1} aria-label="Previous event page"><ChevronLeft size={18} /></button>{Array.from({ length: totalPages }, (_, index) => <button onClick={() => setPage(index + 1)} className={page === index + 1 ? "active" : ""} aria-current={page === index + 1 ? "page" : undefined} key={index}>{String(index + 1).padStart(2, "0")}</button>)}<button onClick={() => setPage((current) => Math.min(totalPages, current + 1))} disabled={page === totalPages} aria-label="Next event page"><ChevronRight size={18} /></button></nav></section>
 
-    <section className="community-cta"><Reveal><Heart size={25} fill="currentColor" /><p className="eyebrow"><span /> {copy.together}</p><h2>{copy.cta}</h2><a className="button button-primary" href="/collaborations">{copy.talk} <ArrowUpRight size={18} /></a></Reveal><UsersRound className="community-cta-icon" size={205} /></section>
+    <section className="community-cta"><Reveal><Heart size={25} fill="currentColor" /><p className="eyebrow"><span /> {copy.together}</p><h2>{copy.cta}</h2><a className="button button-primary" href="/media-kit">{copy.talk} <ArrowUpRight size={18} /></a></Reveal><UsersRound className="community-cta-icon" size={205} /></section>
   </main>;
 }
