@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:infra": "node --test infra/aws/cloudfront/*.test.mjs",
+    "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {
     "embla-carousel-react": "^8.6.0",
