@@ -7,6 +7,7 @@ Contexto para el siguiente agente. Lee esto completo antes de tocar código.
 - Trabaja por **sprints numerados, un PR por sprint**. Ejecuta SOLO el sprint pedido y detente al terminar.
 - Al cerrar, pega la salida real de `npm run lint`, `npm run test:infra` y `npm run build`, y di qué falló o qué no se pudo verificar.
 - Reglas de contenido: nunca "influencer"; **sin teléfono** (solo `carli.f.roman@gmail.com` y `/contacto`); comunidad = **#CarliCodeArmy**; no inventar métricas, fechas ni resultados; tarifas siempre públicas; máximo ~5 TikToks embebidos; sitio ES/EN (`?lang=es|en` + toggle), CV en inglés.
+- **Nunca mencionar la ciudad donde vive** (ni Santa Cruz ni Cochabamba como residencia). Los nombres de eventos y sedes sí se quedan.
 - No mergear sin que ella lo pida.
 
 ## Stack y comandos
@@ -33,6 +34,6 @@ Cuenta 447924811196, distribución `E1LGUCJ0AW0ERL`, bucket `carlicode.com` (sig
 - **Contador "Mi impacto en LATAM"**: datos en `content/impacto/` (xlsx + csv por aporte). Reglas de Carla: evento pequeño 50, charla 70, evento grande 200, Platzi Conf 500, AWSome 350, bootcamp Python en Twitch (pandemia) 1,500, cursos Platzi 60K en total; podcasts/lives sin dato estimados en 70. Resultado: ~67,340 personas en vivo/cursos + 214,424 seguidores ≈ 281,800. Mostrar las dos cifras por separado + total con la etiqueta "estimado". Falta que Carla diga si va en inicio, media kit o ambos.
 - **Sprint 4 Museo**: `/museo` con línea de tiempo por año (sin fecha al final), salas (Escenarios, Contenido, Comunidad, Mentorías, Educación, Código, Vida), filtro `?sala=`, fichas por pieza. Comunidad/embajadurías viven aquí. Hitos iniciales a agregar: 2013 entra a la universidad, 2016 curso de IA con Eduardo Di Santi, 2016 ACM-ICPC 3.er lugar.
 - **Sprint 5 Carga**: los 85 aportes de `content/aportes/aportes.csv` (A001–A085, imágenes `img/ID.jpg`, `img/ID-2.jpg`…) + A086 bootcamp Twitch + A087 video YouTube "Crea tu primer Agente de IA en 2 líneas de código con AWS Strands Agents" (https://www.youtube.com/watch?v=msMoNLbroF4). Optimizar fotos a WebP. Datos faltantes quedan marcados, no inventados.
-- **Sprint 6 CV** (`/cv`, inglés, Carla Florida, sin teléfono, Santa Cruz no Cochabamba): repos públicos video-concepto-tech, experimento-lean-aws (BugDojo), aif-c01-study-lab, chroma-to-opensearch, andina-agent-demo, wabi-sabi (AI-Study-Squad-Tools está vacío: no mostrar); repos privados "pide acceso por correo".
+- **Sprint 6 CV** (`/cv`, inglés, Carla Florida, sin teléfono): repos públicos video-concepto-tech, experimento-lean-aws (BugDojo), aif-c01-study-lab, chroma-to-opensearch, andina-agent-demo, wabi-sabi (AI-Study-Squad-Tools está vacío: no mostrar); repos privados "pide acceso por correo".
 - **Sprint 7 Inglés**: revisar que todo el sitio de marca tenga ES/EN completo.
 - Warning de lint preexistente: Fast Refresh en `LanguageProvider.jsx`.

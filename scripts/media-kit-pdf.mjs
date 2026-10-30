@@ -9,8 +9,8 @@ import { brand, contact } from "../src/data/profile.js";
 
 const chrome = process.env.CHROME || "google-chrome";
 const text = {
-  es: { title: "Media kit 2026", lede: "Creo contenido enseñando sobre tecnología y transformo conceptos complejos en lenguaje natural: inteligencia artificial, AWS, Python y automatización. Desde Santa Cruz, Bolivia, para toda Latinoamérica.", reach: "Alcance", cases: "Casos con marcas", brands: "Marcas que confiaron", rates: "Tarifas (USD)", packages: "Paquetes", contact: "Contacto", profile: "perfil" },
-  en: { title: "Media kit 2026", lede: "I create content that teaches technology and I turn complex concepts into plain language: artificial intelligence, AWS, Python and automation. From Santa Cruz, Bolivia, for all of Latin America.", reach: "Reach", cases: "Brand case studies", brands: "Brands that trusted me", rates: "Rates (USD)", packages: "Packages", contact: "Contact", profile: "profile" },
+  es: { title: "Media kit 2026", lede: "Creo contenido enseñando sobre tecnología y transformo conceptos complejos en lenguaje natural: inteligencia artificial, AWS, Python y automatización. Desde Bolivia, para toda Latinoamérica.", reach: "Alcance", cases: "Casos con marcas", brands: "Marcas que confiaron", rates: "Tarifas (USD)", packages: "Paquetes", contact: "Contacto", profile: "perfil" },
+  en: { title: "Media kit 2026", lede: "I create content that teaches technology and I turn complex concepts into plain language: artificial intelligence, AWS, Python and automation. From Bolivia, for all of Latin America.", reach: "Reach", cases: "Brand case studies", brands: "Brands that trusted me", rates: "Rates (USD)", packages: "Packages", contact: "Contact", profile: "profile" },
 };
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 

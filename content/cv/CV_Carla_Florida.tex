@@ -1,0 +1,143 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[left=1.4cm,right=1.4cm,top=0.9cm,bottom=0.8cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+% BLACK & WHITE ONLY
+\definecolor{accent}{HTML}{000000}
+\definecolor{muted}{HTML}{000000}
+
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black, pdftitle={Carla Florida - CV}, pdfauthor={Carla Florida}}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.1em, label={\textbullet}}
+
+% SECTION: bold uppercase title + thin rule
+\titleformat{\section}{\large\bfseries}{}{0em}{\MakeUppercase}[{\titlerule[0.6pt]}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+% \job{Company}{Role}{Dates}{One-line context}
+\newcommand{\job}[4]{%
+  {\bfseries #1} \,\textbar\, {\itshape #2} \hfill {\small #3}\\
+  {\small\itshape #4}\vspace{-5pt}}
+
+% \lnk{icon}{url}{text}
+\newcommand{\lnk}[3]{#1\,\href{#2}{\underline{#3}}}
+
+\begin{document}
+\pagestyle{empty}
+
+% ================= HEADER =================
+\begin{center}
+{\fontsize{26}{28}\selectfont\bfseries CARLA \textmd{FLORIDA}}\\[3pt]
+{\large\itshape AI Engineer \textbar\ Agentic Systems, Automation \& Machine Learning}\\[6pt]
+\small
+\lnk{\faEnvelope}{mailto:carli.f.roman@gmail.com}{carli.f.roman@gmail.com} \quad
+\faMapMarker*\,Bolivia \textbullet\ Remote \quad
+\lnk{\faLinkedin}{https://www.linkedin.com/in/carlicode/}{linkedin.com/in/carlicode} \quad
+\lnk{\faGithub}{https://github.com/carlicode}{github.com/carlicode}\\[2pt]
+\lnk{\faChalkboardTeacher}{https://platzi.com/profes/carlicode/}{Platzi courses} \quad
+\lnk{\faGoogle}{https://www.cloudskillsboost.google/public_profiles/14e01263-8531-4600-88a2-320eea1f6c27}{Cloud Skills Boost} \quad
+\lnk{\faCertificate}{https://www.credly.com/users/carli-code}{Credly} \quad
+\lnk{\faCode}{https://g.dev/carlicode}{g.dev/carlicode} \quad
+\lnk{\faInstagram}{https://www.instagram.com/carli.code/}{@carli.code}
+\normalsize
+\end{center}
+\vspace{-8pt}
+
+% ================= SUMMARY =================
+AI engineer with 6+ years across conversational AI research, machine learning, data engineering and,
+more recently, LLM agents and business automation in production. I build end to end: I understand the
+problem, design the architecture, write the code, deploy it and keep it running. I've led dev teams
+and worked with leadership and non-technical teams. I'm also an educator and speaker:
+AWS Community Builder, Platzi instructor and speaker at PyCon US 2025.
+
+% ================= EXPERIENCE =================
+\section*{Experience}
+
+\job{Beezero}{AI Engineer / Tech Lead}{Jul 2025 -- Present}{AI-driven logistics systems for B2B mobility and operations.}
+\begin{itemize}
+  \item Lead the development team and the technical direction of the core products.
+  \item Built \textbf{Beezy}, a B2B scheduling system for ride coordination.
+  \item Built \textbf{BeeTracked}, a real-time tracking platform, shipped in phases with production monitoring.
+\end{itemize}
+\vspace{1pt}
+
+\job{NowBit}{AI \& Automation Engineer}{Feb 2025 -- Jul 2025}{AI-powered automation for growth and operations.}
+\begin{itemize}
+  \item Built and validated MVPs using AI agents.
+  \item Designed \textbf{n8n} workflows (webhooks, retries, error handling) and trained internal teams to use them.
+\end{itemize}
+\vspace{1pt}
+
+\job{Dapta}{Head of AI}{Jan 2024 -- Mar 2024}{Multi-agent systems and generative AI solutions.}
+\begin{itemize}
+  \item Built multi-agent systems for content generation and AI-powered blog platforms.
+  \item Implemented NLP and RAG solutions; presented the project to the Government of Colombia.
+  \item Automated CRM workflows in \textbf{HubSpot} and built LinkedIn automation tools for lead generation.
+\end{itemize}
+\vspace{1pt}
+
+{\bfseries Earlier experience}\vspace{-5pt}
+\begin{itemize}
+  \item \textbf{ICI UPB}, Artificial Intelligence Researcher \hfill {\small Oct 2020 -- Jun 2023}\\
+        Conversational AI with deep learning and \textbf{Rasa}; presented in the USA, Switzerland and Uruguay.
+  \item \textbf{Trascender Global}, ML Engineer (Freelance) \hfill {\small 2021 -- 2022}\\
+        Computer vision (OpenCV, TensorFlow) and ETL pipelines.
+\end{itemize}
+
+% ================= PROJECTS =================
+\section*{Selected Projects}
+\begin{itemize}
+  \item \textbf{WhatsApp AI Sales Agent}: LLM agent that qualifies leads from Facebook Ads and sells course enrollments over WhatsApp, with QR payments approved by a human. OpenAI + AWS.
+  \item \textbf{AWS Builder articles}: tested, repo-backed comparisons of AI agent frameworks (Strands Agents and others).
+\end{itemize}
+
+% ================= SKILLS =================
+\section*{Skills}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{3.7cm}X@{}}
+AI \& Agents        & LLMs (OpenAI, Claude, Gemini), LangChain, Strands Agents, RAG, multi-agent orchestration, prompt engineering, fine-tuning \\
+Machine Learning    & TensorFlow, PyTorch, Keras, computer vision (OpenCV), NLP, conversational AI (Rasa), training, evaluation and optimization \\
+Automation          & n8n, webhooks, HubSpot, REST APIs, error handling, retries, branching logic \\
+Data                & Apache Spark, PySpark, ETL, large-scale data pipelines, SQL \\
+Programming         & Python \\
+Cloud \& DevOps     & AWS, Google Cloud, containerization \\
+Tools               & Claude Code, Git/GitHub, technical documentation \\
+\end{tabularx}
+
+% ================= EDUCATION =================
+\section*{Education}
+\textbf{Master's in AI for Software Development} \hfill {\small\itshape In progress}\\
+\textbf{B.Sc. in Systems Engineering}, Universidad Mayor de San Simón
+
+% ================= COMMUNITY =================
+\section*{Community, Speaking \& Awards}
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+\begin{itemize}
+  \item AWS Community Builder (2025)
+  \item AWS User Group Leader
+  \item Organizer, AWSome Women Summit LATAM
+  \item Women Techmakers Ambassador (2024)
+\end{itemize}
+&
+\begin{itemize}
+  \item Speaker, PyCon US 2025
+  \item Speaker, Platzi Conf Colombia 2024
+  \item TEDx Univalle (2023)
+  \item ACM-ICPC Bolivia (2016), 3rd place
+\end{itemize}
+\end{tabularx}
+
+\section*{Languages \& Interests}
+Spanish (native) \textbullet\ English (professional) \quad \textbar \quad
+Tech content creator (\href{https://www.instagram.com/carli.code/}{\underline{@carli.code}}) \textbullet\ Archery
+
+\end{document}

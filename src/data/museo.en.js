@@ -79,7 +79,6 @@ export const texts = {
   A020: "A panel with other leading women from the region.",
   A025: "Why Python is in such high demand, and resources to get started.",
   A031: "The science behind artificial intelligence: algorithms, data and code.",
-  A034: "Systems engineer and content creator in Cochabamba.",
   A041: "An inclusive game-building event.",
   A044: "In-person Python workshop for girls starting their path in technology.",
   A050: "Launch event of the PyLadies community in Santa Cruz.",
