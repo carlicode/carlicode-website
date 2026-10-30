@@ -29,5 +29,5 @@ export const metrics = {
 
 // Estimación propia (content/impacto/impacto-estimacion.csv, 95 filas). Reglas: evento pequeño 50, charla 70,
 // evento grande 200, Platzi Conf 500, AWSome 350, bootcamp de Twitch 1,500, cursos Platzi 60K en total;
-// podcasts/lives sin dato en 70; donde Carla dio su propia cifra (A004, A005, A019, A021, A026, A077, A088, A089) se usa esa. El sitio muestra solo `total`. Seguidores = suma de los 5 canales de socialChannels (mediaKit.js).
-export const impact = { people: 74260, followers: 214424, total: 288700 };
+// podcasts/lives sin dato en 70; donde Carla dio su propia cifra (A004, A005, A019, A021, A026, A077, A079, A088, A089) se usa esa. El sitio muestra solo `total`. Seguidores = suma de los 5 canales de socialChannels (mediaKit.js).
+export const impact = { people: 75010, followers: 214424, total: 289400 };
