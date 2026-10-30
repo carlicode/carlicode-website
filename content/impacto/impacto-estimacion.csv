@@ -3,7 +3,7 @@ A001,IA en startups: de asistentes que responden hasta agentes que ejecutan,The 
 A002,Panel del Día Internacional de la Mujer 2025 (#8M),International Women's Day 2025,Charlas y paneles,2025-03-14,Charla (70),70,
 A003,IA para no programadores,IWD Future Makers Cochabamba 2025,Charlas y paneles,2025-04-05,Charla (70),70,
 A004,Redefine Possible Together: IA accesible para todos,Road to #IWD2025 · Redefine Possible Together,Charlas y paneles,2025-04-16,Estimado de Carla (50),50,Evento en línea para La Paz.
-A005,AWS Community Day Bolivia 2025,AWS Community Day Bolivia,Charlas y paneles,2025,Estimado de Carla (100),100,"Unas 100 personas en el evento, 50 en su taller (ya incluidas)."
+A005,AWS Community Day Bolivia 2025,AWS Community Day Bolivia,Charlas y paneles,2025,Estimado de Carla (150),150,Unas 150 personas en total entre su taller (≈50) y el evento (≈100).
 A006,Un título no te define en tech,Charla tech,Charlas y paneles,2024-10-26,Charla (70),70,
 A007,El futuro de Python como lenguaje,PlatziConf,Charlas y paneles,2024-09-07,Platzi Conf (500),500,
 A008,Nerdearla Chile,Nerdearla,Charlas y paneles,2024-04,Evento grande (200),200,
@@ -19,7 +19,7 @@ A017,Introducción a ChatGPT y Whisper APIs,,Charlas y paneles,2023-04-01,Estima
 A018,Chatbots con Inteligencia Artificial,MLSA Latam · Microsoft User Group Bolivia,Charlas y paneles,2022-04-09,Charla (70),70,
 A019,Futuro de la IA,Transmisión en vivo de la comunidad,Charlas y paneles,2022-09-19,Estimado de Carla (400),400,Podcast en vivo por YouTube.
 A020,Tecnología digital: una oportunidad para tu futuro,Foro de Tecnología Mujeres (5.ª versión),Charlas y paneles,,Charla (70),70,
-A021,Creación de nuestro primer agente virtual con RAG y modelos fundacionales,Evento de comunidad,Charlas y paneles,2026-03-08,Estimado de Carla (100),100,Mismo evento que el panel A089 en UTEPSA (≈100 personas en total; se cuenta una sola vez). La charla tuvo ≈60.
+A021,Creación de nuestro primer agente virtual con RAG y modelos fundacionales,Evento de comunidad,Charlas y paneles,2026-03-08,Estimado de Carla (100),100,UTEPSA: 200 en total entre la charla (esta fila) y el panel A089; el reparto 100 + 100 es una convención.
 A022,Inteligencia Artificial,2do Webinar SucreTechnology · JCI Líderes Sucre,Charlas y paneles,2021-08-18,Estimado como charla (70),70,Estimación: sin dato real de vistas.
 A023,Speaker en la celebración del Día Internacional de la Mujer y la Niña en Ciencia y Tecnología,Becas Grace Hopper,Charlas y paneles,2021-02-12,Charla (70),70,
 A024,"Charla al estilo MLSA: proceso en MLSA, proyectos en Python e IA",MLSA Latam · InstaLive,Charlas y paneles,,Estimado como charla (70),70,Estimación: sin dato real de vistas.
@@ -77,7 +77,7 @@ A075,wabi-sabi,GitHub,Código y proyectos,,No suma asistentes,0,Código: no suma
 A076,BugDojo: experimento lean en AWS,AWS Student Community Day Santa Cruz 2026,Charlas y paneles,2026-10-24,Evento grande (200),200,
 A077,Charla en AgenTICs Bootcamp 2026,"AgenTICs Bootcamp 2026 · GDG Santa Cruz, Women Techmakers Santa Cruz, UPLABS AI",Charlas y paneles,2026-09-12,Estimado de Carla (300),300,
 A078,Serverless en un fin de semana: la app que armé para un evento de 900 personas,Nerdearla Argentina 2026 · Escenario AWS,Charlas y paneles,2026-09-24,Evento grande (200),200,
-A079,Participación en el stand de AWS,Nerdearla Argentina 2026,Comunidad y reconocimientos,2026-09,No suma asistentes,0,Ya se cuenta en A078 (misma Nerdearla).
+A079,Participación en el stand de AWS,Nerdearla Argentina 2026,Comunidad y reconocimientos,2026-09,Evento pequeño (50),50,"Participación en el stand de AWS; cifra por regla, sin dato real. ¿La ajustas?"
 A080,Zero to Hero: Despliegue de MVPs Hyper-Fast con Kiro y Python,Build with AI Hackathon 2026 · GDG Santa Cruz y Women Techmakers Santa Cruz,Talleres y cursos,2026-05-29,Evento pequeño (50),50,
 A081,Inteligencia artificial con AWS,AWS Cloud on Campus · AWS User Group Santa Cruz de la Sierra,Charlas y paneles,2026-05-11,Charla (70),70,
 A082,AWS Cloud Foundations Workshop,Cloud Queens | Break the Pattern · AWS User Group Santa Cruz de la Sierra,Talleres y cursos,2026-04-18,Evento pequeño (50),50,
@@ -86,3 +86,11 @@ A084,Lightning talk técnica · Relanzamiento PyLadies Santiago,PyLadies Santiag
 A085,Speaker en Bolivia Blockchain Conference 2025,Bolivia Blockchain Conference 2025,Charlas y paneles,2025-11-13,Evento grande (200),200,
 A086,Bootcamp de Python en Twitch,Twitch · carlicode,Talleres y cursos,,Bootcamp Twitch (1500 inscritos),1500,"Tres ediciones (2020, 2022 y 2024) de 500 asistentes cada una."
 A087,Crea tu primer Agente de IA en 2 líneas de código con AWS Strands Agents,YouTube · @CarliCode,Contenido,,No suma asistentes,0,Nuevo: https://www.youtube.com/watch?v=msMoNLbroF4. ¿Cuántas vistas tiene?
+A088,AI Gaming Latinoamérica,Microsoft Learn Student Ambassadors · Hackathon,Comunidad y reconocimientos,2021,Estimado de Carla (1100 visualizaciones),1100,"Visualizaciones del video, no asistentes presenciales."
+A089,Panel en UTEPSA · International Women’s Day 2025,Redefine Possible · International Women’s Day 2025 · Women Techmakers,Charlas y paneles,2025,Estimado de Carla (100),100,UTEPSA: 200 en total entre la charla A021 y este panel.
+A090,Reunión de socias del IME 2023,Reunión socias IME 2023,Comunidad y reconocimientos,2023,Evento pequeño (50),50,"Reunión de socias; cifra por regla, sin dato real."
+A091,UXCorp Live: 4 horas de diseño y desarrollo en vivo,UXCorp · Twitch,Charlas y paneles,2024-09-20,Estimado como charla (70),70,Estimación: sin dato real de vistas.
+A092,Sácale el jugo a Python con Colaboratory,Cumbre Virtual · Comunidades Microsoft del Ecuador,Charlas y paneles,2020-12-12,Charla (70),70,
+A093,Jurado del Call for Papers de Nerdearla,Nerdearla,Comunidad y reconocimientos,2024,No suma asistentes,0,Aporte a la comunidad (jurado del Call for Papers).
+A094,¿Comunidad PyLadies?,PyLadies Cochabamba · Meetup #QuedateEnCasa.py,Charlas y paneles,2020-04-01,Estimado como charla (70),70,Estimación: sin dato real de vistas.
+A095,"La tesis, TensorFlow, embeddings y más",DevFest Cochabamba · Google Developer Groups Cochabamba,Charlas y paneles,2024,Charla (70),70,
