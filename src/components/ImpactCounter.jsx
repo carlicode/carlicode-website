@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import { useLanguage } from "./LanguageProvider";
+import { CountUp } from "./motion";
 import { impact } from "../data/profile";
 
 const copy = {
@@ -13,7 +14,7 @@ export default function ImpactCounter() {
   return <section className="impact-counter" aria-label={t.label}>
     <Reveal>
       <p className="eyebrow"><span /> {t.label}</p>
-      <p className="impact-total"><strong>≈ {impact.total.toLocaleString("en-US")}</strong><span>{t.total}</span><em>{t.estimate}</em></p>
+      <p className="impact-total"><strong>≈ <CountUp to={impact.total} duration={1900} /></strong><span>{t.total}</span><em>{t.estimate}</em></p>
       <small>{t.note}</small>
     </Reveal>
   </section>;
