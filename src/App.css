@@ -145,4 +145,4 @@
 /* Contador de impacto con una sola cifra */
 .impact-counter .impact-total{margin:26px 0 14px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
 .impact-counter .impact-total strong{font-size:clamp(3rem,9vw,6.4rem);line-height:1;letter-spacing:-.045em;color:var(--pink)}
-.impact-counter .impact-total span{font-size:clamp(1.1rem,2.4vw,1.6rem)}
+.impact-counter .impact-total>span{font-size:clamp(1.1rem,2.4vw,1.6rem)}
