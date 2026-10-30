@@ -7,7 +7,7 @@
   "event": "The Spark Networking Sessions · Incubatec y Acelaratec (Solydes + UPB) con BCP",
   "role": "Panelista",
   "place": "Santa Cruz de la Sierra · Casa Alfonsina",
-  "text": null,
+  "text": "Panel de The Spark Networking Sessions sobre cómo la IA pasa de responder preguntas a ejecutar tareas: de asistentes a agentes autónomos, tendencias y herramientas clave, y casos reales para escalar una startup.",
   "metric": null,
   "href": null,
   "images": [
@@ -50,12 +50,12 @@
   "id": "A004",
   "sala": "escenarios",
   "date": "2025-04-16",
-  "title": "Redefine Possible Together: IA accesible para todos",
+  "title": "AI y automatizaciones: el trabajo del futuro es hoy",
   "event": "Road to #IWD2025 · Redefine Possible Together",
   "role": "Speaker",
   "place": "En línea",
   "text": "Charla en línea sobre cómo la IA y las automatizaciones ya están transformando la forma de trabajar y estudiar. Organizan Women+ in Firebase y Women Techmakers La Paz y El Alto.",
-  "metric": null,
+  "metric": "Unas 50 personas (estimado)",
   "href": null,
   "images": [
    "A004"
@@ -65,13 +65,13 @@
  {
   "id": "A005",
   "sala": "escenarios",
-  "date": "2025",
+  "date": "2025-09-20",
   "title": "AWS Community Day Bolivia 2025",
   "event": "AWS Community Day Bolivia",
   "role": "Speaker",
   "place": "Bolivia",
-  "text": null,
-  "metric": null,
+  "text": "Taller dentro del AWS Community Day Bolivia, el 20 de septiembre de 2025.",
+  "metric": "Unas 50 personas en el taller y unas 100 en el evento (estimado)",
   "href": "https://www.instagram.com/p/DOXE-2cEW7G/",
   "images": [
    "A005"
@@ -159,20 +159,6 @@
   "youtubeId": "5L-8NO-_GZw"
  },
  {
-  "id": "A011",
-  "sala": "escenarios",
-  "date": null,
-  "title": "Rompiendo el molde con IA",
-  "event": "TEDx",
-  "role": "Speaker",
-  "place": null,
-  "text": null,
-  "metric": null,
-  "href": "https://www.youtube.com/watch?v=9Q-G55HgvHE",
-  "images": [],
-  "youtubeId": "9Q-G55HgvHE"
- },
- {
   "id": "A012",
   "sala": "escenarios",
   "date": null,
@@ -204,17 +190,17 @@
   "id": "A014",
   "sala": "escenarios",
   "date": "2023-11-24",
-  "title": "La IA y su dualidad",
+  "title": "Rompiendo el molde con IA",
   "event": "TEDx Univalle Cochabamba",
   "role": "Speaker",
   "place": "Univalle, Av. América",
   "text": "Charla sobre inteligencia artificial y su dualidad.",
   "metric": null,
-  "href": "https://www.instagram.com/p/CzwAOxrIYrq/",
+  "href": "https://www.youtube.com/watch?v=9Q-G55HgvHE",
   "images": [
    "A014"
   ],
-  "youtubeId": null
+  "youtubeId": "9Q-G55HgvHE"
  },
  {
   "id": "A015",
@@ -283,14 +269,14 @@
  },
  {
   "id": "A019",
-  "sala": "escenarios",
-  "date": "2022-09-19",
+  "sala": "contenido",
+  "date": "2022-09-21",
   "title": "Futuro de la IA",
   "event": "Transmisión en vivo de la comunidad",
   "role": "Invitada",
   "place": null,
-  "text": "Transmisión en vivo por YouTube.",
-  "metric": null,
+  "text": "Podcast en vivo por YouTube.",
+  "metric": "Unas 400 personas (estimado)",
   "href": null,
   "images": [
    "A019"
@@ -316,13 +302,13 @@
  {
   "id": "A021",
   "sala": "escenarios",
-  "date": "2026-03-08",
+  "date": "2025",
   "title": "Creación de nuestro primer agente virtual con RAG y modelos fundacionales",
-  "event": "Redefine Possible · International Women’s Day · Women Techmakers",
+  "event": "Redefine Possible · International Women’s Day 2025 · Women Techmakers",
   "role": "Speaker",
-  "place": null,
-  "text": "Charla de International Women’s Day para crear un primer agente virtual con RAG y modelos fundacionales.",
-  "metric": null,
+  "place": "UTEPSA, Santa Cruz de la Sierra",
+  "text": "Charla presencial de International Women’s Day para crear un primer agente virtual con RAG y modelos fundacionales.",
+  "metric": "Unas 60 personas (estimado)",
   "href": null,
   "images": [
    "A021"
@@ -380,7 +366,7 @@
  {
   "id": "A025",
   "sala": "contenido",
-  "date": null,
+  "date": "2021",
   "title": "Por qué aprender Python",
   "event": "Declarando Variables",
   "role": "Invitada",
@@ -401,8 +387,8 @@
   "event": "Equilibrium Podcast",
   "role": "Entrevistada",
   "place": null,
-  "text": null,
-  "metric": null,
+  "text": "Entrevista en el podcast Equilibrium, disponible en Spotify.",
+  "metric": "Unas 5.000 personas (estimado)",
   "href": "https://www.instagram.com/p/Crx-q6puFZx/",
   "images": [
    "A026"
@@ -747,7 +733,7 @@
  {
   "id": "A050",
   "sala": "comunidad",
-  "date": null,
+  "date": "2026-10",
   "title": "Lanzamiento de PyLadies Santa Cruz",
   "event": "PyLadies Santa Cruz",
   "role": "Lead",
@@ -1107,7 +1093,7 @@
   "event": "AWS Student Community Day Santa Cruz 2026",
   "role": "Speaker",
   "place": "UPB, Santa Cruz de la Sierra",
-  "text": null,
+  "text": "Charla en el AWS Student Community Day sobre BugDojo: cómo construir un MVP serverless en AWS (CloudFront, S3, API Gateway, Lambda y DynamoDB) y entender cuánto cuesta escalarlo según el número de usuarios. Aprendizaje clave: serverless no elimina la necesidad de diseñar pensando en la escala.",
   "metric": null,
   "href": "https://github.com/carlicode/experimento-lean-aws",
   "images": [
@@ -1124,8 +1110,8 @@
   "event": "AgenTICs Bootcamp 2026 · GDG Santa Cruz, Women Techmakers Santa Cruz, UPLABS AI",
   "role": "Speaker",
   "place": "Centro de convenciones UPSA, Santa Cruz de la Sierra",
-  "text": null,
-  "metric": null,
+  "text": "Charla sobre cómo aprovechar la IA para transformar un negocio. Sábado 12 de septiembre, 8:00 h, Centro de Convenciones UPSA. Organizan GDG Santa Cruz, la UPSA y Women Techmakers Santa Cruz.",
+  "metric": "Unas 300 personas (estimado)",
   "href": null,
   "images": [
    "A077"
@@ -1263,15 +1249,19 @@
  {
   "id": "A086",
   "sala": "educacion",
-  "date": null,
-  "title": "Bootcamp de Python en Twitch",
+  "date": "2024-02-26",
+  "title": "Python desde cero · Taller gratuito por Twitch",
   "event": "Twitch · carlicode",
-  "role": null,
+  "role": "Facilitadora",
   "place": null,
-  "text": "Bootcamp de Python en Twitch durante la pandemia.",
-  "metric": "1,500 personas inscritas",
-  "href": null,
-  "images": [],
+  "text": "Taller gratuito por Twitch: introducción a la programación, herramientas, tips y aplicaciones de Python. Duró dos semanas, con inicio el 26 de febrero, a las 21:00 (Bolivia).",
+  "metric": "3 ediciones de 500 asistentes (1.500 en total)",
+  "href": "https://www.twitch.tv/carlicode",
+  "images": [
+   "A086",
+   "A086-2",
+   "A086-3"
+  ],
   "youtubeId": null
  },
  {
@@ -1291,29 +1281,29 @@
  {
   "id": "A088",
   "sala": "comunidad",
-  "date": null,
+  "date": "2021",
   "title": "AI Gaming Latinoamérica",
   "event": "Microsoft Learn Student Ambassadors · Hackathon",
   "role": "Participante",
   "place": null,
   "text": "Transmisión en vivo del hackathon AI Gaming Latinoamérica de Microsoft Learn Student Ambassadors.",
-  "metric": null,
-  "href": null,
+  "metric": "1.100 visualizaciones",
+  "href": "https://www.youtube.com/watch?v=9tSH7_k9Ivo",
   "images": [
    "A088"
   ],
-  "youtubeId": null
+  "youtubeId": "9tSH7_k9Ivo"
  },
  {
   "id": "A089",
   "sala": "escenarios",
-  "date": null,
-  "title": "Panel en la Universidad Tecnológica Privada de Santa Cruz (UTEPSA)",
-  "event": "UTEPSA",
-  "role": null,
+  "date": "2025",
+  "title": "Panel en UTEPSA · International Women’s Day 2025",
+  "event": "Redefine Possible · International Women’s Day 2025 · Women Techmakers",
+  "role": "Panelista",
   "place": "UTEPSA",
-  "text": "Panel con cuatro invitadas en el auditorio de UTEPSA.",
-  "metric": null,
+  "text": "Panel del International Women’s Day 2025 en UTEPSA, el mismo evento de la charla sobre agentes virtuales.",
+  "metric": "Unas 100 personas en el evento (estimado)",
   "href": null,
   "images": [
    "A089"
@@ -1323,12 +1313,12 @@
  {
   "id": "A090",
   "sala": "comunidad",
-  "date": null,
-  "title": "Encuentro con el Instituto de la Mujer y Empresa (IME)",
-  "event": "IME · Instituto de la Mujer y Empresa",
-  "role": null,
+  "date": "2023",
+  "title": "Reunión de socias del IME 2023",
+  "event": "Reunión socias IME 2023",
+  "role": "Invitada",
   "place": null,
-  "text": "Foto grupal en un encuentro con el IME.",
+  "text": "Reunión de socias del IME (Instituto de la Mujer y Empresa).",
   "metric": null,
   "href": null,
   "images": [
@@ -1338,13 +1328,13 @@
  },
  {
   "id": "A091",
-  "sala": "contenido",
-  "date": null,
+  "sala": "escenarios",
+  "date": "2024-09-20",
   "title": "UXCorp Live: 4 horas de diseño y desarrollo en vivo",
   "event": "UXCorp · Twitch",
-  "role": "Participante",
+  "role": "Panelista",
   "place": "En línea (Twitch)",
-  "text": "Transmisión de 4 horas por Twitch para apoyar a la familia de Jaime “Tyto” Gutiérrez, el 20 de septiembre.",
+  "text": "Panel sobre inteligencia artificial dentro de UXCorp Live: 4 horas de diseño y desarrollo en vivo por Twitch para apoyar a la familia de Jaime “Tyto” Gutiérrez.",
   "metric": null,
   "href": null,
   "images": [
@@ -1371,12 +1361,12 @@
  {
   "id": "A093",
   "sala": "comunidad",
-  "date": null,
+  "date": "2024",
   "title": "Jurado del Call for Papers de Nerdearla",
   "event": "Nerdearla",
   "role": "Jurado",
   "place": null,
-  "text": "Parte del jurado del Call for Papers, en el área de Data / AI.",
+  "text": "Aporte a la comunidad: calificar charlas del Call for Papers de Nerdearla 2024, leyendo y evaluando muchas propuestas.",
   "metric": null,
   "href": null,
   "images": [
@@ -1403,7 +1393,7 @@
  {
   "id": "A095",
   "sala": "escenarios",
-  "date": null,
+  "date": "2024",
   "title": "La tesis, TensorFlow, embeddings y más",
   "event": "DevFest Cochabamba · Google Developer Groups Cochabamba",
   "role": "Speaker",
