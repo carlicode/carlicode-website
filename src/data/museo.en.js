@@ -101,7 +101,7 @@ export const texts = {
   A082: "In-person AWS fundamentals workshop, together with Dariana Pol.",
   A083: "A day of talks, workshops and networking for women in tech across Latin America.",
   A084: "Technical lightning talks together with Hazel Saenz (Developer Advocate, AWS).",
-  A086: "Free Twitch workshop: introduction to programming, tools, tips and Python applications. It ran for two weeks, starting February 26, at 9:00 p.m. (Bolivia).",
+  A086: "Free Twitch workshop: introduction to programming, tools, tips and Python applications. It ran in three editions, in 2020, 2022 and 2024, two weeks each. The 2024 edition started on February 26, at 9:00 p.m. (Bolivia).",
   A003: "Future Makers talk (International Women’s Day 2025), Saturday April 5, 8:30 a.m., main auditorium of Universidad Católica Boliviana.",
   A004: "Online talk on how AI and automation are already changing the way we work and study. Organized by Women+ in Firebase and Women Techmakers La Paz & El Alto.",
   A009: "Green & Tech edition organized by IME (Instituto de la Mujer y Empresa). Took part as Head of AI at Dapta.",

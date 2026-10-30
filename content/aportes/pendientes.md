@@ -5,11 +5,10 @@ Generado desde `src/data/aportes.json` (93 piezas visibles). Nada de esto se inv
 ## Decidido con tus respuestas
 - A004: título del cartel. A019: 21 de septiembre de 2022 (y es un podcast). A021: 2025, presencial en UTEPSA. A089 es el panel del mismo evento.
 - A014 y A011 son la misma charla (TEDx Univalle, noviembre de 2023): quedó **A014**, con el título «Rompiendo el molde con IA» y el enlace de YouTube; A011 se oculta para no duplicar.
-- A086 (taller Python desde cero por Twitch): 3 ediciones de 500 asistentes, inicio el 26 de febrero de 2024.
+- A086 (taller Python desde cero por Twitch): 3 ediciones de 500 asistentes, en 2020, 2022 y 2024; la de 2024 empezó el 26 de febrero.
 
 ## Para decidir
-- **A086, año:** tu nota de impacto decía que el taller fue «en pandemia»; ahora dices 2024 y el cartel solo dice «26 de febrero». Puse 2024 y quité «pandemia» del texto. ¿Es 2024?
-- **A086 y el contador de impacto:** `content/impacto/impacto-estimacion.csv` sigue diciendo «En pandemia». ¿Lo actualizo?
+- **A086 y el contador de impacto:** resuelto. Fueron tres ediciones (2020, 2022 y 2024) de 500 personas: coincide con las 1,500 del contador. La nota de `impacto-estimacion.csv` ya lo dice.
 - **Cifras nuevas:** me diste estimados (A004 ≈50, A019 ≈400, A021 ≈60, A089 ≈100, A005 ≈50 y 100, A026 ≈5.000, A077 ≈300). Se muestran como «estimado» en las fichas, pero **no entran todavía** en el contador «Mi impacto en LATAM» (usa tus reglas). ¿Las incorporo?
 - **A088 (AI Gaming):** tu rol sigue sin confirmar; puse «Participante» porque se te ve en la transmisión.
 
