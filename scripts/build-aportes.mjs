@@ -5,8 +5,8 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const SRC = "content/aportes";
 const OUT_IMG = "public/museo";
-// Piezas que no se muestran en el sitio: repos vacíos o sin contenido público (ver HANDOFF.md).
-const hidden = new Set(["A074"]);
+// Piezas que no se muestran en el sitio: repos vacíos (ver HANDOFF.md) y duplicados.
+const hidden = new Set(["A074", "A011"]); // A011 es la misma charla que A014 (TEDx Univalle)
 const rooms = {
   "Charlas y paneles": "escenarios",
   "Podcasts y entrevistas": "contenido",
