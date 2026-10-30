@@ -38,7 +38,7 @@
   "event": "IWD Future Makers Cochabamba 2025",
   "role": "Speaker",
   "place": "Cochabamba, Bolivia",
-  "text": null,
+  "text": "Charla de Future Makers (International Women’s Day 2025), sábado 5 de abril, 8:30 h, en el auditorio principal de la Universidad Católica Boliviana.",
   "metric": null,
   "href": "https://www.instagram.com/p/DHq_baPOxmT/",
   "images": [
@@ -53,8 +53,8 @@
   "title": "Redefine Possible Together: IA accesible para todos",
   "event": "Road to #IWD2025 · Redefine Possible Together",
   "role": "Speaker",
-  "place": null,
-  "text": null,
+  "place": "En línea",
+  "text": "Charla en línea sobre cómo la IA y las automatizaciones ya están transformando la forma de trabajar y estudiar. Organizan Women+ in Firebase y Women Techmakers La Paz y El Alto.",
   "metric": null,
   "href": null,
   "images": [
@@ -83,9 +83,9 @@
   "sala": "escenarios",
   "date": "2024-10-26",
   "title": "Un título no te define en tech",
-  "event": "Charla tech",
+  "event": "Women’s Morning Talk",
   "role": "Speaker",
-  "place": null,
+  "place": "Sociedad de Ingenieros de Bolivia",
   "text": "Caminos no tradicionales hacia la tecnología.",
   "metric": null,
   "href": "https://www.instagram.com/p/DBd7sczuX3t/",
@@ -136,7 +136,7 @@
   "event": "FuckUp Nights Cochabamba · Green & Tech",
   "role": "Speaker",
   "place": "Cochabamba, Bolivia",
-  "text": null,
+  "text": "Edición Green & Tech organizada por el IME (Instituto de la Mujer y Empresa). Participó como Head of AI de Dapta.",
   "metric": null,
   "href": "https://www.instagram.com/p/C4_eTQiP7z2/",
   "images": [
@@ -205,9 +205,9 @@
   "sala": "escenarios",
   "date": "2023-11-24",
   "title": "La IA y su dualidad",
-  "event": "TDex",
+  "event": "TEDx Univalle Cochabamba",
   "role": "Speaker",
-  "place": null,
+  "place": "Univalle, Av. América",
   "text": "Charla sobre inteligencia artificial y su dualidad.",
   "metric": null,
   "href": "https://www.instagram.com/p/CzwAOxrIYrq/",
@@ -223,8 +223,8 @@
   "title": "MujeresTech LATAM: mi camino en IA, comunidad y educación",
   "event": "MujeresTech LATAM",
   "role": "Invitada",
-  "place": null,
-  "text": null,
+  "place": "En línea (Gather)",
+  "text": "Evento en línea por Gather, organizado por el IME (Instituto de la Mujer y Empresa) con Mujeres TICs, WTM Santa Cruz y GDG Santa Cruz. 18:00 h (Bolivia).",
   "metric": null,
   "href": "https://www.instagram.com/p/Cvm31ffsHOZ/",
   "images": [
@@ -253,10 +253,10 @@
   "sala": "escenarios",
   "date": "2023-04-01",
   "title": "Introducción a ChatGPT y Whisper APIs",
-  "event": null,
+  "event": "International Women’s Day 2023 · Women Techmakers",
   "role": "Speaker",
-  "place": null,
-  "text": null,
+  "place": "Universidad del Valle",
+  "text": "Taller sobre ChatGPT y su API, y sobre Whisper, la API de OpenAI para comprender y responder a los mensajes del usuario en tiempo real. 8:00 h.",
   "metric": null,
   "href": null,
   "images": [
@@ -273,7 +273,7 @@
   "event": "MLSA Latam · Microsoft User Group Bolivia",
   "role": "Speaker",
   "place": null,
-  "text": null,
+  "text": "Charla para Women Meet By Tech, con Microsoft Learn Student Ambassadors. Evento público y gratuito.",
   "metric": null,
   "href": null,
   "images": [
@@ -289,7 +289,7 @@
   "event": "Transmisión en vivo de la comunidad",
   "role": "Invitada",
   "place": null,
-  "text": null,
+  "text": "Transmisión en vivo por YouTube.",
   "metric": null,
   "href": null,
   "images": [
@@ -300,11 +300,11 @@
  {
   "id": "A020",
   "sala": "escenarios",
-  "date": null,
+  "date": "2022-04-12",
   "title": "Tecnología digital: una oportunidad para tu futuro",
   "event": "Foro de Tecnología Mujeres (5.ª versión)",
   "role": "Panelista",
-  "place": null,
+  "place": "En línea",
   "text": "Panel con otras referentes de la región.",
   "metric": null,
   "href": null,
@@ -318,10 +318,10 @@
   "sala": "escenarios",
   "date": "2026-03-08",
   "title": "Creación de nuestro primer agente virtual con RAG y modelos fundacionales",
-  "event": "Evento de comunidad",
+  "event": "Redefine Possible · International Women’s Day · Women Techmakers",
   "role": "Speaker",
   "place": null,
-  "text": null,
+  "text": "Charla de International Women’s Day para crear un primer agente virtual con RAG y modelos fundacionales.",
   "metric": null,
   "href": null,
   "images": [
@@ -337,7 +337,7 @@
   "event": "2do Webinar SucreTechnology · JCI Líderes Sucre",
   "role": "Expositora",
   "place": "En línea (Zoom y Facebook Live)",
-  "text": null,
+  "text": "Ciclo de webinars de JCI Líderes Sucre sobre inteligencia artificial, por Zoom y Facebook Live. 19:00 h.",
   "metric": null,
   "href": null,
   "images": [
@@ -352,8 +352,8 @@
   "title": "Speaker en la celebración del Día Internacional de la Mujer y la Niña en Ciencia y Tecnología",
   "event": "Becas Grace Hopper",
   "role": "Speaker",
-  "place": null,
-  "text": null,
+  "place": "Universidad Católica Boliviana",
+  "text": "Charla el 12 de febrero, 9:00 h, organizada por Google Developer Student Clubs de la UCB “San Pablo”.",
   "metric": null,
   "href": null,
   "images": [
@@ -364,12 +364,12 @@
  {
   "id": "A024",
   "sala": "escenarios",
-  "date": null,
+  "date": "2020-12-14",
   "title": "Charla al estilo MLSA: proceso en MLSA, proyectos en Python e IA",
   "event": "MLSA Latam · InstaLive",
   "role": "Invitada",
-  "place": null,
-  "text": null,
+  "place": "En línea (Instagram Live)",
+  "text": "InstaLive de MLSA Latam, lunes 14 de diciembre, 21:00 h (Bolivia).",
   "metric": null,
   "href": null,
   "images": [
@@ -470,7 +470,7 @@
   "sala": "contenido",
   "date": "2025-03-11",
   "title": "Mujer en tech y AI · Ep. 113",
-  "event": "Mujer en tech y AI",
+  "event": "Divagadoras Científicas · Mujer en tech y AI",
   "role": "Invitada",
   "place": null,
   "text": "La ciencia detrás de la inteligencia artificial: algoritmos, datos y código.",
@@ -601,7 +601,7 @@
   "event": "Build with AI Bolivia",
   "role": "Mentora",
   "place": "Bolivia",
-  "text": null,
+  "text": "Mentora en inteligencia artificial, MVP y pitch en el hackathon Build with AI de Google Developer Groups Bolivia, 4 y 5 de mayo.",
   "metric": null,
   "href": "https://www.instagram.com/p/C6ZYYhou_sd/",
   "images": [
@@ -633,7 +633,7 @@
   "event": "Google I/O Extended Santa Cruz",
   "role": "Speaker",
   "place": "Santa Cruz de la Sierra",
-  "text": null,
+  "text": "Nuevas versiones y herramientas del ecosistema Gemma, y cómo elegir el modelo open-source correcto y aplicarlo en tus proyectos, desde ideas personales hasta soluciones de IA a gran escala.",
   "metric": null,
   "href": "https://www.instagram.com/p/DMc-8YqggNK/",
   "images": [
@@ -649,7 +649,7 @@
   "event": "Google I/O Extended Cochabamba",
   "role": "Facilitadora",
   "place": "Cochabamba, Bolivia",
-  "text": null,
+  "text": "Taller «Dominando MediaPipe: de la visión al lenguaje y más allá», 10:00 h.",
   "metric": null,
   "href": "https://www.instagram.com/p/CwObFadLvIQ/",
   "images": [
@@ -1287,5 +1287,133 @@
   "href": "https://www.youtube.com/watch?v=msMoNLbroF4",
   "images": [],
   "youtubeId": "msMoNLbroF4"
+ },
+ {
+  "id": "A088",
+  "sala": "comunidad",
+  "date": null,
+  "title": "AI Gaming Latinoamérica",
+  "event": "Microsoft Learn Student Ambassadors · Hackathon",
+  "role": "Participante",
+  "place": null,
+  "text": "Transmisión en vivo del hackathon AI Gaming Latinoamérica de Microsoft Learn Student Ambassadors.",
+  "metric": null,
+  "href": null,
+  "images": [
+   "A088"
+  ],
+  "youtubeId": null
+ },
+ {
+  "id": "A089",
+  "sala": "escenarios",
+  "date": null,
+  "title": "Panel en la Universidad Tecnológica Privada de Santa Cruz (UTEPSA)",
+  "event": "UTEPSA",
+  "role": null,
+  "place": "UTEPSA",
+  "text": "Panel con cuatro invitadas en el auditorio de UTEPSA.",
+  "metric": null,
+  "href": null,
+  "images": [
+   "A089"
+  ],
+  "youtubeId": null
+ },
+ {
+  "id": "A090",
+  "sala": "comunidad",
+  "date": null,
+  "title": "Encuentro con el Instituto de la Mujer y Empresa (IME)",
+  "event": "IME · Instituto de la Mujer y Empresa",
+  "role": null,
+  "place": null,
+  "text": "Foto grupal en un encuentro con el IME.",
+  "metric": null,
+  "href": null,
+  "images": [
+   "A090"
+  ],
+  "youtubeId": null
+ },
+ {
+  "id": "A091",
+  "sala": "contenido",
+  "date": null,
+  "title": "UXCorp Live: 4 horas de diseño y desarrollo en vivo",
+  "event": "UXCorp · Twitch",
+  "role": "Participante",
+  "place": "En línea (Twitch)",
+  "text": "Transmisión de 4 horas por Twitch para apoyar a la familia de Jaime “Tyto” Gutiérrez, el 20 de septiembre.",
+  "metric": null,
+  "href": null,
+  "images": [
+   "A091"
+  ],
+  "youtubeId": null
+ },
+ {
+  "id": "A092",
+  "sala": "escenarios",
+  "date": "2020-12-12",
+  "title": "Sácale el jugo a Python con Colaboratory",
+  "event": "Cumbre Virtual · Comunidades Microsoft del Ecuador",
+  "role": "Speaker",
+  "place": "En línea",
+  "text": "Charla de 11:30 h en la Cumbre Virtual de las comunidades Microsoft del Ecuador.",
+  "metric": null,
+  "href": null,
+  "images": [
+   "A092"
+  ],
+  "youtubeId": null
+ },
+ {
+  "id": "A093",
+  "sala": "comunidad",
+  "date": null,
+  "title": "Jurado del Call for Papers de Nerdearla",
+  "event": "Nerdearla",
+  "role": "Jurado",
+  "place": null,
+  "text": "Parte del jurado del Call for Papers, en el área de Data / AI.",
+  "metric": null,
+  "href": null,
+  "images": [
+   "A093"
+  ],
+  "youtubeId": null
+ },
+ {
+  "id": "A094",
+  "sala": "escenarios",
+  "date": "2020-04-01",
+  "title": "¿Comunidad PyLadies?",
+  "event": "PyLadies Cochabamba · Meetup #QuedateEnCasa.py",
+  "role": "Speaker",
+  "place": "En línea (YouTube Live)",
+  "text": "Meetup en vivo por YouTube, 19:50 h.",
+  "metric": null,
+  "href": null,
+  "images": [
+   "A094"
+  ],
+  "youtubeId": null
+ },
+ {
+  "id": "A095",
+  "sala": "escenarios",
+  "date": null,
+  "title": "La tesis, TensorFlow, embeddings y más",
+  "event": "DevFest Cochabamba · Google Developer Groups Cochabamba",
+  "role": "Speaker",
+  "place": null,
+  "text": "Cómo se aplica TensorFlow a un modelo de clasificación de violencia y cómo integrarlo con otras tecnologías, como el procesamiento de lenguaje natural, para potenciar el resultado del modelo entrenado.",
+  "metric": null,
+  "href": null,
+  "images": [
+   "A095"
+  ],
+  "youtubeId": null
  }
 ]

@@ -67,6 +67,14 @@ export const titles = {
   A085: "Speaker at Bolivia Blockchain Conference 2025",
   A086: "Python bootcamp on Twitch",
   A087: "Create your first AI agent in 2 lines of code with AWS Strands Agents",
+  A088: "AI Gaming Latinoamérica",
+  A089: "Panel at Universidad Tecnológica Privada de Santa Cruz (UTEPSA)",
+  A090: "Meeting with the Instituto de la Mujer y Empresa (IME)",
+  A091: "UXCorp Live: 4 hours of design and development, live",
+  A092: "Make the most of Python with Colaboratory",
+  A093: "Call for Papers jury at Nerdearla",
+  A094: "PyLadies community?",
+  A095: "The thesis, TensorFlow, embeddings and more",
 };
 
 export const texts = {
@@ -94,13 +102,35 @@ export const texts = {
   A083: "A day of talks, workshops and networking for women in tech across Latin America.",
   A084: "Technical lightning talks together with Hazel Saenz (Developer Advocate, AWS).",
   A086: "A Python bootcamp on Twitch during the pandemic.",
+  A003: "Future Makers talk (International Women’s Day 2025), Saturday April 5, 8:30 a.m., main auditorium of Universidad Católica Boliviana.",
+  A004: "Online talk on how AI and automation are already changing the way we work and study. Organized by Women+ in Firebase and Women Techmakers La Paz & El Alto.",
+  A009: "Green & Tech edition organized by IME (Instituto de la Mujer y Empresa). Took part as Head of AI at Dapta.",
+  A015: "Online event on Gather, organized by IME (Instituto de la Mujer y Empresa) with Mujeres TICs, WTM Santa Cruz and GDG Santa Cruz. 6:00 p.m. (Bolivia).",
+  A017: "Workshop on ChatGPT and its API, and on Whisper, OpenAI’s API for understanding and responding to user messages in real time. 8:00 a.m.",
+  A018: "Talk for Women Meet By Tech, with Microsoft Learn Student Ambassadors. Free public event.",
+  A019: "Livestream on YouTube.",
+  A021: "International Women’s Day talk on building a first virtual agent with RAG and foundation models.",
+  A022: "JCI Líderes Sucre webinar series on artificial intelligence, on Zoom and Facebook Live. 7:00 p.m.",
+  A023: "Talk on February 12, 9:00 a.m., organized by Google Developer Student Clubs at UCB “San Pablo”.",
+  A024: "MLSA Latam InstaLive, Monday, December 14, 9:00 p.m. (Bolivia).",
+  A040: "Mentor in artificial intelligence, MVP and pitch at the Google Developer Groups Bolivia Build with AI hackathon, May 4–5.",
+  A042: "New versions and tools of the Gemma ecosystem, and how to pick the right open-source model and apply it in your projects, from personal ideas to large-scale AI solutions.",
+  A043: "Workshop “Mastering MediaPipe: from vision to language and beyond”, 10:00 a.m.",
+  A088: "Livestream of Microsoft Learn Student Ambassadors’ AI Gaming Latinoamérica hackathon.",
+  A089: "Panel with four guests in the UTEPSA auditorium.",
+  A090: "Group photo at a meeting with IME.",
+  A091: "4-hour Twitch livestream to support the family of Jaime “Tyto” Gutiérrez, on September 20.",
+  A092: "11:30 a.m. talk at the Cumbre Virtual of Microsoft communities in Ecuador.",
+  A093: "Part of the Call for Papers jury, in the Data / AI track.",
+  A094: "Live meetup on YouTube, 7:50 p.m.",
+  A095: "How TensorFlow is applied to a violence classification model and how to integrate it with other technologies, such as natural language processing, to boost the trained model’s results.",
 };
 
 export const roles = {
   "Autora": "Author", "CEO y fundadora": "CEO & Founder", "Co-organizadora": "Co-organizer", "Creadora": "Creator",
   "Embajadora": "Ambassador", "Entrevistada": "Interviewee", "Expositora": "Presenter", "Facilitadora": "Facilitator",
   "Investigadora y desarrolladora": "Researcher & developer", "Invitada": "Guest", "Líder": "Leader", "Mentora": "Mentor",
-  "Miembro": "Member", "Organizadora": "Organizer", "Panelista": "Panelist", "Participante": "Participant", "Profesora": "Instructor",
+  "Miembro": "Member", "Organizadora": "Organizer", "Panelista": "Panelist", "Participante": "Participant", "Profesora": "Instructor", "Jurado": "Jury member",
 };
 
 export const places = {
@@ -112,6 +142,12 @@ export const places = {
   "Estados Unidos": "United States",
   "MIDE, Ciudad de México": "MIDE, Mexico City",
   "Salt Lake City, EE. UU.": "Salt Lake City, USA",
+  "En línea": "Online",
+  "En línea (Gather)": "Online (Gather)",
+  "En línea (Instagram Live)": "Online (Instagram Live)",
+  "En línea (Twitch)": "Online (Twitch)",
+  "En línea (YouTube Live)": "Online (YouTube Live)",
+  "Univalle, Av. América": "Univalle, Av. América",
 };
 
 export const metrics = {
@@ -134,4 +170,5 @@ export const events = {
   "Nerdearla Argentina 2026 · Escenario AWS": "Nerdearla Argentina 2026 · AWS Stage",
   "The Spark Networking Sessions · Incubatec y Acelaratec (Solydes + UPB) con BCP": "The Spark Networking Sessions · Incubatec and Acelaratec (Solydes + UPB) with BCP",
   "Build with AI Hackathon 2026 · GDG Santa Cruz y Women Techmakers Santa Cruz": "Build with AI Hackathon 2026 · GDG Santa Cruz and Women Techmakers Santa Cruz",
+  "Cumbre Virtual · Comunidades Microsoft del Ecuador": "Cumbre Virtual · Microsoft communities of Ecuador",
 };
